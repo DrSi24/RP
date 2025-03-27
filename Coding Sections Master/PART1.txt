@@ -1,0 +1,168 @@
+import shap
+import numpy as np
+import xgboost as xgb
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import sqlite3
+from datetime import datetime
+from lifelines import KaplanMeierFitter, CoxPHFitter
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.metrics import roc_auc_score
+import logging
+from contextlib import contextmanager
+import os
+import io
+import plotly.express as px
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Configuration
+DB_PATH = "resume_data.db"
+TABLE_NAME = "resume_data"
+
+def create_database():
+    """Create database and table if they don't exist"""
+    conn = None
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        
+        cursor.execute(f"""
+            CREATE TABLE IF NOT EXISTS {TABLE_NAME} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                
+                -- 👤 Demographic & Socioeconomic
+                Age INTEGER,
+                Sex TEXT,
+                Employment_Status TEXT,
+                Income_Level TEXT,
+                Social_Deprivation INTEGER,
+                Material_Deprivation INTEGER,
+                
+                -- 👩‍⚕️ Occupation Details
+                Healthcare_Role TEXT,
+                Department TEXT,
+                Years_Experience INTEGER,
+                Weekly_Hours INTEGER,
+                Night_Shifts_Monthly INTEGER,
+                Overtime_Hours_Monthly INTEGER,
+                Patient_Facing TEXT,
+                Management_Responsibilities TEXT,
+                Work_Stress_Level INTEGER,
+                Job_Satisfaction INTEGER,
+                Workplace_Support INTEGER,
+                Burnout_Level INTEGER,
+                Sick_Days_Last_Year INTEGER,
+                Workplace_Incidents INTEGER,
+                Recent_Promotion TEXT,
+                Recent_Demotion TEXT,
+                
+                -- 🏥 Clinical & Psychiatric
+                MH_Disorders TEXT,
+                Substance_Use_Disorders TEXT,
+                History_Suicidal_Ideation INTEGER,
+                Previous_Suicide_Attempts INTEGER,
+                Frequency_Suicidal_Thoughts INTEGER,
+                Intensity_Suicidal_Thoughts INTEGER,
+                
+                -- 🏃 Health & Medical
+                Chronic_Illnesses TEXT,
+                GP_Visits INTEGER,
+                ED_Visits INTEGER,
+                Hospitalizations INTEGER,
+                
+                -- 🧠 Psychological Factors
+                Hopelessness INTEGER,
+                Despair INTEGER,
+                Impulsivity INTEGER,
+                Aggression INTEGER,
+                Access_Lethal_Means INTEGER,
+                Social_Isolation INTEGER,
+                
+                -- 🤝 Support & Resilience
+                Coping_Strategies INTEGER,
+                Measured_Resilience INTEGER,
+                MH_Service_Engagement INTEGER,
+                Supportive_Relationships INTEGER,
+                
+                -- 📊 Risk Assessment
+                Suicidal_Distress INTEGER,
+                Time_To_Crisis INTEGER,
+                Crisis_Event INTEGER,
+                Observation_Date TEXT
+            )
+        """)
+        conn.commit()
+        st.success("Database initialized successfully!")
+        
+    except sqlite3.Error as e:
+        st.error(f"Database creation error: {e}")
+        logger.error(f"Database creation error: {e}")
+    finally:
+        if conn:
+            conn.close()
+
+@contextmanager
+def get_db_connection():
+    conn = None
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        yield conn
+    finally:
+        if conn:
+            conn.close()
+
+@st.cache_data(ttl=3600)
+def load_data():
+    try:
+        with get_db_connection() as conn:
+            query = f"SELECT * FROM {TABLE_NAME}"
+            df = pd.read_sql_query(query, conn)
+            if 'Observation_Date' in df.columns:
+                df['Observation_Date'] = pd.to_datetime(df['Observation_Date'])
+            return df
+    except Exception as e:
+        logger.error(f"Data loading error: {e}")
+        return pd.DataFrame()
+
+def insert_entry(data: dict):
+    try:
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            columns = ', '.join(data.keys())
+            placeholders = ', '.join(['?' for _ in data])
+            query = f"INSERT INTO {TABLE_NAME} ({columns}) VALUES ({placeholders})"
+            cursor.execute(query, list(data.values()))
+            conn.commit()
+            return True
+    except sqlite3.Error as e:
+        logger.error(f"Database error: {e}")
+        st.error(f"⚠️ Failed to save data: {e}")
+        return False
+
+def upload_csv_to_db(csv_df: pd.DataFrame):
+    try:
+        with get_db_connection() as conn:
+            csv_df.to_sql(TABLE_NAME, conn, if_exists='append', index=False)
+            return True
+    except Exception as e:
+        logger.error(f"CSV upload error: {e}")
+        st.error(f"⚠️ Failed to upload CSV: {e}")
+        return False
+
+def get_latest_entries(n=10):
+    try:
+        with get_db_connection() as conn:
+            df = pd.read_sql_query(
+                f"SELECT * FROM {TABLE_NAME} ORDER BY id DESC LIMIT {n}",
+                conn
+            )
+            return df
+    except Exception as e:
+        logger.error(f"Error fetching latest entries: {e}")
+        return pd.DataFrame()

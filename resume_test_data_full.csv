@@ -1,0 +1,501 @@
+Age,Sex,Employment_Status,Income_Level,Social_Deprivation,Material_Deprivation,Healthcare_Role,Department,Years_Experience,Weekly_Hours,Night_Shifts_Monthly,Overtime_Hours_Monthly,Patient_Facing,Management_Responsibilities,Work_Stress_Level,Job_Satisfaction,Workplace_Support,Burnout_Level,Sick_Days_Last_Year,Workplace_Incidents,Recent_Promotion,Recent_Demotion,MH_Disorders,Substance_Use_Disorders,History_Suicidal_Ideation,Previous_Suicide_Attempts,Frequency_Suicidal_Thoughts,Intensity_Suicidal_Thoughts,Chronic_Illnesses,GP_Visits,ED_Visits,Hospitalizations,Hopelessness,Despair,Impulsivity,Aggression,Access_Lethal_Means,Social_Isolation,Coping_Strategies,Measured_Resilience,MH_Service_Engagement,Supportive_Relationships,Suicidal_Distress,Time_To_Crisis,Crisis_Event,Observation_Date
+60,Female,Full-time,Medium,8,6,Doctor,Intensive Care,13,21,0,36,Yes,Yes,1,6,9,4,21,3,Yes,No,PTSD,Multiple,1,0,8,7,Diabetes,4,8,0,2,6,4,6,4,6,9,6,3,2,2,300,0,2024-10-17 14:58:55
+50,Male,Full-time,Medium,6,4,Technician,Intensive Care,3,60,9,28,No,Yes,9,4,5,7,15,0,Yes,No,Bipolar,Multiple,1,0,7,4,Diabetes,2,5,0,0,5,1,3,3,4,9,5,7,3,2,274,0,2024-08-23 14:58:55
+36,Female,Temporary,High,7,7,Admin Staff,Oncology,22,34,12,2,Yes,No,1,9,9,2,28,5,No,Yes,"Depression, Anxiety",Cannabis,0,0,0,6,None,5,0,5,0,1,6,7,8,6,8,1,0,4,1,365,0,2024-09-21 14:58:55
+64,Female,Part-time,Medium,10,7,Paramedic,Radiology,19,22,4,14,Yes,Yes,3,8,7,3,8,3,No,No,Multiple,Multiple,0,0,6,6,None,12,2,5,6,10,2,6,5,8,1,7,4,2,4,335,0,2024-10-26 14:58:55
+29,Male,Part-time,Low,1,8,Nurse,Neurology,14,30,4,35,No,No,1,6,4,5,0,0,No,No,Depression,Cannabis,0,0,4,4,Diabetes,9,3,1,4,0,0,1,5,3,7,3,3,3,3,305,0,2024-09-02 14:58:55
+42,Male,Temporary,Medium,6,6,Healthcare Assistant,Oncology,28,49,7,18,Yes,Yes,6,6,10,3,27,4,No,No,Bipolar,Multiple,0,0,6,7,None,18,8,0,2,4,7,7,1,4,2,8,5,4,0,356,0,2025-01-11 14:58:55
+60,Female,Contract,Low,5,10,Admin Staff,Oncology,7,59,6,12,No,No,8,7,0,5,16,5,No,No,PTSD,None,0,0,8,8,Multiple,7,10,3,6,3,7,8,5,8,0,7,6,1,1,311,0,2024-07-31 14:58:55
+40,Female,Full-time,Low,3,0,Nurse,Surgery,40,37,7,20,No,No,6,6,4,5,28,5,No,No,Bipolar,Cannabis,0,0,1,3,None,17,5,5,1,2,2,4,6,9,10,2,8,9,2,324,0,2025-03-03 14:58:55
+44,Female,Temporary,Medium,6,2,Healthcare Assistant,Surgery,18,21,5,36,Yes,Yes,5,4,2,6,12,3,No,No,Multiple,Prescription Drugs,0,0,10,3,None,2,3,3,2,1,6,3,7,10,0,2,0,8,2,335,0,2024-05-03 14:58:55
+32,Female,Full-time,High,3,7,Pharmacist,Geriatrics,38,51,5,26,Yes,No,9,7,3,4,20,4,No,No,Depression,Cannabis,0,0,3,7,None,16,0,5,0,9,8,3,7,3,9,7,10,9,3,292,0,2024-11-07 14:58:55
+32,Female,Contract,Medium,1,2,Therapist,Oncology,27,27,1,28,Yes,No,0,9,7,2,25,3,No,No,None,Cannabis,0,1,3,0,None,7,7,3,7,1,7,3,8,4,1,1,9,7,0,365,0,2024-11-22 14:58:55
+45,Female,Full-time,Low,9,7,Doctor,Cardiology,26,41,5,19,Yes,Yes,10,6,6,5,20,2,No,No,Multiple,None,0,0,1,3,Multiple,9,10,4,1,3,2,5,9,4,6,8,3,5,4,313,0,2025-03-24 14:58:55
+57,Female,Temporary,Low,6,0,Technician,Radiology,3,25,4,24,Yes,No,9,6,10,6,4,0,No,No,None,None,1,0,2,5,Hypertension,1,1,3,6,1,1,10,10,7,5,3,5,9,3,254,0,2024-11-07 14:58:55
+61,Female,Full-time,Medium,7,4,Admin Staff,Neurology,14,31,12,5,Yes,Yes,8,6,4,6,9,2,No,No,"Depression, Anxiety",None,0,0,10,3,None,11,10,0,10,3,9,3,2,3,10,5,9,10,2,325,0,2025-02-09 14:58:55
+45,Female,Part-time,High,1,3,Doctor,Oncology,34,59,2,35,No,No,4,6,1,5,5,0,No,No,PTSD,Alcohol,1,0,7,5,Multiple,5,10,5,8,2,6,6,9,3,1,2,6,2,5,186,1,2025-02-10 14:58:55
+24,Female,Contract,High,4,4,Paramedic,Administration,36,55,5,1,No,Yes,10,7,5,3,23,1,Yes,No,Bipolar,Cannabis,0,0,8,4,Diabetes,1,7,0,5,8,6,6,6,6,3,2,6,10,4,243,0,2025-01-02 14:58:55
+43,Female,Contract,Low,0,7,Nurse,Obstetrics,0,34,7,21,Yes,No,4,8,10,3,18,5,Yes,No,Multiple,Multiple,0,3,5,8,Hypertension,20,5,3,1,6,8,4,6,10,1,2,7,1,4,289,1,2024-05-14 14:58:55
+23,Female,Contract,Low,6,9,Nurse,Psychiatry,2,47,8,31,No,No,5,6,5,6,24,3,No,No,Bipolar,Cannabis,0,0,9,9,Diabetes,2,7,2,1,10,4,4,0,4,0,10,9,6,2,314,0,2025-03-01 14:58:55
+45,Male,Temporary,High,7,3,Admin Staff,Radiology,23,37,0,15,No,No,8,7,9,4,12,1,No,No,Multiple,Prescription Drugs,0,0,1,8,None,16,5,2,8,2,3,9,7,5,2,9,7,7,3,243,1,2024-06-15 14:58:55
+65,Female,Contract,Medium,5,10,Midwife,Surgery,26,21,2,17,Yes,No,7,6,9,5,0,1,No,No,Bipolar,Prescription Drugs,0,2,1,3,None,6,4,2,9,7,7,7,3,5,3,1,7,9,3,323,0,2024-08-18 14:58:55
+51,Female,Part-time,Low,4,3,Midwife,Geriatrics,39,32,2,4,Yes,Yes,7,8,10,3,19,5,No,No,None,None,0,1,6,3,Hypertension,20,4,5,7,8,3,6,4,5,9,7,7,0,3,275,1,2024-07-23 14:58:55
+59,Female,Temporary,Low,5,2,Pharmacist,Psychiatry,35,34,10,35,No,Yes,7,6,5,6,24,5,No,No,PTSD,Alcohol,0,0,7,7,Hypertension,4,9,1,8,6,3,6,5,9,4,8,7,5,5,268,0,2024-08-22 14:58:55
+23,Female,Part-time,High,1,6,Therapist,Surgery,33,39,7,29,Yes,Yes,0,7,8,2,14,0,No,No,Depression,Cannabis,0,0,7,9,Diabetes,0,9,4,3,5,1,5,2,4,4,7,5,6,1,356,0,2024-08-17 14:58:55
+42,Female,Full-time,Medium,0,2,Healthcare Assistant,Surgery,28,48,0,18,No,Yes,0,9,10,0,13,2,Yes,No,Multiple,None,0,0,5,3,Multiple,7,10,3,3,3,0,6,4,4,6,9,8,8,2,291,0,2024-07-31 14:58:55
+54,Male,Full-time,High,6,2,Paramedic,Radiology,23,48,4,22,Yes,Yes,7,5,7,5,7,4,No,No,PTSD,Alcohol,0,0,9,1,Hypertension,11,7,1,1,4,3,6,9,8,9,2,2,2,4,293,0,2024-04-24 14:58:55
+33,Male,Full-time,Medium,6,10,Doctor,Surgery,23,22,2,33,No,Yes,4,5,7,3,9,0,No,No,None,None,0,0,7,1,Diabetes,13,6,2,9,7,6,9,4,7,7,6,5,1,6,228,0,2024-09-09 14:58:55
+43,Male,Full-time,Medium,9,9,Midwife,Obstetrics,3,38,1,12,No,Yes,8,9,0,2,8,4,Yes,No,Multiple,Cannabis,1,0,0,0,Hypertension,15,7,3,0,2,8,1,0,3,8,10,4,4,0,365,0,2024-09-06 14:58:55
+65,Male,Part-time,Medium,10,4,Pharmacist,General Practice,2,22,7,28,No,No,1,10,4,3,16,1,No,No,PTSD,Multiple,0,1,8,4,Asthma,9,7,1,9,1,8,9,2,6,6,9,7,9,3,277,0,2024-10-23 14:58:55
+46,Male,Temporary,Low,9,4,Pharmacist,Geriatrics,33,33,2,35,No,No,8,6,6,7,8,4,No,No,Depression,Cannabis,0,0,0,5,Diabetes,14,6,0,3,2,9,1,2,7,4,1,3,0,1,307,0,2024-11-26 14:58:55
+70,Female,Temporary,High,1,5,Admin Staff,Emergency,22,59,6,21,Yes,No,7,8,5,3,2,2,No,No,Depression,Cannabis,0,0,2,8,None,20,1,2,9,6,0,9,0,8,8,3,3,5,2,303,0,2024-12-06 14:58:55
+48,Male,Contract,High,1,7,Paramedic,General Practice,22,23,11,35,Yes,No,8,4,4,7,10,0,No,No,None,Prescription Drugs,0,0,8,4,Asthma,14,10,1,9,7,4,6,6,4,7,5,9,8,3,278,0,2025-01-24 14:58:55
+63,Female,Part-time,Medium,0,9,Healthcare Assistant,Emergency,4,30,10,8,No,Yes,3,8,7,1,11,5,No,No,Bipolar,Multiple,0,0,10,5,None,9,8,5,10,0,6,9,0,2,9,10,10,9,1,365,0,2025-03-03 14:58:55
+49,Male,Full-time,Low,9,5,Therapist,Intensive Care,30,50,0,38,No,Yes,0,7,2,4,9,2,No,No,Depression,Prescription Drugs,0,0,4,5,None,20,6,0,7,6,6,6,6,3,8,4,9,8,2,266,0,2024-04-08 14:58:55
+37,Female,Part-time,Low,7,0,Technician,Administration,40,51,5,18,Yes,Yes,0,9,5,2,24,2,No,No,"Depression, Anxiety",Alcohol,0,1,8,2,None,6,10,2,1,8,9,6,3,9,9,8,4,6,3,336,0,2025-01-01 14:58:55
+36,Male,Contract,High,7,7,Admin Staff,Intensive Care,5,46,2,37,Yes,No,4,5,4,5,16,0,No,No,PTSD,Alcohol,0,0,8,3,None,2,5,4,10,2,5,4,8,5,7,9,10,10,3,337,1,2025-02-26 14:58:55
+68,Male,Contract,Low,0,7,Healthcare Assistant,Surgery,36,49,7,5,No,Yes,1,10,7,0,16,5,No,No,Anxiety,None,0,0,5,0,None,1,8,2,7,2,10,0,6,9,5,3,5,6,3,272,0,2024-10-26 14:58:55
+65,Female,Part-time,Low,10,8,Technician,Neurology,9,21,5,14,No,No,7,6,3,3,24,2,No,No,Depression,Cannabis,0,0,10,3,Hypertension,5,0,5,0,7,9,1,4,10,3,4,10,7,2,358,1,2024-11-05 14:58:55
+24,Female,Part-time,Medium,7,8,Technician,Neurology,39,28,11,19,No,Yes,9,6,7,5,10,5,Yes,No,"Depression, Anxiety",None,1,0,0,0,Diabetes,20,10,4,0,3,3,8,6,4,8,3,3,9,3,261,0,2024-10-11 14:58:55
+58,Male,Part-time,Low,8,1,Paramedic,Emergency,6,47,1,8,No,Yes,10,6,9,5,29,3,Yes,No,Depression,Cannabis,0,0,9,4,None,8,1,4,3,7,2,7,8,8,8,7,1,1,5,277,0,2024-05-11 14:58:55
+28,Female,Temporary,Medium,3,1,Paramedic,Psychiatry,38,50,5,31,No,Yes,4,7,1,3,21,3,No,No,Depression,Prescription Drugs,0,0,6,10,Asthma,9,0,4,6,4,8,7,9,10,9,7,1,5,6,194,1,2025-03-17 14:58:55
+42,Male,Full-time,High,0,2,Doctor,Radiology,37,53,6,3,Yes,Yes,4,9,8,0,3,3,Yes,No,Bipolar,None,0,0,5,10,Multiple,3,9,3,8,2,9,9,5,10,9,2,2,4,3,323,1,2024-04-29 14:58:55
+30,Male,Part-time,Low,0,0,Pharmacist,Surgery,20,34,4,17,No,No,1,7,8,3,6,4,No,No,"Depression, Anxiety",None,0,0,8,7,Multiple,2,2,3,4,3,3,0,0,2,8,0,1,4,0,321,0,2024-09-26 14:58:55
+60,Other,Part-time,High,2,3,Healthcare Assistant,Radiology,19,44,2,4,Yes,No,6,7,9,3,20,2,No,Yes,None,None,1,0,6,7,Diabetes,8,10,4,1,3,7,5,5,1,9,5,0,2,1,365,0,2024-03-28 14:58:55
+39,Female,Part-time,High,4,3,Admin Staff,General Practice,2,55,3,19,Yes,Yes,7,7,9,5,25,0,No,Yes,Multiple,Prescription Drugs,1,0,10,4,Hypertension,16,4,0,6,7,0,8,0,5,2,1,7,2,2,354,0,2025-01-26 14:58:55
+25,Male,Contract,Low,4,8,Nurse,Neurology,21,27,3,22,Yes,No,9,8,5,5,13,0,No,No,Depression,Prescription Drugs,0,0,3,9,Multiple,13,0,4,10,5,6,7,3,6,10,1,4,5,4,223,0,2024-09-02 14:58:55
+46,Female,Contract,Low,8,8,Admin Staff,Cardiology,3,28,5,10,No,Yes,0,9,3,0,6,4,No,No,PTSD,None,0,0,6,1,None,9,3,1,1,6,5,2,7,4,2,2,9,9,0,365,0,2024-06-20 14:58:55
+35,Female,Temporary,High,9,8,Doctor,Geriatrics,27,56,9,36,Yes,Yes,1,6,3,2,23,0,No,No,Multiple,Prescription Drugs,0,0,1,5,Hypertension,12,7,4,8,8,0,3,4,0,10,7,0,9,3,322,0,2025-01-03 14:58:55
+30,Female,Full-time,Low,1,9,Therapist,General Practice,11,58,0,21,Yes,Yes,9,6,5,5,7,3,Yes,No,Depression,Alcohol,0,0,5,0,Hypertension,11,5,3,8,5,3,2,4,2,5,2,8,6,2,256,0,2024-12-17 14:58:55
+47,Male,Temporary,Medium,1,6,Pharmacist,Administration,37,51,10,3,Yes,Yes,3,9,4,1,0,2,Yes,No,Bipolar,None,0,0,5,6,Hypertension,0,0,3,2,2,4,5,9,2,5,6,7,0,1,325,0,2024-11-15 14:58:55
+23,Male,Full-time,Medium,5,1,Nurse,Geriatrics,35,36,3,28,Yes,No,4,8,5,3,23,0,No,No,"Depression, Anxiety",Prescription Drugs,1,0,1,10,Diabetes,18,0,1,7,2,10,8,10,3,5,9,3,2,1,365,1,2024-10-01 14:58:55
+41,Female,Contract,Low,8,9,Midwife,Obstetrics,40,54,9,33,No,Yes,1,7,6,5,21,0,No,No,"Depression, Anxiety",Multiple,1,0,3,3,Asthma,18,2,1,10,10,7,7,7,9,4,9,7,0,5,265,0,2025-02-10 14:58:55
+49,Female,Contract,High,0,4,Therapist,General Practice,4,56,12,12,No,Yes,0,10,6,0,3,1,Yes,No,PTSD,Cannabis,1,3,7,4,None,5,9,2,3,2,3,9,7,5,4,8,9,9,1,344,0,2024-09-01 14:58:55
+68,Female,Contract,Low,8,3,Paramedic,Emergency,12,38,3,8,Yes,No,8,8,8,4,28,1,No,No,PTSD,Alcohol,0,0,7,5,Asthma,12,7,0,2,9,2,3,0,4,1,7,6,2,4,295,0,2024-06-10 14:58:55
+28,Male,Temporary,Low,8,10,Technician,Obstetrics,22,48,9,30,Yes,Yes,0,9,7,2,29,1,No,No,PTSD,None,0,0,7,10,Multiple,18,10,0,0,1,1,1,4,0,6,0,10,4,0,338,0,2025-02-26 14:58:55
+65,Female,Part-time,High,8,7,Midwife,Pediatrics,29,26,0,6,No,No,3,10,5,1,11,2,No,No,PTSD,Multiple,0,0,7,0,None,12,10,0,4,0,3,7,4,5,3,6,10,8,2,317,0,2024-04-18 14:58:55
+29,Female,Part-time,High,4,1,Admin Staff,General Practice,36,47,8,3,No,Yes,1,10,5,0,23,3,No,No,Bipolar,None,0,1,0,8,Diabetes,20,7,5,10,10,10,7,7,8,2,6,6,2,6,193,0,2024-12-13 14:58:55
+68,Male,Contract,Medium,8,5,Admin Staff,Obstetrics,24,28,3,18,No,Yes,10,6,4,4,2,5,No,No,PTSD,Alcohol,0,0,1,9,None,3,2,3,3,9,9,10,0,10,7,7,0,9,2,320,0,2024-04-27 14:58:55
+56,Male,Part-time,High,10,4,Paramedic,Surgery,26,47,6,29,Yes,Yes,3,8,0,4,12,3,Yes,No,PTSD,Alcohol,0,0,3,3,None,1,6,0,0,0,3,5,6,0,3,9,5,9,0,365,0,2024-10-23 14:58:55
+35,Female,Part-time,Medium,3,1,Doctor,Geriatrics,13,25,11,30,No,Yes,7,5,8,6,19,3,No,No,Depression,None,0,1,8,7,None,14,2,2,9,3,9,7,6,7,10,4,3,8,3,315,0,2024-06-17 14:58:55
+38,Female,Temporary,High,1,10,Healthcare Assistant,Oncology,35,48,2,34,Yes,Yes,7,4,8,7,30,2,No,No,None,Alcohol,1,1,2,4,Multiple,11,3,2,7,2,4,8,8,7,3,9,9,0,4,274,1,2025-01-19 14:58:55
+57,Male,Full-time,Low,5,9,Midwife,Oncology,38,36,9,20,Yes,Yes,10,6,8,4,5,2,No,No,Depression,None,1,0,5,10,None,6,8,0,7,4,6,0,1,2,7,8,9,5,3,321,0,2024-05-20 14:58:55
+61,Male,Contract,Medium,3,0,Midwife,Surgery,15,35,11,30,No,No,8,4,10,6,10,1,No,No,None,None,1,0,6,7,None,19,3,1,7,8,8,8,2,8,0,8,9,8,5,275,1,2025-03-24 14:58:55
+25,Male,Contract,Medium,5,7,Therapist,Pediatrics,21,42,2,18,Yes,Yes,10,5,7,5,22,0,No,No,PTSD,Multiple,1,0,7,0,None,17,2,2,2,7,1,1,3,10,8,7,10,4,3,345,1,2024-09-13 14:58:55
+23,Male,Temporary,Medium,2,1,Pharmacist,Administration,20,50,7,30,No,No,4,9,9,2,3,4,No,No,Multiple,Multiple,0,0,6,7,Hypertension,12,4,1,5,8,4,0,0,10,6,5,1,10,2,351,0,2025-02-27 14:58:55
+27,Other,Temporary,Low,5,6,Therapist,Pediatrics,20,22,7,31,Yes,No,6,7,2,4,19,4,No,No,Bipolar,Prescription Drugs,0,0,2,10,Multiple,16,6,3,6,4,10,7,6,7,1,5,9,9,2,336,0,2025-03-17 14:58:55
+63,Female,Part-time,Low,1,8,Healthcare Assistant,Emergency,7,40,10,1,No,Yes,2,10,0,1,15,5,No,No,Anxiety,None,0,0,5,10,None,3,4,5,8,7,9,7,9,2,10,0,6,1,4,295,0,2025-01-07 14:58:55
+25,Male,Contract,Low,1,8,Admin Staff,Neurology,15,45,11,9,Yes,No,9,9,10,3,6,0,No,No,None,None,0,0,4,3,Multiple,13,3,2,4,3,8,10,2,9,5,5,8,4,1,347,1,2025-02-24 14:58:55
+50,Other,Full-time,Low,8,7,Admin Staff,Radiology,30,55,0,1,Yes,Yes,3,10,7,1,21,5,No,Yes,Bipolar,Multiple,1,0,9,1,Hypertension,19,7,1,8,4,2,3,2,4,7,3,4,0,2,307,1,2025-03-22 14:58:55
+39,Female,Temporary,Low,6,10,Admin Staff,Geriatrics,9,56,9,1,No,No,9,9,6,1,28,1,No,No,"Depression, Anxiety",None,1,0,3,10,None,12,3,0,5,2,0,7,2,2,10,3,7,8,2,342,0,2024-12-07 14:58:55
+47,Female,Full-time,Medium,2,9,Admin Staff,Pediatrics,31,41,1,23,No,Yes,8,6,4,5,10,5,No,No,Bipolar,Cannabis,0,2,0,5,Diabetes,2,1,3,9,4,1,6,7,4,4,1,4,9,4,290,0,2024-09-16 14:58:55
+65,Female,Full-time,Low,10,8,Healthcare Assistant,Cardiology,33,31,7,16,No,No,9,7,9,3,23,0,No,No,PTSD,None,0,0,6,1,None,17,9,4,9,2,5,1,8,8,5,10,6,9,5,252,1,2025-01-25 14:58:55
+55,Male,Contract,Medium,0,1,Paramedic,Emergency,8,32,0,31,No,No,9,5,6,6,0,0,No,No,PTSD,Cannabis,0,0,7,4,Multiple,13,5,4,9,4,4,4,9,3,9,3,6,8,4,261,0,2025-01-11 14:58:55
+31,Male,Contract,Low,7,5,Pharmacist,Intensive Care,16,30,11,15,Yes,Yes,0,9,9,1,25,4,No,No,Multiple,None,0,0,1,1,Diabetes,14,1,0,3,10,0,9,1,5,7,4,8,5,1,333,0,2025-03-09 14:58:55
+57,Female,Temporary,High,5,3,Healthcare Assistant,Psychiatry,10,35,7,15,No,No,1,7,3,2,28,1,No,No,"Depression, Anxiety",None,1,2,6,2,Hypertension,2,2,3,0,4,0,3,9,2,5,4,2,10,0,352,0,2024-05-13 14:58:55
+35,Female,Contract,Medium,6,3,Pharmacist,Intensive Care,31,27,7,38,No,Yes,4,6,8,5,26,2,Yes,No,Depression,None,0,0,5,10,None,0,0,3,0,5,10,2,9,2,8,4,0,8,1,365,0,2024-06-10 14:58:55
+52,Male,Contract,High,8,4,Healthcare Assistant,Administration,9,59,1,30,Yes,Yes,2,7,10,2,6,5,Yes,No,Bipolar,None,0,0,4,5,None,16,4,3,9,8,3,0,0,4,8,3,1,2,5,278,1,2024-04-16 14:58:55
+69,Female,Contract,Medium,4,2,Admin Staff,Emergency,21,59,3,23,No,Yes,1,10,9,1,11,4,No,No,Multiple,None,0,0,3,0,None,2,8,3,4,0,3,4,8,7,8,0,5,3,1,365,0,2024-10-29 14:58:55
+36,Female,Full-time,High,0,0,Paramedic,Geriatrics,16,21,5,0,No,Yes,0,10,1,0,6,5,No,Yes,Multiple,Multiple,0,0,1,5,None,13,1,4,2,9,5,9,5,7,5,9,9,5,2,284,0,2025-01-11 14:58:55
+29,Male,Temporary,Low,9,7,Midwife,Obstetrics,3,49,11,10,Yes,Yes,9,9,8,4,26,5,No,No,Bipolar,Cannabis,0,1,9,2,None,2,6,1,4,5,5,7,8,2,8,7,9,3,4,256,1,2024-12-31 14:58:55
+35,Female,Part-time,Low,6,4,Therapist,General Practice,24,49,10,20,No,No,2,7,8,2,22,2,No,No,Anxiety,None,1,0,5,6,None,12,4,3,4,0,9,8,5,7,2,2,8,0,1,332,0,2024-07-13 14:58:55
+44,Other,Full-time,Low,4,2,Technician,Radiology,20,31,8,3,No,No,0,9,4,0,6,1,Yes,No,Multiple,Alcohol,0,0,4,1,Diabetes,14,1,1,0,5,5,6,1,10,4,1,2,6,0,346,0,2024-04-17 14:58:55
+61,Other,Contract,Medium,2,9,Paramedic,Psychiatry,36,29,7,6,No,No,0,10,10,0,9,0,No,No,Depression,Cannabis,0,0,1,5,Diabetes,17,7,3,7,1,0,10,0,7,1,8,9,4,1,365,0,2024-09-04 14:58:55
+42,Male,Full-time,High,8,6,Midwife,Intensive Care,37,30,11,25,No,Yes,0,9,0,0,29,3,No,No,Bipolar,None,0,0,9,7,None,13,10,2,4,7,9,0,7,2,7,6,1,7,2,328,0,2024-07-16 14:58:55
+37,Female,Contract,Low,0,6,Doctor,Psychiatry,0,34,7,11,No,No,7,8,6,3,15,5,Yes,Yes,Depression,None,0,0,6,0,None,20,5,5,4,10,8,0,2,9,10,8,10,8,3,301,0,2024-11-02 14:58:55
+66,Female,Contract,High,0,0,Healthcare Assistant,Cardiology,24,35,6,30,No,No,2,7,9,3,25,3,No,No,Depression,Cannabis,1,0,5,10,Multiple,2,3,2,8,2,10,0,0,9,3,1,0,4,1,326,0,2024-09-09 14:58:55
+39,Female,Full-time,High,0,8,Doctor,Cardiology,35,36,12,16,Yes,No,10,6,9,4,7,1,No,No,Multiple,None,0,0,10,10,Asthma,18,3,5,7,9,6,1,7,1,5,8,1,7,4,293,1,2024-07-04 14:58:55
+68,Other,Temporary,Low,2,1,Midwife,Obstetrics,16,45,8,32,No,No,0,9,3,2,8,3,No,No,"Depression, Anxiety",Cannabis,0,0,8,8,Asthma,7,1,2,0,5,6,0,0,9,5,9,2,0,1,365,0,2024-09-11 14:58:55
+45,Female,Contract,Low,5,4,Paramedic,Administration,40,21,1,10,Yes,No,6,6,8,3,8,5,No,No,Depression,None,0,0,10,4,Hypertension,3,2,3,2,5,10,3,7,1,4,8,6,0,3,294,0,2024-11-21 14:58:55
+47,Female,Temporary,High,9,4,Healthcare Assistant,Cardiology,23,31,2,27,Yes,Yes,9,6,5,6,1,2,No,No,Depression,None,0,0,9,4,Multiple,3,6,1,6,3,6,9,0,8,0,10,1,6,2,309,0,2025-01-19 14:58:55
+46,Female,Part-time,Low,10,7,Technician,Emergency,1,45,9,31,Yes,Yes,2,5,2,5,12,3,No,No,Multiple,None,0,0,4,4,Hypertension,18,2,5,0,4,1,8,8,6,10,8,4,5,2,313,0,2024-04-29 14:58:55
+66,Female,Contract,Low,2,7,Admin Staff,Radiology,39,42,7,0,Yes,No,7,8,5,4,12,1,No,No,Depression,Alcohol,0,0,8,5,Diabetes,10,4,4,0,1,1,3,8,5,6,9,1,4,2,306,1,2024-05-29 14:58:55
+62,Male,Temporary,Low,7,6,Healthcare Assistant,Geriatrics,14,37,5,27,No,Yes,3,9,9,2,22,1,Yes,No,Multiple,Cannabis,1,0,8,1,None,0,9,0,4,9,5,3,8,6,9,9,6,4,2,316,0,2024-06-19 14:58:55
+50,Male,Temporary,Medium,9,6,Healthcare Assistant,Obstetrics,31,51,9,6,No,Yes,3,7,5,1,22,2,No,No,Bipolar,Cannabis,0,0,0,5,None,7,5,5,8,9,6,6,2,7,7,3,9,8,5,224,0,2024-10-02 14:58:55
+36,Male,Part-time,High,1,10,Paramedic,Emergency,38,57,8,1,No,No,4,9,4,1,3,3,No,No,Depression,None,0,1,4,10,None,14,5,5,5,7,2,10,3,0,0,9,7,0,2,289,1,2024-04-16 14:58:55
+66,Female,Temporary,High,8,5,Paramedic,Oncology,5,22,9,23,Yes,No,5,7,1,4,24,3,No,No,PTSD,Cannabis,0,0,8,3,None,0,3,4,9,9,3,8,4,7,9,2,7,7,5,242,0,2024-10-03 14:58:55
+22,Male,Temporary,Medium,2,5,Midwife,General Practice,0,57,3,3,No,Yes,6,5,9,3,23,0,No,No,Anxiety,None,0,0,6,7,None,6,5,3,1,6,2,6,5,2,6,5,7,1,1,343,0,2025-02-15 14:58:55
+46,Female,Part-time,High,4,10,Nurse,General Practice,22,22,7,18,No,No,3,8,9,3,11,4,No,No,None,Multiple,1,1,5,10,None,20,2,2,10,9,6,0,8,2,3,2,9,6,4,259,0,2025-02-20 14:58:55
+28,Male,Contract,Low,9,8,Healthcare Assistant,Cardiology,38,49,9,25,No,Yes,7,5,1,6,16,1,No,No,None,None,0,1,5,8,Diabetes,19,6,2,8,5,6,0,10,5,5,10,8,5,3,335,0,2024-12-01 14:58:55
+30,Female,Temporary,High,7,5,Therapist,Oncology,16,20,2,10,Yes,Yes,5,6,6,3,1,0,Yes,No,"Depression, Anxiety",Multiple,0,1,10,8,None,19,6,1,5,6,3,3,3,3,8,8,0,9,1,353,0,2024-10-24 14:58:55
+45,Female,Temporary,Low,1,1,Healthcare Assistant,Pediatrics,33,49,2,39,Yes,No,0,7,1,3,12,1,No,No,Multiple,None,1,0,6,7,Multiple,10,3,3,4,0,6,3,5,3,4,2,0,1,1,362,0,2025-02-11 14:58:55
+22,Female,Temporary,Medium,5,1,Midwife,Pediatrics,40,51,7,10,No,Yes,0,7,5,2,30,0,No,No,None,None,0,0,0,2,None,13,1,4,4,4,4,0,0,3,7,1,9,2,1,363,0,2025-02-13 14:58:55
+65,Male,Full-time,Low,4,4,Pharmacist,Geriatrics,28,47,4,2,Yes,Yes,8,7,4,3,28,4,No,No,Depression,Multiple,0,0,3,9,Asthma,15,10,3,2,6,0,5,1,9,4,7,1,3,3,295,0,2024-06-02 14:58:55
+29,Female,Part-time,High,9,3,Doctor,Cardiology,8,40,2,11,Yes,Yes,9,7,3,4,17,0,No,No,Bipolar,Alcohol,0,0,0,10,Multiple,13,6,3,5,0,9,9,7,8,1,5,10,6,5,249,0,2024-09-18 14:58:55
+45,Female,Full-time,High,8,10,Admin Staff,Intensive Care,12,32,9,2,No,No,5,10,6,1,27,1,No,No,PTSD,Multiple,0,0,5,10,Hypertension,11,2,2,3,1,3,1,3,7,3,7,5,7,1,314,0,2024-10-05 14:58:55
+32,Male,Part-time,High,4,1,Nurse,Emergency,5,46,10,26,Yes,No,9,5,7,6,27,3,No,No,Bipolar,Alcohol,0,1,3,3,None,16,0,4,9,8,6,10,9,2,1,6,0,10,5,263,1,2024-07-17 14:58:55
+38,Female,Contract,Medium,1,2,Technician,Cardiology,5,55,0,1,Yes,No,7,9,3,3,26,1,No,No,Anxiety,Multiple,0,0,0,0,Multiple,13,1,0,1,2,1,4,6,0,6,2,4,1,1,330,0,2024-05-26 14:58:55
+29,Female,Contract,Medium,4,6,Technician,Neurology,19,26,2,15,No,No,6,6,0,3,14,5,No,No,None,None,0,0,8,8,None,9,9,5,2,5,1,7,3,0,6,7,4,7,1,321,0,2024-06-16 14:58:55
+56,Male,Temporary,High,3,7,Technician,Psychiatry,2,41,11,1,Yes,Yes,5,9,0,1,30,2,No,No,Bipolar,None,1,1,3,4,Diabetes,13,8,2,8,6,0,2,8,0,2,9,3,10,1,365,0,2025-02-19 14:58:55
+56,Female,Part-time,Low,10,5,Paramedic,Geriatrics,16,29,8,29,Yes,No,3,9,0,4,7,2,No,No,Anxiety,None,0,0,5,5,Asthma,17,7,4,10,8,1,8,8,3,6,0,10,8,4,227,1,2024-08-15 14:58:55
+54,Male,Contract,Medium,6,10,Technician,General Practice,11,58,4,19,Yes,No,6,5,10,4,14,5,No,No,Anxiety,None,0,0,6,2,None,8,5,1,10,4,9,6,3,5,0,0,4,6,6,270,0,2024-09-20 14:58:55
+26,Male,Part-time,High,5,4,Admin Staff,Pediatrics,0,34,11,37,Yes,No,8,4,0,6,0,2,No,No,"Depression, Anxiety",Multiple,0,0,7,10,None,16,5,5,8,3,7,8,7,3,0,9,0,0,4,316,1,2024-04-28 14:58:55
+63,Male,Contract,High,1,0,Doctor,Surgery,16,34,9,27,Yes,No,10,7,4,6,19,2,No,No,"Depression, Anxiety",None,1,0,10,9,Hypertension,5,0,5,5,10,10,0,5,10,8,7,10,5,5,236,0,2024-12-13 14:58:55
+60,Male,Full-time,Medium,10,7,Technician,Pediatrics,2,23,1,24,Yes,Yes,9,6,3,5,9,4,Yes,No,Multiple,Cannabis,0,0,8,7,None,7,1,2,9,1,7,4,0,10,5,8,10,7,4,321,0,2024-07-04 14:58:55
+62,Male,Contract,Medium,10,2,Healthcare Assistant,Geriatrics,25,51,6,31,Yes,Yes,9,5,8,5,11,3,No,No,Depression,Cannabis,0,2,8,6,Multiple,12,3,1,9,2,7,2,6,2,4,9,5,4,4,241,1,2024-08-14 14:58:55
+49,Female,Full-time,Medium,4,5,Healthcare Assistant,General Practice,14,42,1,9,Yes,Yes,6,7,2,2,4,3,No,No,"Depression, Anxiety",Multiple,0,1,7,0,Hypertension,17,2,2,8,4,0,3,0,7,5,5,6,1,3,321,0,2024-06-03 14:58:55
+28,Female,Contract,Low,6,2,Paramedic,Geriatrics,35,25,3,39,No,No,0,7,6,3,8,1,Yes,No,Anxiety,Cannabis,0,1,9,9,Hypertension,4,0,3,3,10,0,3,2,7,5,4,7,4,2,316,0,2024-05-01 14:58:55
+30,Female,Temporary,Low,10,6,Admin Staff,Psychiatry,31,43,11,32,No,No,9,6,10,5,22,5,Yes,No,Multiple,None,1,0,10,4,None,5,7,4,10,1,9,10,7,5,0,1,1,7,5,189,0,2024-07-31 14:58:55
+29,Female,Full-time,High,6,6,Doctor,General Practice,31,39,6,12,No,Yes,8,6,7,5,7,0,No,No,Depression,Prescription Drugs,0,1,2,9,None,20,6,1,4,3,3,6,8,8,4,10,6,1,4,248,0,2024-05-18 14:58:55
+33,Female,Contract,Medium,4,8,Nurse,Administration,3,56,3,40,No,No,3,5,5,5,15,1,No,No,None,None,0,0,1,8,Diabetes,18,3,5,9,0,5,9,2,9,8,8,5,0,4,262,0,2025-03-18 14:58:55
+55,Female,Temporary,Low,8,4,Midwife,Surgery,17,39,6,36,Yes,No,2,6,9,4,13,1,Yes,No,Multiple,Prescription Drugs,0,0,4,10,Hypertension,3,8,2,5,3,7,10,0,0,3,5,8,3,0,365,0,2024-03-28 14:58:55
+54,Male,Full-time,Medium,3,7,Doctor,Cardiology,18,31,6,15,No,Yes,3,6,0,4,26,1,Yes,No,PTSD,Prescription Drugs,0,0,0,5,None,6,10,5,8,6,1,7,0,7,2,7,7,3,3,277,0,2024-06-18 14:58:55
+69,Male,Temporary,High,10,9,Midwife,Administration,34,52,0,21,No,Yes,3,7,7,4,24,1,No,No,Depression,Multiple,1,0,2,7,None,3,3,1,4,2,2,10,6,5,0,8,10,8,2,308,0,2024-05-15 14:58:55
+44,Female,Part-time,Low,2,9,Pharmacist,Oncology,39,47,5,19,Yes,No,9,6,9,4,12,3,Yes,No,"Depression, Anxiety",Prescription Drugs,0,0,0,9,None,10,0,5,7,9,5,9,4,0,1,8,3,2,3,308,0,2024-06-01 14:58:55
+45,Male,Part-time,Low,3,7,Midwife,Surgery,13,27,8,26,Yes,No,10,5,2,7,22,0,No,No,Multiple,Cannabis,0,0,2,0,None,11,9,2,10,7,9,4,0,3,2,7,8,3,4,282,0,2024-10-05 14:58:55
+58,Female,Full-time,Low,4,0,Therapist,General Practice,32,20,1,40,Yes,No,1,9,7,5,20,1,No,No,Bipolar,None,0,0,3,9,None,13,0,2,0,5,3,9,5,4,3,9,0,2,0,362,0,2024-08-14 14:58:55
+56,Male,Contract,High,5,4,Healthcare Assistant,General Practice,13,56,2,15,Yes,Yes,0,8,3,0,12,3,No,No,PTSD,Alcohol,0,0,6,10,Hypertension,12,0,0,4,5,1,6,5,6,6,7,10,1,0,355,0,2024-05-28 14:58:55
+65,Female,Full-time,Medium,2,2,Admin Staff,Neurology,33,41,9,33,Yes,Yes,9,4,7,7,30,1,No,No,Depression,Prescription Drugs,0,0,4,6,None,9,0,5,9,0,6,2,3,7,5,2,5,3,6,247,0,2025-03-24 14:58:55
+61,Other,Temporary,Low,1,0,Paramedic,Obstetrics,3,25,4,31,No,Yes,0,8,10,2,4,2,No,No,"Depression, Anxiety",None,0,0,4,2,Asthma,17,3,0,0,4,3,2,6,8,10,2,7,7,0,355,0,2025-03-11 14:58:55
+43,Female,Contract,High,3,3,Therapist,Neurology,23,40,8,25,Yes,Yes,7,2,0,6,15,1,No,No,"Depression, Anxiety",None,0,0,0,8,None,15,0,0,9,2,7,2,6,5,7,1,10,0,4,231,0,2024-04-26 14:58:55
+48,Male,Part-time,Medium,4,7,Midwife,Radiology,28,51,3,24,No,No,1,7,2,2,25,5,No,No,PTSD,Prescription Drugs,0,0,7,5,Hypertension,4,1,5,5,9,7,3,8,9,8,0,10,7,4,255,1,2024-05-30 14:58:55
+56,Male,Contract,High,3,2,Technician,Neurology,18,54,0,1,No,Yes,9,8,5,3,10,5,Yes,No,Multiple,None,0,0,3,4,Asthma,7,3,1,6,0,6,5,0,8,5,3,3,7,1,357,0,2025-01-22 14:58:55
+22,Female,Part-time,Medium,10,9,Admin Staff,Emergency,5,34,3,11,Yes,Yes,4,8,8,2,21,1,No,No,Bipolar,Prescription Drugs,0,0,9,7,Diabetes,13,6,3,4,7,9,4,4,3,6,1,1,2,2,311,0,2024-04-09 14:58:55
+56,Female,Contract,High,2,1,Therapist,Oncology,32,24,5,39,No,No,3,8,1,4,4,4,No,No,PTSD,Alcohol,0,0,4,7,Diabetes,4,1,2,0,6,8,7,9,7,3,1,10,9,4,252,0,2024-09-01 14:58:55
+58,Male,Contract,Medium,7,10,Paramedic,Administration,39,25,4,8,No,No,7,8,10,2,12,2,Yes,No,"Depression, Anxiety",Prescription Drugs,1,0,1,2,Multiple,7,7,4,5,6,3,4,2,2,1,10,1,9,2,278,0,2025-02-09 14:58:55
+68,Female,Contract,Low,9,8,Healthcare Assistant,Psychiatry,18,44,12,11,Yes,No,1,9,0,0,27,0,Yes,No,Anxiety,None,0,2,0,1,None,5,6,0,9,9,6,10,6,3,8,10,9,5,4,263,0,2025-03-17 14:58:55
+35,Male,Temporary,Medium,3,9,Admin Staff,Administration,0,59,0,25,No,Yes,9,5,9,5,10,1,No,No,PTSD,None,0,0,8,1,Hypertension,15,8,1,4,9,9,4,3,9,8,4,0,3,6,225,1,2024-11-20 14:58:55
+24,Male,Temporary,High,1,4,Paramedic,Administration,4,48,3,8,No,No,8,5,2,6,24,0,No,No,Anxiety,None,0,0,1,4,None,3,5,5,5,9,9,9,3,3,3,3,4,0,4,237,0,2024-06-09 14:58:55
+22,Male,Full-time,High,1,6,Pharmacist,Surgery,26,26,5,9,No,No,6,6,3,3,18,2,No,No,"Depression, Anxiety",None,0,0,5,9,None,11,3,1,10,3,0,1,0,5,2,0,5,0,3,286,0,2024-04-02 14:58:55
+26,Male,Full-time,Medium,0,10,Pharmacist,General Practice,15,59,12,31,Yes,Yes,6,4,10,7,2,1,No,No,Multiple,None,1,0,0,6,Diabetes,10,5,1,9,10,3,10,0,8,9,8,3,4,4,234,1,2025-01-23 14:58:55
+47,Other,Part-time,Low,3,10,Paramedic,Radiology,5,32,9,33,Yes,Yes,0,7,4,2,14,4,No,No,PTSD,Alcohol,1,0,0,7,None,2,3,5,6,5,1,10,9,5,10,3,3,7,2,312,0,2024-09-02 14:58:55
+35,Female,Temporary,Low,9,1,Therapist,Radiology,39,57,9,19,Yes,No,1,8,2,1,6,3,No,Yes,Multiple,Prescription Drugs,0,0,8,9,Asthma,11,6,4,6,8,8,4,1,0,5,4,4,0,2,365,0,2024-07-07 14:58:55
+60,Male,Part-time,Medium,8,8,Admin Staff,Psychiatry,12,37,3,38,No,Yes,3,5,9,6,6,4,No,No,"Depression, Anxiety",Alcohol,0,0,3,7,Asthma,4,8,5,1,2,4,6,1,4,2,6,4,1,1,345,0,2024-08-09 14:58:55
+48,Female,Full-time,Medium,10,8,Therapist,Oncology,34,21,8,1,Yes,No,3,9,10,1,5,4,Yes,No,Depression,Multiple,1,2,8,7,None,5,2,4,2,8,2,1,0,8,0,1,8,6,3,244,1,2024-11-04 14:58:55
+30,Female,Part-time,High,6,3,Nurse,Surgery,18,27,4,0,No,No,10,8,1,3,2,3,No,No,None,Prescription Drugs,0,0,10,9,Diabetes,18,2,5,5,3,3,5,7,4,3,7,7,7,3,301,0,2025-01-25 14:58:55
+36,Other,Full-time,Low,9,3,Midwife,Pediatrics,11,30,7,35,Yes,Yes,2,7,1,4,29,3,No,No,Anxiety,Cannabis,0,0,4,10,Diabetes,17,1,0,2,4,5,6,5,5,0,10,8,2,3,331,0,2024-09-14 14:58:55
+36,Male,Temporary,Medium,6,5,Nurse,Geriatrics,15,52,8,23,No,No,6,5,6,5,12,5,No,No,None,Alcohol,0,0,6,2,Asthma,15,0,4,1,6,9,4,5,2,1,1,2,10,1,299,0,2024-06-26 14:58:55
+47,Male,Contract,Low,6,9,Pharmacist,Neurology,9,57,9,26,Yes,Yes,7,7,8,3,6,3,No,No,Depression,None,1,0,0,10,Hypertension,10,0,0,3,5,0,8,9,7,2,10,2,7,2,284,0,2024-05-25 14:58:55
+63,Male,Temporary,Medium,7,9,Healthcare Assistant,Geriatrics,24,46,4,1,Yes,Yes,1,10,9,0,4,1,Yes,No,Bipolar,None,1,1,5,1,Multiple,4,2,4,4,9,6,3,9,9,7,9,0,0,5,251,1,2024-12-03 14:58:55
+34,Male,Part-time,Medium,0,9,Doctor,Geriatrics,19,39,5,30,No,Yes,3,9,1,2,22,0,No,No,Multiple,Multiple,0,0,7,3,Hypertension,8,6,4,10,7,7,9,8,10,9,4,9,8,4,265,0,2024-10-01 14:58:55
+53,Male,Part-time,Low,9,5,Midwife,Cardiology,30,31,0,13,Yes,No,2,6,6,3,17,5,Yes,No,Bipolar,None,0,0,0,0,None,2,10,5,9,7,6,0,4,3,3,1,5,1,4,304,0,2024-05-30 14:58:55
+60,Female,Temporary,Medium,9,0,Pharmacist,Geriatrics,3,50,10,1,No,Yes,1,8,6,0,21,5,No,No,Multiple,None,1,0,8,2,Multiple,7,8,4,8,7,6,7,3,3,3,1,3,1,3,286,0,2024-12-01 14:58:55
+70,Male,Temporary,Medium,7,8,Therapist,Radiology,22,46,11,28,Yes,Yes,5,8,10,5,29,0,No,No,Bipolar,Multiple,0,0,2,10,None,5,1,0,2,2,8,7,10,10,9,3,10,3,3,316,0,2024-08-12 14:58:55
+53,Male,Full-time,High,3,1,Therapist,Neurology,1,51,6,14,Yes,No,3,9,6,2,7,5,No,No,Multiple,None,0,0,0,8,None,3,6,5,2,9,3,6,5,4,8,3,7,9,4,313,0,2024-10-03 14:58:55
+25,Male,Part-time,Medium,3,4,Therapist,Neurology,21,29,3,11,No,No,5,9,2,1,16,3,Yes,No,Depression,None,0,0,0,6,Multiple,11,0,2,5,5,6,7,7,9,6,7,1,2,2,290,0,2024-05-24 14:58:55
+51,Male,Part-time,Medium,3,8,Healthcare Assistant,Emergency,36,22,10,36,No,No,1,7,6,3,19,4,No,No,Depression,Alcohol,0,2,10,6,None,11,1,0,4,6,8,1,0,8,1,5,10,3,2,338,0,2025-01-07 14:58:55
+58,Male,Temporary,Medium,5,3,Nurse,Oncology,7,46,1,27,No,No,3,7,0,4,26,2,No,No,Multiple,Alcohol,0,2,5,0,Diabetes,20,5,2,5,8,4,2,6,7,2,9,1,5,5,231,0,2025-01-17 14:58:55
+44,Female,Contract,High,6,10,Doctor,Cardiology,6,54,4,19,Yes,Yes,10,5,9,7,0,3,No,No,Anxiety,None,0,0,10,6,Asthma,15,10,1,6,9,1,8,7,6,3,7,6,6,5,176,1,2024-09-02 14:58:55
+60,Male,Part-time,Low,5,2,Therapist,Geriatrics,13,50,11,38,No,Yes,5,5,0,6,13,4,No,No,PTSD,Cannabis,1,0,5,9,None,9,4,5,10,9,4,0,8,4,3,6,4,4,5,257,0,2024-06-30 14:58:55
+66,Male,Contract,High,0,6,Midwife,Obstetrics,2,34,2,23,Yes,Yes,4,7,4,3,16,4,No,No,Multiple,None,0,0,0,6,None,13,7,1,2,3,3,7,10,8,9,9,0,1,2,334,0,2025-02-10 14:58:55
+36,Male,Temporary,High,7,5,Admin Staff,Pediatrics,15,35,5,20,No,No,2,7,1,3,9,5,No,No,Depression,Prescription Drugs,0,3,2,3,Diabetes,12,10,5,4,4,7,7,7,8,7,3,6,2,3,245,0,2024-08-10 14:58:55
+64,Female,Temporary,Low,9,7,Doctor,Administration,18,32,7,9,No,No,7,7,8,4,11,1,No,No,Anxiety,None,0,0,6,6,None,8,1,5,7,7,4,6,6,9,9,1,6,9,4,254,0,2024-09-02 14:58:55
+50,Male,Full-time,High,10,2,Healthcare Assistant,General Practice,17,54,6,13,No,Yes,6,7,6,3,15,1,No,No,Bipolar,None,0,0,9,7,Asthma,6,0,0,3,0,8,10,2,9,9,8,9,10,1,321,0,2024-04-25 14:58:55
+57,Male,Part-time,Low,6,4,Doctor,Emergency,15,30,2,36,No,No,2,5,3,4,13,5,No,No,PTSD,None,0,0,2,2,Multiple,11,6,2,9,5,8,4,1,1,5,1,5,2,3,316,1,2024-08-21 14:58:55
+34,Male,Contract,High,5,9,Admin Staff,Neurology,7,40,7,17,No,No,5,9,3,3,29,5,No,No,Multiple,Multiple,0,0,2,9,None,4,5,5,1,3,2,3,2,3,2,0,3,4,1,294,0,2024-10-23 14:58:55
+53,Female,Full-time,Low,5,3,Midwife,Neurology,32,30,1,23,No,Yes,3,7,1,3,26,0,No,No,Anxiety,None,1,0,2,1,None,17,7,2,3,4,9,9,3,7,10,7,7,10,0,365,0,2025-03-03 14:58:55
+28,Male,Part-time,Medium,4,3,Admin Staff,Intensive Care,11,49,9,13,Yes,Yes,10,8,4,5,15,0,Yes,Yes,Multiple,Prescription Drugs,0,0,6,6,None,3,10,5,1,10,5,9,3,0,8,9,10,4,3,221,0,2025-01-04 14:58:55
+43,Female,Full-time,High,5,3,Paramedic,Cardiology,10,54,8,33,No,No,4,3,3,6,7,2,No,No,Anxiety,Alcohol,0,2,3,4,None,1,7,2,2,4,5,9,5,4,9,8,1,3,4,279,1,2024-11-07 14:58:55
+49,Female,Temporary,High,8,9,Midwife,Geriatrics,4,41,3,11,Yes,No,10,6,0,3,22,2,No,No,Multiple,Prescription Drugs,0,0,3,4,None,2,1,1,3,1,3,9,6,7,7,0,1,7,3,295,0,2024-11-30 14:58:55
+23,Male,Part-time,High,9,7,Doctor,Cardiology,26,57,0,21,No,No,4,8,7,3,27,2,No,No,Anxiety,Multiple,1,0,2,4,None,11,7,0,3,7,10,5,3,1,8,6,1,5,3,276,0,2024-11-16 14:58:55
+63,Female,Full-time,High,8,5,Therapist,Intensive Care,11,50,7,5,No,Yes,6,9,2,1,9,2,No,No,None,None,0,0,9,6,None,2,5,5,9,1,9,10,9,1,4,1,2,5,1,365,0,2024-06-11 14:58:55
+66,Female,Full-time,Medium,9,2,Doctor,Administration,16,33,6,35,No,Yes,10,3,5,8,28,4,No,No,Multiple,None,0,0,10,8,Diabetes,3,8,3,8,3,2,0,5,7,2,5,5,0,6,140,1,2024-09-24 14:58:55
+27,Male,Contract,High,7,9,Doctor,Cardiology,5,43,10,35,Yes,Yes,4,8,3,4,16,4,No,No,Anxiety,None,0,0,8,10,Diabetes,5,6,2,9,4,0,4,8,9,3,10,0,5,3,291,1,2024-08-06 14:58:55
+49,Male,Full-time,Medium,9,4,Midwife,Neurology,32,51,12,21,Yes,Yes,10,4,8,6,26,0,No,No,Multiple,Alcohol,1,0,1,7,Hypertension,11,1,2,5,0,6,3,5,8,4,4,10,2,2,352,0,2024-05-04 14:58:55
+49,Female,Part-time,Medium,8,5,Paramedic,Radiology,4,55,4,13,No,Yes,2,9,6,3,29,1,No,No,"Depression, Anxiety",Cannabis,0,0,3,5,Diabetes,18,7,3,8,5,4,3,2,6,8,0,1,5,2,320,0,2024-12-05 14:58:55
+65,Female,Part-time,Medium,9,4,Doctor,Surgery,27,51,9,15,Yes,No,9,7,8,4,28,5,No,No,Depression,None,0,2,7,6,None,9,8,0,3,1,9,6,0,7,8,1,9,9,1,365,0,2024-12-12 14:58:55
+65,Other,Contract,Medium,7,5,Pharmacist,Neurology,13,34,12,35,No,No,4,6,9,4,17,1,Yes,No,"Depression, Anxiety",Alcohol,0,0,5,8,None,0,6,2,8,4,6,8,10,4,2,1,1,10,4,254,0,2024-05-30 14:58:55
+41,Male,Part-time,Low,7,7,Technician,Emergency,4,54,4,24,No,No,6,5,2,6,19,3,Yes,No,Bipolar,None,0,0,6,10,Asthma,16,3,0,10,5,0,7,9,0,6,9,0,5,4,262,0,2024-10-14 14:58:55
+51,Female,Temporary,Low,0,6,Technician,Oncology,32,22,6,31,Yes,Yes,4,9,0,3,15,4,No,No,None,None,0,0,6,5,Asthma,15,8,2,8,10,7,10,9,3,5,9,2,1,4,304,1,2024-10-05 14:58:55
+32,Male,Part-time,High,9,4,Doctor,Intensive Care,40,35,4,32,Yes,Yes,4,6,4,4,16,2,No,No,Anxiety,None,0,0,1,0,None,8,3,4,5,7,2,7,4,1,3,5,9,0,2,343,0,2024-05-22 14:58:55
+49,Female,Part-time,Low,10,9,Therapist,Pediatrics,18,24,7,35,Yes,Yes,8,7,2,5,15,2,No,No,Anxiety,Cannabis,0,3,3,3,Asthma,20,3,2,4,8,6,4,9,2,4,10,6,10,4,339,0,2024-09-30 14:58:55
+46,Female,Full-time,Low,4,5,Healthcare Assistant,General Practice,21,40,10,19,Yes,No,2,8,5,4,18,3,Yes,No,Bipolar,Multiple,0,0,9,7,Asthma,8,8,4,2,5,2,5,9,2,9,0,0,2,3,295,0,2024-06-29 14:58:55
+60,Male,Full-time,High,3,3,Healthcare Assistant,Pediatrics,4,29,12,17,No,Yes,5,7,7,3,23,1,No,No,None,Alcohol,0,0,9,6,None,8,7,5,4,4,2,1,2,8,1,10,6,4,3,298,1,2024-03-27 14:58:55
+54,Male,Part-time,High,1,8,Midwife,Neurology,1,38,5,37,Yes,Yes,0,6,10,4,23,2,No,No,Bipolar,Prescription Drugs,0,0,5,2,Diabetes,11,3,0,2,3,9,10,7,9,10,3,4,3,1,326,0,2024-04-03 14:58:55
+22,Male,Contract,High,7,3,Technician,Emergency,29,44,12,2,Yes,No,9,6,3,4,7,1,No,No,Multiple,Alcohol,1,0,2,9,Diabetes,8,7,2,4,1,8,2,9,3,6,9,8,6,3,285,1,2024-03-27 14:58:55
+48,Male,Full-time,Low,2,0,Doctor,Geriatrics,38,23,4,22,No,Yes,4,8,4,2,5,5,Yes,No,PTSD,None,1,0,8,2,Asthma,14,7,1,4,1,1,4,0,1,3,10,1,3,1,365,0,2024-10-14 14:58:55
+34,Male,Contract,Low,3,6,Healthcare Assistant,Neurology,3,48,8,31,Yes,No,7,9,4,3,5,3,No,No,None,None,0,0,3,10,None,1,6,1,1,6,3,1,10,2,1,4,0,7,3,291,0,2024-10-25 14:58:55
+62,Female,Part-time,High,6,6,Doctor,Oncology,32,38,10,15,Yes,Yes,4,7,3,2,20,1,No,No,Multiple,Prescription Drugs,0,0,9,2,None,10,9,3,8,4,5,2,1,2,10,1,8,6,1,316,0,2024-12-26 14:58:55
+24,Female,Part-time,Medium,9,3,Midwife,Radiology,12,21,1,4,Yes,Yes,8,8,3,3,28,5,No,No,Bipolar,Cannabis,0,0,1,0,None,10,5,1,6,6,2,3,2,6,5,1,7,9,3,280,0,2024-04-09 14:58:55
+60,Female,Temporary,High,8,2,Technician,Administration,19,29,0,3,Yes,No,10,7,3,4,8,1,No,No,PTSD,Alcohol,1,0,5,9,Asthma,7,7,4,5,10,9,5,2,7,10,6,9,8,3,289,0,2025-02-09 14:58:55
+27,Female,Full-time,Medium,1,7,Admin Staff,Obstetrics,6,44,7,20,No,No,5,6,3,3,3,1,Yes,No,None,None,0,0,0,0,None,5,6,1,4,0,9,4,7,10,1,6,5,0,2,294,0,2024-08-30 14:58:55
+29,Female,Part-time,Medium,2,4,Pharmacist,General Practice,14,39,11,39,No,No,7,4,3,6,25,2,No,No,None,None,0,0,5,5,Asthma,20,4,1,3,0,6,9,4,5,9,5,4,4,4,253,0,2024-07-25 14:58:55
+48,Female,Temporary,High,3,9,Pharmacist,Oncology,22,38,2,13,Yes,No,9,6,4,4,30,0,No,No,None,Multiple,0,0,9,0,Asthma,19,3,1,7,4,6,3,7,3,1,0,7,3,4,237,0,2024-11-12 14:58:55
+30,Female,Full-time,High,9,6,Healthcare Assistant,Intensive Care,13,42,10,38,Yes,No,7,6,1,6,11,4,No,No,Anxiety,Cannabis,1,0,0,4,Multiple,6,1,2,1,1,4,1,10,5,6,2,7,5,3,279,0,2024-10-13 14:58:55
+58,Male,Part-time,High,0,3,Pharmacist,Geriatrics,22,43,11,30,No,No,2,9,1,2,27,1,Yes,No,None,None,0,0,7,3,Diabetes,2,10,3,7,7,2,10,10,10,0,8,4,0,3,326,0,2025-01-07 14:58:55
+54,Male,Part-time,Low,6,3,Admin Staff,Intensive Care,18,30,11,13,Yes,Yes,6,6,8,3,11,1,No,No,"Depression, Anxiety",None,0,0,4,4,None,7,7,0,0,2,1,4,5,0,6,9,6,5,1,342,0,2025-02-09 14:58:55
+63,Male,Full-time,Medium,1,7,Doctor,Neurology,28,53,11,5,Yes,Yes,6,9,1,2,22,1,No,No,Bipolar,None,0,0,5,6,None,17,8,3,9,0,3,4,1,9,9,0,0,0,3,365,0,2024-06-22 14:58:55
+65,Male,Full-time,Low,4,7,Midwife,Emergency,19,47,6,11,Yes,No,9,7,5,4,16,0,No,Yes,None,Alcohol,0,0,1,5,Multiple,16,3,4,0,1,3,10,10,7,4,1,3,0,2,293,0,2024-07-02 14:58:55
+45,Male,Full-time,Low,0,1,Admin Staff,Oncology,28,24,9,15,Yes,Yes,5,7,1,4,14,5,No,No,PTSD,Multiple,0,0,1,8,None,10,3,2,2,9,10,6,3,0,0,7,1,7,3,306,0,2025-03-26 14:58:55
+36,Male,Part-time,High,2,1,Midwife,Psychiatry,23,24,12,16,Yes,No,6,6,4,5,8,3,Yes,No,"Depression, Anxiety",Prescription Drugs,0,0,8,5,Diabetes,1,4,5,4,9,7,0,8,4,5,6,9,1,4,274,0,2024-05-18 14:58:55
+53,Female,Part-time,Low,1,2,Midwife,Geriatrics,17,40,10,22,Yes,Yes,1,8,3,3,6,2,No,No,"Depression, Anxiety",Prescription Drugs,0,0,2,8,Diabetes,20,1,2,5,6,7,3,3,1,6,8,2,9,1,360,1,2024-08-26 14:58:55
+53,Female,Temporary,High,0,2,Technician,Emergency,9,31,7,13,Yes,No,8,8,6,4,9,0,No,No,"Depression, Anxiety",Alcohol,1,1,5,3,Diabetes,18,6,1,3,5,4,10,4,5,0,9,0,5,2,298,0,2024-04-17 14:58:55
+45,Male,Contract,Medium,6,0,Doctor,Radiology,40,23,12,6,Yes,Yes,9,6,6,3,15,5,No,No,Bipolar,None,0,0,9,0,None,6,4,1,6,7,5,4,4,8,8,3,10,5,3,280,0,2024-11-16 14:58:55
+62,Male,Full-time,High,4,2,Pharmacist,Geriatrics,7,39,12,31,Yes,Yes,9,6,5,5,11,1,No,No,Depression,None,0,0,4,0,Hypertension,17,5,4,6,6,7,7,9,4,6,3,10,5,5,255,1,2024-08-27 14:58:55
+70,Male,Part-time,Low,0,5,Technician,Intensive Care,25,57,5,14,No,Yes,0,9,9,1,24,5,No,No,PTSD,None,0,0,3,9,Diabetes,7,3,5,1,9,0,7,7,3,0,6,1,7,2,301,0,2024-10-20 14:58:55
+70,Female,Part-time,Low,5,7,Midwife,Geriatrics,28,44,11,16,No,Yes,0,8,4,1,6,0,No,No,Bipolar,Multiple,0,0,9,6,None,13,7,2,1,7,4,0,5,1,2,0,0,3,1,287,0,2024-10-25 14:58:55
+33,Female,Full-time,High,4,9,Healthcare Assistant,Obstetrics,9,33,9,40,No,Yes,2,6,0,4,17,0,No,No,Anxiety,None,1,0,1,2,Hypertension,6,7,5,1,2,3,4,9,2,4,9,7,2,1,365,0,2025-01-26 14:58:55
+60,Female,Contract,High,2,5,Pharmacist,Neurology,16,30,8,33,Yes,No,2,8,2,3,14,0,No,No,Bipolar,None,0,0,7,1,None,20,4,0,1,5,3,9,6,5,3,8,3,5,2,342,0,2025-02-25 14:58:55
+23,Male,Full-time,Low,6,4,Pharmacist,Cardiology,1,51,6,4,Yes,No,0,8,8,0,5,3,No,No,"Depression, Anxiety",Alcohol,0,0,9,5,Multiple,3,5,3,8,6,10,0,5,7,1,1,2,3,4,255,0,2025-01-03 14:58:55
+24,Female,Contract,Medium,10,3,Doctor,Intensive Care,5,30,9,26,No,No,6,8,0,3,25,4,Yes,No,None,Cannabis,1,1,6,5,None,16,2,2,4,9,1,0,4,7,0,0,0,1,3,298,0,2024-11-26 14:58:55
+70,Other,Part-time,Medium,9,2,Paramedic,Obstetrics,4,37,4,22,Yes,Yes,3,7,4,3,11,2,No,No,Bipolar,Alcohol,1,0,10,6,Asthma,4,0,5,10,10,9,1,4,4,3,6,1,5,5,273,0,2024-10-10 14:58:55
+58,Male,Contract,High,8,3,Nurse,General Practice,27,46,7,39,No,No,9,5,1,7,10,3,No,No,Bipolar,Prescription Drugs,1,0,1,4,Multiple,11,8,0,7,0,0,1,2,4,6,5,2,9,2,356,0,2024-12-03 14:58:55
+70,Female,Temporary,Medium,8,6,Nurse,Surgery,40,37,1,13,Yes,Yes,1,7,3,2,19,3,No,No,PTSD,None,0,0,5,7,None,8,8,0,4,0,5,8,6,9,10,2,2,4,1,343,0,2024-12-02 14:58:55
+38,Female,Part-time,Low,8,0,Nurse,Cardiology,4,42,6,14,No,Yes,9,6,10,4,2,4,No,No,Depression,None,0,0,7,6,None,19,2,3,10,6,6,3,9,2,3,0,5,10,2,298,0,2024-12-08 14:58:55
+70,Female,Temporary,High,1,6,Paramedic,Neurology,17,30,3,32,No,Yes,4,6,0,4,1,3,No,No,None,Cannabis,0,0,6,1,None,12,3,0,4,10,4,2,4,6,8,4,9,8,3,335,1,2024-11-07 14:58:55
+23,Male,Full-time,Low,2,0,Doctor,Psychiatry,25,40,8,30,No,No,5,5,2,6,5,0,No,No,None,Prescription Drugs,0,0,0,0,None,17,6,4,0,2,7,10,6,5,7,9,7,10,2,319,0,2024-10-19 14:58:55
+23,Female,Full-time,Low,6,1,Paramedic,Cardiology,19,24,11,34,Yes,Yes,8,4,9,6,23,0,No,No,None,None,0,0,4,8,None,19,1,0,5,2,8,0,1,0,7,3,5,5,2,311,0,2024-06-27 14:58:55
+49,Female,Full-time,Medium,4,3,Nurse,General Practice,40,42,0,16,No,No,3,9,6,2,21,5,Yes,No,Anxiety,Multiple,0,0,1,4,Hypertension,8,2,5,3,4,10,1,8,3,4,4,1,2,0,365,0,2024-09-03 14:58:55
+44,Female,Contract,High,1,0,Technician,Emergency,26,60,6,27,Yes,No,1,10,9,1,24,1,No,No,Multiple,Multiple,0,0,5,10,None,3,5,4,2,10,10,5,7,5,0,0,1,10,3,326,1,2025-03-13 14:58:55
+58,Female,Part-time,High,2,10,Admin Staff,Psychiatry,11,44,5,18,Yes,Yes,4,7,2,4,29,3,Yes,No,Bipolar,Multiple,0,1,6,4,None,20,10,0,5,5,1,8,4,10,8,0,6,4,5,242,0,2025-01-14 14:58:55
+53,Female,Full-time,Medium,9,10,Midwife,Intensive Care,6,60,7,22,Yes,Yes,2,9,3,1,4,1,No,Yes,None,None,0,0,6,9,Hypertension,7,7,1,1,1,10,4,1,5,1,4,0,9,0,365,0,2024-04-26 14:58:55
+54,Other,Full-time,Low,5,10,Paramedic,Psychiatry,2,29,4,31,Yes,No,1,9,1,2,17,2,No,No,"Depression, Anxiety",None,0,3,2,3,None,0,0,0,7,2,3,3,5,10,5,5,0,7,4,261,1,2024-11-01 14:58:55
+22,Female,Part-time,Low,6,8,Doctor,Oncology,9,41,0,39,Yes,No,0,7,2,4,15,0,No,No,Bipolar,None,0,0,6,1,None,16,3,4,0,5,10,4,7,2,9,4,6,8,0,365,0,2024-06-20 14:58:55
+40,Female,Full-time,Low,8,5,Doctor,General Practice,33,38,0,12,Yes,No,9,8,8,2,7,5,Yes,No,PTSD,Prescription Drugs,1,0,4,4,Multiple,8,0,0,8,2,8,8,6,5,4,1,8,7,1,312,0,2025-03-17 14:58:55
+23,Female,Temporary,Low,0,0,Admin Staff,Geriatrics,24,20,8,19,Yes,No,1,8,2,1,24,2,No,No,Bipolar,Prescription Drugs,0,0,7,1,None,19,1,0,7,4,4,6,7,9,9,8,4,2,2,348,0,2024-12-24 14:58:55
+65,Male,Part-time,High,10,0,Healthcare Assistant,Obstetrics,34,26,9,34,No,No,5,7,10,5,29,5,Yes,No,Bipolar,Alcohol,0,0,7,6,None,12,7,0,0,8,2,7,3,5,7,4,10,8,2,296,0,2024-09-21 14:58:55
+47,Female,Part-time,High,6,5,Pharmacist,Cardiology,15,23,5,4,No,No,7,6,4,2,25,4,No,No,Multiple,None,1,0,6,10,Diabetes,1,5,4,9,2,5,3,2,8,10,10,0,2,2,330,1,2024-05-19 14:58:55
+53,Female,Part-time,Medium,7,3,Nurse,Oncology,1,20,9,8,No,Yes,2,7,1,0,19,0,No,No,Anxiety,None,0,0,5,8,Asthma,12,8,0,8,10,2,10,6,8,2,10,4,7,3,247,0,2025-03-11 14:58:55
+27,Female,Temporary,Medium,2,3,Healthcare Assistant,Administration,23,34,4,28,Yes,No,10,6,3,6,21,2,No,No,"Depression, Anxiety",Multiple,1,3,1,8,None,8,1,3,1,5,4,7,1,1,5,4,10,9,4,268,0,2024-12-02 14:58:55
+53,Female,Part-time,High,3,10,Nurse,Psychiatry,9,59,0,5,Yes,No,8,7,6,4,30,4,No,No,PTSD,Prescription Drugs,0,0,5,10,Hypertension,19,2,5,2,10,2,5,4,3,5,9,0,8,1,346,0,2024-08-07 14:58:55
+25,Male,Temporary,High,9,5,Admin Staff,Oncology,37,31,5,24,Yes,No,8,6,6,7,10,2,Yes,No,None,Multiple,0,0,10,5,Multiple,5,8,3,1,4,5,4,6,8,9,8,9,6,2,295,0,2024-04-16 14:58:55
+32,Female,Part-time,Low,5,10,Nurse,Pediatrics,21,41,5,30,Yes,No,1,7,2,3,9,5,No,No,Anxiety,None,0,0,8,0,None,0,8,4,7,4,9,6,0,3,2,2,8,3,1,337,0,2024-07-22 14:58:55
+38,Female,Contract,Low,9,6,Admin Staff,General Practice,25,41,2,21,No,Yes,7,10,4,2,23,4,Yes,No,"Depression, Anxiety",None,0,0,1,5,None,4,5,1,1,10,4,5,3,7,6,4,3,9,2,324,0,2024-11-12 14:58:55
+59,Female,Full-time,Medium,6,8,Therapist,Obstetrics,38,36,12,1,Yes,Yes,9,7,0,4,24,4,No,No,Depression,Cannabis,1,0,0,4,Diabetes,2,2,3,9,5,8,2,1,9,10,4,8,8,3,308,0,2024-09-13 14:58:55
+45,Female,Contract,High,3,9,Healthcare Assistant,Radiology,26,48,7,4,No,No,10,7,9,4,11,0,Yes,No,Bipolar,None,0,0,10,3,Hypertension,3,4,5,1,5,2,4,5,2,3,1,1,2,2,319,0,2024-07-08 14:58:55
+26,Female,Full-time,Medium,7,4,Healthcare Assistant,Emergency,28,33,0,26,Yes,No,4,7,9,3,20,1,No,No,Multiple,Prescription Drugs,0,0,4,5,Diabetes,0,1,2,0,0,5,8,0,2,4,10,6,2,0,365,0,2024-04-26 14:58:55
+55,Female,Temporary,High,4,8,Pharmacist,Psychiatry,37,39,0,24,No,No,3,7,9,2,27,5,No,Yes,Depression,Multiple,0,0,10,5,Diabetes,13,6,5,6,10,7,6,6,8,8,3,1,1,5,278,0,2025-03-19 14:58:55
+27,Male,Contract,Low,0,3,Admin Staff,General Practice,19,52,5,7,Yes,Yes,9,6,10,3,5,5,No,No,Anxiety,None,0,1,5,5,None,8,9,3,1,8,6,3,2,10,5,10,3,9,4,266,0,2025-01-04 14:58:55
+43,Male,Part-time,Medium,3,9,Paramedic,Radiology,26,34,9,0,No,Yes,4,10,0,0,26,4,No,No,Bipolar,Prescription Drugs,0,0,2,1,Diabetes,3,10,2,9,4,5,6,0,9,9,10,5,2,2,276,0,2024-11-04 14:58:55
+32,Female,Full-time,Medium,2,1,Therapist,Radiology,40,31,12,19,Yes,Yes,3,8,4,3,19,4,No,No,Depression,Cannabis,0,2,7,6,None,17,7,4,4,0,1,4,7,7,3,1,1,0,2,301,1,2025-02-23 14:58:55
+69,Male,Full-time,High,8,2,Technician,Administration,19,59,0,22,No,Yes,7,5,9,6,4,0,Yes,No,Bipolar,Alcohol,0,0,6,3,None,13,5,5,4,7,6,10,6,0,7,4,1,3,4,200,0,2025-01-15 14:58:55
+37,Male,Contract,Low,7,10,Nurse,Neurology,18,39,5,31,Yes,Yes,3,6,8,3,22,1,No,No,Multiple,Cannabis,0,0,1,8,Asthma,3,7,1,2,6,7,1,1,9,8,9,1,7,1,335,0,2024-11-29 14:58:55
+54,Female,Temporary,Medium,0,0,Therapist,Obstetrics,19,49,0,10,No,Yes,9,7,0,6,8,5,Yes,No,Anxiety,Alcohol,0,1,6,9,Hypertension,9,1,2,2,6,0,5,6,1,9,1,2,4,2,358,0,2024-04-22 14:58:55
+30,Male,Contract,Low,10,5,Admin Staff,Oncology,34,57,12,38,No,No,5,5,0,6,25,3,No,No,"Depression, Anxiety",None,0,0,0,1,Asthma,2,2,2,2,4,8,6,2,2,4,9,4,1,1,364,0,2024-05-09 14:58:55
+27,Female,Temporary,Medium,5,5,Midwife,Radiology,1,22,5,23,Yes,Yes,1,9,3,2,26,3,No,No,Anxiety,None,0,1,8,4,None,6,6,5,5,0,3,7,8,10,1,8,8,2,3,294,0,2024-12-14 14:58:55
+37,Female,Temporary,Low,8,0,Nurse,Pediatrics,29,47,2,10,No,Yes,4,8,3,2,28,1,No,No,PTSD,Alcohol,1,0,6,3,Hypertension,9,9,3,3,8,7,5,7,1,5,9,5,0,4,245,1,2024-10-21 14:58:55
+50,Female,Full-time,High,6,10,Doctor,Administration,33,45,7,28,Yes,No,5,6,1,3,15,2,No,No,Depression,Alcohol,0,0,5,8,Multiple,12,0,2,2,10,9,7,4,2,10,5,8,1,2,320,0,2024-12-08 14:58:55
+24,Male,Contract,Medium,3,2,Healthcare Assistant,General Practice,21,49,12,25,Yes,Yes,4,8,8,4,21,0,No,Yes,Bipolar,Prescription Drugs,0,0,1,3,None,3,6,4,1,8,6,6,6,7,7,7,9,0,4,331,0,2024-11-23 14:58:55
+41,Female,Contract,Medium,0,4,Admin Staff,Administration,2,32,5,15,Yes,No,1,9,8,2,13,1,No,No,Anxiety,None,0,0,2,7,Multiple,17,5,5,2,7,9,1,2,10,4,8,4,1,1,365,0,2024-09-19 14:58:55
+57,Male,Temporary,Low,1,2,Doctor,Surgery,5,32,12,34,No,Yes,6,7,1,3,21,3,Yes,No,None,Alcohol,0,0,0,7,Diabetes,10,7,4,3,4,6,5,0,10,0,7,10,2,3,287,0,2025-01-18 14:58:55
+40,Female,Contract,Low,4,9,Pharmacist,Surgery,14,21,10,19,No,No,3,6,8,5,7,4,No,No,None,None,0,0,9,5,Hypertension,3,6,5,5,2,1,8,0,5,7,4,5,0,2,271,0,2025-02-13 14:58:55
+47,Male,Part-time,Medium,10,2,Technician,Geriatrics,26,56,12,2,Yes,No,7,10,5,1,26,3,No,No,"Depression, Anxiety",None,0,0,4,5,None,13,3,4,3,7,0,5,10,6,8,4,9,10,1,365,0,2024-11-02 14:58:55
+24,Female,Part-time,High,4,9,Technician,Administration,9,57,0,0,Yes,No,6,9,7,1,19,4,No,No,Multiple,Prescription Drugs,0,1,8,10,None,17,2,3,7,0,3,3,1,9,0,5,7,8,1,318,0,2024-06-17 14:58:55
+40,Female,Contract,Low,7,2,Doctor,Geriatrics,8,21,4,0,No,No,6,8,9,0,18,0,No,No,None,None,0,0,5,7,Diabetes,7,2,5,2,2,1,6,7,9,7,0,2,9,0,365,0,2025-01-28 14:58:55
+41,Other,Contract,Low,5,4,Healthcare Assistant,Psychiatry,32,55,7,16,No,No,8,5,3,4,13,4,Yes,No,Anxiety,Prescription Drugs,0,0,4,9,Multiple,9,3,1,2,10,7,2,0,5,9,10,1,4,2,269,1,2024-12-06 14:58:55
+53,Female,Temporary,Low,7,4,Pharmacist,Geriatrics,31,45,2,1,No,Yes,0,10,1,0,6,1,No,No,Depression,Prescription Drugs,0,0,2,8,None,4,8,3,2,6,9,4,10,0,1,7,2,7,0,355,0,2024-09-17 14:58:55
+28,Male,Part-time,Medium,1,3,Midwife,Intensive Care,5,30,11,28,Yes,Yes,9,5,1,5,4,4,No,Yes,Multiple,Cannabis,0,0,4,4,None,6,8,4,7,3,6,0,4,10,3,1,8,4,4,220,0,2024-07-12 14:58:55
+62,Female,Part-time,Medium,2,0,Healthcare Assistant,Oncology,40,27,5,19,Yes,No,5,6,8,4,17,2,No,No,Depression,Cannabis,0,2,7,10,Asthma,11,1,5,3,6,7,9,8,2,1,5,5,7,2,281,0,2025-01-05 14:58:55
+54,Male,Full-time,Medium,5,4,Therapist,Intensive Care,35,59,4,5,Yes,No,5,8,0,2,1,1,No,No,Bipolar,Alcohol,1,0,1,0,None,2,4,3,0,10,10,2,8,0,1,8,9,6,2,288,0,2025-01-01 14:58:55
+61,Male,Temporary,Medium,9,9,Technician,Radiology,1,41,5,7,Yes,No,5,6,6,3,10,0,No,No,Anxiety,None,0,0,4,0,None,3,0,4,1,4,5,7,1,9,9,2,3,3,3,306,0,2024-10-27 14:58:55
+60,Male,Full-time,High,2,4,Therapist,General Practice,28,39,9,28,Yes,Yes,5,7,10,3,21,1,No,No,Bipolar,Prescription Drugs,0,0,5,1,None,9,3,0,9,5,0,8,6,8,2,1,9,6,2,313,0,2025-01-02 14:58:55
+39,Female,Part-time,High,5,3,Nurse,Psychiatry,3,27,0,32,No,No,9,6,2,6,7,2,No,No,"Depression, Anxiety",None,0,0,9,9,None,3,1,0,1,6,8,8,10,8,7,9,2,5,3,365,1,2024-12-21 14:58:55
+61,Female,Temporary,Medium,5,5,Paramedic,Cardiology,0,48,6,2,Yes,No,6,7,2,1,0,0,No,No,PTSD,Alcohol,1,1,7,9,Hypertension,14,7,2,2,9,5,9,0,4,3,4,1,2,5,277,1,2024-08-24 14:58:55
+22,Male,Contract,High,1,9,Admin Staff,Radiology,18,59,8,34,No,No,9,4,1,6,30,3,No,No,None,None,0,0,7,4,Asthma,9,3,1,5,6,9,1,2,3,6,10,3,8,4,302,0,2024-08-15 14:58:55
+32,Female,Temporary,Low,6,3,Pharmacist,Oncology,25,45,1,4,No,No,5,6,9,2,26,2,No,No,Anxiety,Prescription Drugs,0,2,4,3,None,20,4,0,7,6,0,3,5,8,9,8,8,9,4,282,1,2025-01-21 14:58:55
+49,Male,Contract,Low,1,6,Healthcare Assistant,Surgery,24,49,9,26,Yes,Yes,0,7,5,2,21,0,No,No,Anxiety,None,0,0,8,0,Diabetes,15,10,4,0,6,0,4,8,8,2,5,3,8,0,365,0,2025-02-23 14:58:55
+46,Male,Contract,Low,5,6,Technician,Obstetrics,9,36,4,11,No,No,2,9,9,1,11,4,Yes,No,Multiple,None,0,2,3,3,Multiple,14,3,3,8,10,7,2,9,2,9,7,4,4,3,327,0,2024-05-29 14:58:55
+44,Male,Temporary,Medium,0,1,Therapist,Geriatrics,14,39,9,19,Yes,No,1,8,1,1,1,1,No,No,Bipolar,Prescription Drugs,0,0,8,3,Hypertension,18,4,5,0,6,5,10,1,4,10,7,7,7,0,293,0,2024-12-20 14:58:55
+52,Male,Contract,Low,2,2,Nurse,Neurology,21,35,3,19,No,Yes,5,8,9,4,17,0,No,No,Bipolar,Multiple,0,1,10,9,Asthma,19,4,3,9,2,7,0,6,2,2,6,1,6,3,273,0,2024-10-24 14:58:55
+51,Female,Full-time,High,1,0,Admin Staff,General Practice,20,26,5,8,Yes,No,7,7,3,4,6,1,No,No,Depression,Multiple,1,1,6,3,Multiple,18,4,2,1,2,7,5,3,9,1,4,10,8,3,251,1,2024-10-28 14:58:55
+63,Female,Part-time,Medium,6,7,Admin Staff,Emergency,21,35,5,38,Yes,No,2,7,9,4,25,4,No,No,Depression,None,0,2,5,0,None,17,10,3,2,6,10,9,1,1,5,1,2,6,0,308,0,2025-01-29 14:58:55
+56,Female,Contract,High,3,8,Healthcare Assistant,Obstetrics,35,46,10,3,No,Yes,9,9,8,3,16,0,No,Yes,Bipolar,None,0,0,3,8,None,11,2,0,6,1,7,1,2,0,5,9,5,3,0,341,0,2024-12-02 14:58:55
+28,Male,Full-time,Low,7,3,Pharmacist,Intensive Care,33,42,1,18,Yes,Yes,7,5,8,4,21,3,Yes,No,Anxiety,None,1,0,1,2,None,15,6,3,8,1,9,8,5,9,0,9,6,3,4,233,0,2024-08-09 14:58:55
+37,Male,Contract,Low,5,5,Midwife,Geriatrics,29,43,1,37,No,Yes,7,5,5,7,29,2,No,No,Bipolar,Prescription Drugs,0,0,7,3,Multiple,0,2,0,2,2,6,0,9,1,6,4,3,10,2,352,0,2024-12-21 14:58:55
+47,Male,Part-time,Low,9,8,Healthcare Assistant,Psychiatry,24,28,3,26,Yes,No,4,6,3,4,22,0,No,No,Depression,None,1,0,5,4,Asthma,15,1,0,7,3,6,10,8,7,3,6,0,7,3,294,0,2024-11-16 14:58:55
+69,Female,Full-time,Medium,3,5,Therapist,Intensive Care,27,54,0,12,Yes,No,7,6,6,5,13,4,No,No,"Depression, Anxiety",Cannabis,0,0,2,6,Asthma,1,2,1,8,5,9,8,7,10,10,6,6,5,4,207,0,2024-07-30 14:58:55
+70,Male,Part-time,High,4,8,Paramedic,General Practice,0,39,8,12,Yes,Yes,5,9,0,2,23,0,No,No,Multiple,Cannabis,0,0,6,5,None,14,10,2,9,7,3,6,9,7,2,10,8,8,3,301,1,2024-08-30 14:58:55
+23,Female,Part-time,Medium,8,3,Doctor,Intensive Care,3,56,12,21,No,Yes,4,6,3,4,6,1,No,No,None,None,0,0,9,4,Diabetes,6,2,4,6,9,8,10,10,2,7,1,0,9,3,261,0,2024-10-07 14:58:55
+22,Other,Full-time,Medium,6,7,Midwife,General Practice,6,36,6,27,No,Yes,8,5,4,7,21,5,No,No,Depression,Alcohol,0,0,6,7,Diabetes,0,7,0,3,9,1,9,8,6,1,6,0,6,5,245,1,2024-04-26 14:58:55
+69,Female,Full-time,Low,9,8,Pharmacist,Intensive Care,8,50,11,21,Yes,No,6,7,7,3,24,0,No,No,PTSD,Prescription Drugs,0,0,5,0,Asthma,4,3,5,3,6,10,1,3,6,8,5,0,6,2,328,0,2025-01-25 14:58:55
+33,Female,Full-time,Medium,8,3,Nurse,Obstetrics,35,27,6,18,No,No,7,8,1,3,28,3,Yes,No,PTSD,None,1,0,1,6,Asthma,9,2,2,3,3,8,5,3,1,7,6,9,3,1,318,0,2024-10-03 14:58:55
+26,Male,Temporary,Medium,6,4,Midwife,Administration,18,34,2,7,Yes,Yes,0,9,4,0,2,0,No,No,PTSD,None,1,0,7,5,None,20,9,4,5,1,9,7,8,8,7,10,6,2,0,365,0,2025-03-20 14:58:55
+58,Female,Full-time,Low,0,7,Technician,Pediatrics,0,50,10,7,No,No,10,8,5,3,26,2,No,No,Anxiety,Multiple,0,0,0,10,Asthma,3,4,5,3,1,2,1,7,2,2,7,10,7,2,328,0,2024-12-07 14:58:55
+53,Female,Full-time,Medium,7,9,Pharmacist,Obstetrics,9,49,11,25,No,Yes,1,7,4,1,5,0,No,No,Depression,Multiple,0,0,0,4,None,13,3,3,4,3,1,4,1,1,3,3,8,6,0,360,0,2024-04-24 14:58:55
+30,Female,Full-time,Low,3,5,Paramedic,Administration,35,39,2,25,Yes,No,7,6,8,6,19,5,No,No,"Depression, Anxiety",Prescription Drugs,0,0,5,6,Asthma,12,8,2,8,5,3,10,7,2,1,0,2,3,3,270,0,2024-10-14 14:58:55
+62,Male,Full-time,Low,2,6,Technician,Cardiology,8,58,0,22,Yes,No,8,3,9,6,1,1,No,No,Bipolar,None,1,1,4,2,Asthma,0,7,5,6,2,4,5,0,1,1,7,7,3,3,292,0,2024-07-31 14:58:55
+56,Male,Contract,Low,6,2,Midwife,Radiology,31,31,2,12,Yes,No,3,8,0,1,16,0,No,No,Anxiety,Alcohol,0,3,8,0,None,15,10,2,7,5,1,2,8,7,3,7,8,0,3,287,0,2024-09-16 14:58:55
+40,Male,Temporary,Low,2,6,Doctor,Radiology,31,36,2,27,Yes,No,9,7,2,4,11,3,Yes,No,Anxiety,None,0,3,6,8,Hypertension,8,6,2,4,4,0,1,8,4,5,2,2,10,2,325,0,2024-12-26 14:58:55
+69,Female,Part-time,Medium,7,7,Doctor,Oncology,5,49,3,8,Yes,Yes,10,5,1,4,11,4,No,No,PTSD,Cannabis,0,1,1,1,Multiple,15,7,3,4,4,9,10,7,2,4,2,2,6,3,284,0,2025-03-10 14:58:55
+37,Female,Full-time,Low,5,9,Paramedic,Geriatrics,37,48,3,19,No,No,9,5,2,6,29,0,No,No,Bipolar,None,0,0,6,9,Hypertension,18,4,3,10,1,10,5,10,4,0,4,0,0,4,231,0,2025-03-06 14:58:55
+24,Female,Contract,Low,4,5,Admin Staff,Obstetrics,16,38,2,18,No,No,8,5,9,4,16,0,No,No,Anxiety,None,1,0,2,2,None,14,3,2,6,7,4,2,4,10,9,2,1,9,2,311,0,2024-03-30 14:58:55
+41,Male,Contract,Medium,3,9,Nurse,Obstetrics,9,30,9,38,Yes,Yes,3,5,8,5,26,2,No,No,"Depression, Anxiety",Alcohol,0,0,0,7,Hypertension,13,6,5,10,4,8,1,4,10,0,4,6,9,2,326,0,2024-04-24 14:58:55
+45,Female,Contract,Medium,7,8,Admin Staff,Emergency,26,53,11,11,Yes,No,9,5,8,5,9,3,Yes,No,"Depression, Anxiety",Multiple,0,0,10,9,Hypertension,19,0,1,7,10,4,0,2,7,5,7,2,3,5,248,0,2024-07-21 14:58:55
+54,Male,Part-time,High,7,5,Doctor,Emergency,34,26,7,14,Yes,Yes,9,5,9,5,2,5,Yes,No,Anxiety,None,0,0,7,8,None,9,5,0,8,1,10,7,4,6,2,0,6,10,3,288,0,2024-04-24 14:58:55
+45,Male,Full-time,Medium,0,8,Doctor,Oncology,20,53,7,30,No,Yes,9,2,1,8,19,4,No,No,PTSD,None,0,0,2,2,Asthma,20,7,3,1,6,9,0,3,5,2,1,4,2,4,253,0,2025-03-05 14:58:55
+32,Male,Temporary,Medium,8,3,Therapist,Neurology,24,39,12,13,Yes,No,8,9,2,3,17,1,No,No,Depression,None,0,0,10,5,None,11,6,1,2,8,8,4,0,0,6,1,9,10,0,348,0,2025-03-21 14:58:55
+70,Female,Temporary,High,4,7,Technician,Radiology,27,57,12,10,Yes,No,10,7,3,4,12,0,Yes,No,Depression,Prescription Drugs,0,0,7,6,Asthma,0,1,3,1,8,9,10,8,9,0,3,7,2,4,254,0,2024-10-12 14:58:55
+29,Male,Contract,Medium,3,10,Midwife,Neurology,14,43,0,25,No,Yes,6,5,8,5,11,5,No,No,PTSD,None,0,0,6,0,None,20,6,2,9,0,5,5,9,0,0,8,4,0,3,324,0,2024-12-29 14:58:55
+57,Female,Part-time,Medium,5,3,Nurse,Geriatrics,3,29,6,26,No,Yes,1,8,2,2,26,4,No,No,None,Alcohol,0,0,1,6,None,16,5,1,6,6,2,10,3,0,9,1,2,3,1,312,0,2024-06-03 14:58:55
+59,Female,Part-time,Medium,5,1,Paramedic,General Practice,28,51,10,10,No,Yes,8,8,6,2,26,1,No,No,Bipolar,None,0,0,0,3,Multiple,8,4,5,1,8,3,2,2,9,2,10,8,0,3,294,0,2024-04-18 14:58:55
+61,Male,Part-time,Medium,1,9,Midwife,General Practice,8,34,1,37,No,No,3,7,2,3,29,5,No,No,None,None,0,0,6,4,Asthma,18,3,5,1,5,3,6,5,7,7,8,6,7,2,278,0,2024-11-17 14:58:55
+41,Female,Temporary,High,7,10,Therapist,Surgery,26,56,0,33,Yes,Yes,7,5,6,4,26,3,No,No,Multiple,Alcohol,0,0,0,7,None,17,0,4,1,0,0,1,0,7,0,6,4,0,3,314,0,2025-03-13 14:58:55
+56,Male,Contract,Medium,6,8,Doctor,Intensive Care,25,39,2,18,No,Yes,6,6,6,4,16,3,No,No,Bipolar,None,0,0,5,3,Hypertension,6,1,0,3,1,2,6,4,6,9,9,6,5,2,300,0,2024-11-04 14:58:55
+69,Male,Full-time,Medium,0,4,Paramedic,Emergency,18,22,3,5,No,Yes,6,9,8,2,3,4,No,No,Multiple,Cannabis,0,1,10,3,Diabetes,8,6,0,0,3,2,1,6,5,3,7,10,6,2,291,0,2025-01-07 14:58:55
+46,Female,Temporary,High,4,3,Doctor,Surgery,27,56,12,37,Yes,No,7,4,1,6,30,1,No,No,Bipolar,None,0,0,9,7,None,20,9,3,1,3,0,4,1,3,8,0,9,9,2,322,0,2024-10-03 14:58:55
+56,Male,Contract,Low,5,1,Nurse,Cardiology,16,59,5,27,Yes,Yes,0,6,5,2,22,3,No,No,Bipolar,Multiple,0,0,10,4,Asthma,11,2,0,2,1,8,6,9,0,3,4,8,1,0,291,0,2024-06-07 14:58:55
+46,Female,Contract,High,3,0,Technician,Oncology,40,27,9,0,Yes,No,4,9,8,0,9,4,No,No,Bipolar,None,0,0,9,5,None,6,4,4,6,7,10,10,8,8,9,8,4,3,3,253,0,2024-11-04 14:58:55
+50,Female,Full-time,Low,1,10,Midwife,Oncology,19,59,4,34,No,No,1,6,1,2,10,3,No,Yes,Anxiety,None,1,0,7,10,None,13,7,5,9,1,0,10,5,0,7,3,6,10,0,365,0,2024-03-29 14:58:55
+39,Female,Full-time,High,3,6,Midwife,General Practice,39,42,3,39,Yes,Yes,1,6,1,4,5,3,Yes,No,None,None,0,0,6,4,Hypertension,14,7,1,0,2,8,2,1,3,6,1,10,2,0,365,0,2024-08-16 14:58:55
+67,Female,Full-time,High,0,5,Admin Staff,Obstetrics,38,59,7,7,No,No,0,8,4,0,5,5,No,No,Depression,None,0,0,3,0,None,14,5,1,5,3,0,10,7,2,2,5,8,8,0,365,0,2024-09-17 14:58:55
+39,Female,Part-time,Medium,6,1,Paramedic,Radiology,22,30,10,6,No,Yes,4,7,9,2,26,5,No,No,PTSD,Alcohol,0,0,0,6,Asthma,5,4,5,2,8,1,3,7,6,6,1,0,6,2,320,1,2024-04-09 14:58:55
+23,Female,Full-time,Low,1,7,Therapist,Neurology,31,27,11,10,No,No,1,10,9,0,8,3,No,No,Bipolar,Multiple,0,1,0,5,None,20,1,2,2,9,1,0,0,4,6,2,3,1,2,365,0,2024-10-23 14:58:55
+56,Female,Contract,Medium,1,10,Admin Staff,Emergency,32,48,3,38,Yes,No,3,7,9,4,29,2,No,Yes,Anxiety,Alcohol,1,1,3,1,Hypertension,13,8,5,3,0,5,2,0,4,9,7,0,10,0,365,0,2024-06-10 14:58:55
+37,Male,Full-time,Low,8,3,Nurse,Surgery,4,49,12,3,No,Yes,2,8,7,1,14,5,No,No,Depression,None,0,0,4,10,Asthma,1,0,1,3,7,6,8,0,3,2,2,7,5,0,333,0,2024-09-17 14:58:55
+62,Male,Contract,High,4,7,Therapist,Neurology,33,29,9,24,Yes,Yes,2,7,10,4,1,1,No,Yes,Depression,None,1,0,6,6,Diabetes,7,10,3,6,4,10,9,3,0,1,1,2,8,1,365,0,2024-11-15 14:58:55
+57,Female,Temporary,High,1,6,Technician,Obstetrics,39,58,11,11,Yes,Yes,1,9,8,0,3,4,No,No,Anxiety,Prescription Drugs,1,0,3,5,None,12,1,4,2,6,0,4,3,4,8,5,1,2,1,321,0,2025-01-18 14:58:55
+54,Female,Part-time,Low,10,4,Technician,Surgery,10,47,12,25,Yes,No,5,8,1,3,4,4,No,No,"Depression, Anxiety",Multiple,1,0,9,4,Multiple,5,0,5,7,7,2,7,7,3,0,2,3,10,1,319,0,2024-09-29 14:58:55
+25,Male,Temporary,Medium,8,9,Technician,Administration,2,55,1,37,No,No,1,5,4,4,16,1,No,No,"Depression, Anxiety",Prescription Drugs,1,0,0,7,Hypertension,4,3,2,7,4,1,1,0,9,6,0,10,5,2,274,0,2024-07-10 14:58:55
+54,Female,Temporary,Medium,8,9,Technician,Intensive Care,32,32,2,11,No,Yes,7,7,6,4,7,1,Yes,No,PTSD,None,1,0,10,4,Multiple,4,3,3,10,7,7,2,9,7,3,2,2,2,6,206,0,2025-02-12 14:58:55
+35,Male,Contract,Medium,0,7,Admin Staff,Cardiology,10,51,5,36,No,Yes,7,5,5,7,7,1,No,No,Anxiety,Alcohol,0,0,9,10,Hypertension,0,4,5,6,9,8,6,2,1,1,5,10,2,5,206,0,2025-03-06 14:58:55
+42,Female,Temporary,Medium,10,8,Pharmacist,Cardiology,15,55,7,23,Yes,No,4,10,5,3,21,1,No,No,Depression,Multiple,0,0,6,1,Asthma,8,4,3,1,10,1,9,10,7,1,2,4,3,2,333,0,2024-04-19 14:58:55
+69,Male,Contract,High,2,4,Therapist,Neurology,17,56,7,15,No,No,9,6,6,3,11,0,Yes,No,Bipolar,None,0,0,1,5,None,5,7,5,4,7,1,3,0,0,7,8,7,8,2,312,0,2024-06-17 14:58:55
+41,Male,Full-time,High,3,9,Paramedic,Neurology,29,45,10,12,No,No,6,9,2,5,20,4,Yes,No,None,Prescription Drugs,0,0,10,0,None,19,10,3,5,8,9,8,8,3,6,6,9,10,1,299,1,2024-06-26 14:58:55
+29,Male,Full-time,High,6,4,Nurse,Neurology,9,41,8,24,No,Yes,3,7,2,4,7,0,Yes,No,None,None,1,0,1,4,Multiple,6,10,0,9,1,8,6,9,2,6,4,7,7,2,313,0,2025-03-06 14:58:55
+28,Female,Contract,High,9,1,Healthcare Assistant,Surgery,17,23,6,3,No,No,0,10,9,0,18,3,Yes,No,Depression,Cannabis,0,1,7,5,Diabetes,8,2,3,3,2,3,10,8,4,4,1,10,0,1,365,0,2024-08-27 14:58:55
+24,Female,Full-time,High,3,4,Doctor,Intensive Care,37,50,12,10,No,Yes,10,8,8,4,2,3,No,No,None,Alcohol,1,0,9,6,Diabetes,4,5,0,9,0,4,0,6,4,9,8,6,10,3,340,0,2024-06-21 14:58:55
+38,Male,Part-time,Medium,1,2,Paramedic,Administration,18,37,1,31,Yes,No,1,6,7,3,17,4,No,No,None,Alcohol,1,0,9,1,None,13,2,1,4,3,10,3,7,4,7,4,7,0,2,262,0,2024-05-04 14:58:55
+54,Female,Temporary,Medium,6,6,Doctor,Pediatrics,35,57,7,6,Yes,No,9,7,4,4,20,3,No,No,None,None,0,0,9,0,Asthma,4,1,0,8,4,8,9,0,3,1,6,4,6,2,292,0,2025-03-07 14:58:55
+69,Male,Part-time,Medium,5,9,Therapist,Neurology,12,43,6,10,Yes,Yes,9,6,5,4,18,1,No,No,None,Cannabis,0,0,4,5,None,7,7,3,10,10,5,10,4,7,1,8,9,2,4,228,1,2024-06-21 14:58:55
+33,Female,Temporary,Medium,2,4,Paramedic,Administration,2,42,7,27,Yes,Yes,3,7,10,3,18,0,No,No,Anxiety,Cannabis,0,1,9,2,Diabetes,6,0,4,6,0,9,5,1,2,4,3,9,10,0,365,0,2024-12-02 14:58:55
+43,Male,Full-time,High,5,7,Technician,Radiology,9,41,11,40,No,Yes,0,5,9,5,14,1,No,No,PTSD,None,0,0,1,4,None,12,8,4,1,7,8,5,0,3,0,8,10,6,1,298,0,2025-02-02 14:58:55
+43,Male,Part-time,High,10,0,Technician,Geriatrics,37,21,2,22,Yes,No,7,5,0,5,5,3,No,No,Bipolar,None,0,0,4,10,Hypertension,12,10,1,10,1,8,9,2,0,5,0,10,8,2,348,1,2025-01-30 14:58:55
+67,Female,Full-time,High,5,2,Healthcare Assistant,Administration,0,50,6,22,No,No,8,8,9,4,15,5,No,No,"Depression, Anxiety",None,1,0,7,1,Diabetes,7,6,3,0,0,6,5,6,6,3,5,5,2,2,352,0,2024-07-05 14:58:55
+51,Other,Temporary,Low,4,2,Doctor,Obstetrics,26,30,9,27,Yes,No,3,8,0,3,7,0,No,No,Depression,Cannabis,0,0,5,0,Hypertension,10,9,0,1,1,9,4,0,0,5,1,7,2,0,365,0,2024-11-23 14:58:55
+59,Female,Contract,Medium,3,8,Nurse,Geriatrics,7,47,12,25,Yes,Yes,9,7,3,5,15,1,No,No,Depression,Prescription Drugs,0,0,2,0,None,17,10,4,2,4,8,2,10,1,6,7,0,1,4,246,0,2024-11-14 14:58:55
+59,Female,Contract,Medium,9,4,Therapist,Emergency,16,51,8,24,Yes,No,2,6,1,3,17,4,No,No,PTSD,None,0,0,7,10,Diabetes,18,3,5,10,8,4,1,1,10,2,4,5,9,3,272,0,2024-05-11 14:58:55
+66,Female,Part-time,High,0,8,Technician,Emergency,8,24,2,28,No,Yes,1,6,10,3,19,1,Yes,No,None,Alcohol,0,0,8,3,None,5,2,2,1,8,4,2,1,6,10,2,5,0,2,302,0,2024-05-29 14:58:55
+29,Male,Full-time,Medium,9,8,Pharmacist,Obstetrics,5,57,9,18,No,Yes,4,6,6,6,15,5,No,No,Bipolar,Alcohol,0,0,4,9,None,1,5,3,10,1,7,8,3,0,7,1,10,8,2,349,1,2024-04-25 14:58:55
+48,Other,Full-time,Medium,5,0,Admin Staff,Administration,24,29,5,32,Yes,Yes,2,8,1,4,10,3,No,No,None,Alcohol,0,0,1,1,Asthma,12,8,5,2,1,9,2,2,10,6,7,4,5,3,241,0,2024-03-26 14:58:55
+48,Female,Part-time,High,1,1,Admin Staff,Surgery,38,59,1,35,No,No,9,6,9,6,6,0,No,No,"Depression, Anxiety",None,0,2,1,0,None,10,8,5,9,2,3,2,2,2,0,6,3,5,2,327,0,2024-04-02 14:58:55
+55,Female,Contract,Low,2,4,Nurse,Obstetrics,27,43,1,13,Yes,No,6,6,1,5,16,4,No,No,"Depression, Anxiety",None,0,0,6,5,None,0,3,3,10,6,8,0,9,5,5,8,0,7,4,239,0,2024-11-30 14:58:55
+42,Female,Temporary,Low,7,3,Admin Staff,Geriatrics,32,54,4,13,Yes,Yes,10,7,4,5,16,0,Yes,No,"Depression, Anxiety",Multiple,0,0,0,3,Multiple,1,9,2,10,10,6,1,4,5,6,7,10,10,6,206,1,2024-04-14 14:58:55
+51,Female,Part-time,Low,9,9,Doctor,Geriatrics,36,42,4,34,Yes,No,5,8,3,3,11,4,No,No,Bipolar,None,1,0,9,9,Asthma,16,4,4,8,2,6,10,2,5,10,10,9,4,2,338,0,2024-11-20 14:58:55
+54,Female,Temporary,High,5,8,Technician,Neurology,8,36,12,29,No,Yes,0,9,7,2,12,0,Yes,No,Depression,Cannabis,0,0,1,6,None,7,10,2,3,0,2,2,10,10,3,3,10,8,2,270,0,2024-05-03 14:58:55
+49,Female,Contract,Medium,2,6,Technician,General Practice,17,20,6,27,Yes,Yes,7,6,3,6,9,3,No,No,Bipolar,None,0,0,9,10,Diabetes,1,8,1,8,5,3,1,6,1,1,1,7,10,5,235,0,2024-03-28 14:58:55
+68,Female,Full-time,High,6,5,Pharmacist,Oncology,20,50,11,16,Yes,No,1,8,5,2,6,4,No,No,PTSD,None,0,0,3,5,Asthma,5,1,0,10,2,6,7,4,1,9,1,5,4,2,312,0,2024-07-28 14:58:55
+54,Male,Contract,High,3,6,Paramedic,Pediatrics,1,50,1,2,Yes,Yes,4,8,4,2,13,2,No,No,Depression,Cannabis,0,0,0,4,Diabetes,4,1,0,2,0,10,5,3,5,8,1,2,1,1,339,0,2025-03-03 14:58:55
+26,Other,Part-time,Medium,8,0,Admin Staff,Geriatrics,37,53,10,15,No,Yes,8,7,10,4,22,0,Yes,No,Anxiety,None,0,0,3,9,Diabetes,15,4,5,0,3,10,6,2,9,6,10,2,5,3,288,0,2024-09-28 14:58:55
+69,Female,Full-time,Low,4,0,Doctor,Radiology,39,28,12,29,Yes,No,7,8,1,5,0,0,No,No,Anxiety,Prescription Drugs,0,0,10,1,Multiple,7,0,4,10,0,4,0,3,4,0,5,5,8,1,357,0,2024-09-15 14:58:55
+40,Male,Part-time,Low,2,7,Midwife,Obstetrics,35,41,6,28,No,Yes,1,8,10,1,16,1,No,No,Anxiety,None,0,0,9,4,None,18,7,2,4,0,2,5,1,6,7,6,6,2,0,351,0,2024-05-08 14:58:55
+25,Female,Part-time,High,1,1,Admin Staff,Intensive Care,36,32,4,14,Yes,Yes,8,5,7,6,3,4,No,No,None,Prescription Drugs,0,0,4,8,None,15,4,5,9,1,0,1,0,6,2,5,7,9,3,302,1,2025-01-15 14:58:55
+56,Female,Contract,Low,10,9,Nurse,General Practice,14,44,5,24,No,Yes,4,6,1,3,20,5,Yes,No,Bipolar,None,0,0,8,8,None,12,9,3,9,9,6,5,2,4,3,1,4,3,3,301,0,2024-12-22 14:58:55
+70,Female,Part-time,High,1,10,Paramedic,Geriatrics,27,37,7,37,Yes,Yes,9,6,8,6,4,2,No,Yes,None,Cannabis,0,0,0,1,Multiple,19,1,5,1,7,5,2,10,7,4,3,9,9,5,251,0,2024-07-13 14:58:55
+38,Female,Contract,High,2,8,Admin Staff,Obstetrics,17,31,9,37,Yes,Yes,5,3,8,8,19,3,No,Yes,Depression,Prescription Drugs,0,0,4,6,Multiple,6,8,3,3,1,9,6,1,9,0,2,5,10,2,332,0,2024-08-12 14:58:55
+65,Male,Full-time,Medium,1,6,Doctor,Cardiology,33,59,12,22,No,Yes,2,5,2,4,23,1,Yes,No,Depression,Alcohol,0,1,1,9,None,15,1,3,1,10,6,2,0,5,5,10,0,7,3,300,0,2024-08-03 14:58:55
+49,Female,Contract,Medium,3,5,Admin Staff,General Practice,21,36,11,24,No,Yes,2,8,3,2,22,2,No,No,Anxiety,Alcohol,0,0,8,3,None,15,6,1,1,1,1,8,0,4,9,3,5,5,0,362,0,2024-06-13 14:58:55
+51,Female,Full-time,Medium,1,0,Nurse,Surgery,10,34,3,6,Yes,No,9,10,7,2,24,4,No,No,Bipolar,Multiple,1,0,5,2,Multiple,11,7,1,2,10,3,2,1,3,5,4,8,6,3,253,0,2025-03-24 14:58:55
+50,Male,Contract,High,9,0,Midwife,Pediatrics,12,34,12,21,No,No,7,6,8,4,6,2,No,No,PTSD,None,0,0,1,10,Asthma,13,5,3,4,10,1,6,8,6,1,6,9,6,2,357,0,2024-06-24 14:58:55
+67,Female,Temporary,Medium,8,1,Therapist,Psychiatry,3,34,6,16,Yes,Yes,10,4,2,7,30,0,No,No,None,None,0,0,2,0,Asthma,17,10,4,3,9,7,3,4,3,10,8,3,3,3,342,0,2024-05-21 14:58:55
+27,Male,Temporary,Low,1,5,Healthcare Assistant,Psychiatry,21,58,5,17,Yes,Yes,9,7,4,5,9,0,No,No,"Depression, Anxiety",None,0,0,7,2,None,17,6,1,1,9,6,7,8,4,9,10,9,5,4,256,1,2024-11-17 14:58:55
+56,Female,Part-time,Low,8,5,Midwife,Neurology,6,32,9,40,Yes,No,9,5,10,6,16,1,No,No,PTSD,None,1,0,0,10,None,15,10,1,10,7,0,1,7,4,5,1,0,8,4,281,0,2024-06-24 14:58:55
+62,Female,Contract,High,5,1,Admin Staff,Neurology,23,36,1,9,No,No,1,7,7,2,28,4,No,No,None,Multiple,0,0,2,8,None,19,0,0,9,5,1,7,10,0,7,7,10,2,2,299,0,2024-12-22 14:58:55
+58,Female,Contract,High,0,0,Technician,Surgery,3,51,7,9,Yes,No,10,7,2,4,29,4,No,No,Depression,Multiple,0,0,9,8,Asthma,15,3,5,1,10,1,8,5,0,5,2,8,7,3,270,0,2024-11-17 14:58:55
+45,Male,Full-time,Medium,3,9,Pharmacist,Intensive Care,27,28,9,6,No,No,1,10,6,0,6,2,No,No,None,Cannabis,0,0,0,6,None,12,6,0,5,3,3,7,0,2,3,8,3,6,1,342,0,2025-01-31 14:58:55
+50,Female,Part-time,High,0,4,Technician,Neurology,14,59,8,37,Yes,No,4,6,10,4,0,1,No,No,Multiple,None,0,0,10,2,None,8,0,4,6,2,2,5,9,10,3,9,1,3,2,365,0,2025-01-28 14:58:55
+70,Male,Contract,High,5,4,Midwife,Oncology,0,39,4,26,No,Yes,5,6,7,5,6,4,No,Yes,PTSD,Prescription Drugs,0,0,10,2,None,8,0,1,9,0,0,9,4,2,8,3,0,9,3,339,0,2024-04-20 14:58:55
+67,Male,Part-time,Low,3,1,Technician,Geriatrics,2,45,9,32,No,No,1,5,9,4,25,5,No,No,Anxiety,None,0,0,7,3,Diabetes,12,10,1,5,10,1,0,0,1,5,2,2,2,4,311,0,2025-01-16 14:58:55
+52,Male,Temporary,Low,2,5,Doctor,Pediatrics,13,46,3,0,Yes,No,4,9,10,0,23,5,No,No,Depression,None,0,0,0,6,None,3,5,2,6,2,10,6,6,1,7,9,6,6,0,365,0,2024-09-29 14:58:55
+56,Male,Contract,Medium,2,8,Technician,Administration,37,40,5,33,No,No,6,5,2,6,10,0,No,No,Bipolar,None,1,0,4,6,Multiple,8,3,4,0,8,8,0,9,5,7,5,10,9,2,288,0,2024-09-13 14:58:55
+54,Female,Contract,High,8,1,Paramedic,Obstetrics,0,37,7,3,Yes,Yes,9,7,1,4,8,2,No,No,Multiple,Cannabis,0,0,3,1,None,14,2,5,5,4,0,6,10,0,6,9,9,8,2,347,0,2024-07-31 14:58:55
+42,Female,Part-time,High,5,9,Therapist,Administration,37,32,10,16,Yes,Yes,9,6,9,4,11,3,No,No,None,None,0,0,6,4,Hypertension,13,4,5,10,5,8,1,7,5,2,8,1,9,3,206,0,2024-07-11 14:58:55
+53,Female,Contract,Low,8,1,Admin Staff,Surgery,37,35,2,3,Yes,Yes,7,8,6,2,2,0,Yes,No,Multiple,Alcohol,0,0,4,6,Multiple,18,8,5,2,4,6,7,7,4,9,6,8,2,2,328,0,2024-07-28 14:58:55
+44,Male,Part-time,High,4,2,Technician,Emergency,20,28,9,25,Yes,Yes,6,7,8,4,30,1,Yes,No,"Depression, Anxiety",Alcohol,0,0,7,6,Diabetes,11,9,4,0,0,1,1,6,5,0,3,10,9,1,365,1,2024-08-26 14:58:55
+54,Female,Contract,Low,1,6,Nurse,Obstetrics,28,31,10,3,Yes,Yes,7,7,0,2,3,4,No,No,Multiple,Alcohol,0,0,10,5,Diabetes,20,9,2,7,9,1,2,1,4,4,2,1,8,1,345,0,2025-02-08 14:58:55
+24,Female,Full-time,Medium,7,5,Therapist,Obstetrics,4,57,10,0,No,Yes,8,7,2,3,3,0,No,No,None,Prescription Drugs,1,0,0,9,None,5,10,2,3,0,4,2,4,6,9,9,4,7,0,365,0,2025-01-24 14:58:55
+39,Male,Part-time,Low,4,7,Therapist,Cardiology,9,38,0,6,Yes,No,4,10,4,1,27,3,No,No,Multiple,Multiple,0,1,4,9,Hypertension,2,9,0,9,3,4,0,3,0,9,3,7,2,0,322,0,2025-03-14 14:58:55
+46,Female,Contract,High,1,7,Technician,Surgery,27,26,3,29,No,Yes,4,5,2,5,24,3,Yes,No,Anxiety,None,1,0,3,7,None,19,2,4,7,2,3,4,4,2,1,2,9,7,2,364,0,2024-07-11 14:58:55
+63,Other,Temporary,Medium,3,5,Therapist,Surgery,20,54,3,8,No,Yes,10,6,0,4,12,5,Yes,No,"Depression, Anxiety",Prescription Drugs,0,0,2,2,None,15,4,4,9,10,9,4,9,5,9,2,7,3,7,189,0,2024-03-26 14:58:55
+52,Male,Contract,Low,8,10,Pharmacist,Psychiatry,6,37,0,34,Yes,No,9,7,6,7,22,1,Yes,No,Anxiety,None,0,0,4,0,None,19,9,2,10,7,9,9,8,0,1,8,2,5,3,335,0,2024-11-21 14:58:55
+24,Male,Temporary,Low,3,9,Technician,Radiology,2,35,8,7,No,Yes,3,8,6,3,18,0,Yes,No,Depression,Prescription Drugs,1,0,9,2,Hypertension,16,4,3,3,6,2,4,3,10,6,3,1,9,3,322,0,2024-10-19 14:58:55
+61,Female,Temporary,Medium,3,2,Doctor,Administration,19,58,2,23,Yes,No,8,5,9,5,9,2,Yes,No,Bipolar,None,0,0,2,10,None,15,8,3,3,10,3,8,7,10,10,8,8,1,4,313,0,2024-04-23 14:58:55
+67,Female,Full-time,Medium,1,2,Midwife,Intensive Care,18,23,4,18,No,No,4,8,7,3,4,0,No,No,"Depression, Anxiety",Alcohol,0,0,7,1,Multiple,5,10,0,9,6,9,5,7,6,2,9,2,7,4,296,0,2024-11-08 14:58:55
+45,Male,Part-time,Low,5,0,Paramedic,Radiology,34,44,5,35,No,Yes,1,7,4,4,6,5,No,No,"Depression, Anxiety",None,0,0,2,1,None,7,9,3,3,7,3,5,1,3,7,4,7,8,1,361,0,2024-06-16 14:58:55
+53,Female,Contract,High,10,6,Healthcare Assistant,Oncology,3,51,7,26,No,No,9,5,9,5,23,3,No,No,Bipolar,Prescription Drugs,0,0,0,1,Asthma,18,10,3,5,9,1,2,5,2,8,6,1,6,3,332,0,2024-11-27 14:58:55
+68,Female,Full-time,Low,1,4,Therapist,Emergency,4,59,5,31,Yes,No,7,5,4,6,15,1,No,No,Multiple,None,0,0,8,4,None,1,3,3,8,6,4,4,4,9,7,4,2,7,6,220,0,2025-02-14 14:58:55
+43,Female,Contract,Medium,6,3,Doctor,Obstetrics,0,32,2,13,No,No,6,9,4,1,0,1,No,No,Anxiety,None,0,0,8,0,Asthma,13,0,1,4,9,4,9,1,8,5,0,0,6,4,285,0,2025-02-03 14:58:55
+44,Female,Temporary,Low,2,9,Admin Staff,Psychiatry,3,36,5,17,Yes,No,7,10,0,1,11,2,Yes,No,Bipolar,Cannabis,0,0,5,9,None,11,9,0,9,1,4,6,9,0,4,1,10,10,0,364,0,2024-11-26 14:58:55
+23,Female,Part-time,Medium,2,3,Admin Staff,Emergency,11,56,0,27,No,Yes,2,8,9,3,1,1,Yes,No,Anxiety,Cannabis,0,0,9,3,None,16,4,2,7,3,10,2,3,7,2,10,5,9,2,295,1,2025-02-21 14:58:55
+48,Male,Contract,Medium,4,3,Paramedic,Obstetrics,26,25,3,28,No,No,3,5,4,4,6,5,No,No,Anxiety,None,0,0,0,9,Hypertension,14,0,3,7,10,10,1,6,0,2,4,6,3,4,283,0,2025-03-14 14:58:55
+63,Male,Contract,High,2,5,Therapist,Oncology,22,38,5,15,No,Yes,4,9,5,3,10,5,No,No,Anxiety,Cannabis,1,0,7,4,None,17,5,5,3,5,9,4,0,4,6,5,3,0,2,322,0,2024-05-15 14:58:55
+23,Female,Temporary,Medium,1,7,Pharmacist,Radiology,24,32,6,34,No,No,5,5,0,6,30,5,No,No,Bipolar,Multiple,0,0,1,1,Hypertension,15,9,1,10,2,0,2,8,9,4,6,0,2,3,329,0,2024-05-27 14:58:55
+47,Female,Contract,Medium,9,7,Paramedic,Surgery,20,45,10,30,Yes,No,0,10,10,1,28,1,No,No,Anxiety,None,0,0,8,4,None,12,9,3,9,2,5,4,9,7,5,1,2,6,1,334,0,2025-01-22 14:58:55
+38,Male,Contract,High,8,4,Therapist,Neurology,23,33,12,3,Yes,No,3,9,6,2,29,1,No,No,Bipolar,None,1,0,7,9,None,20,6,1,8,5,10,8,0,5,5,9,8,10,1,317,1,2024-04-11 14:58:55
+61,Female,Temporary,Medium,1,5,Doctor,Administration,24,50,10,36,No,Yes,10,3,0,9,12,5,No,No,Multiple,None,0,0,2,3,None,16,0,0,8,0,1,10,4,6,8,8,4,10,4,304,0,2024-12-03 14:58:55
+54,Female,Full-time,High,10,3,Midwife,Neurology,31,23,9,16,No,Yes,9,7,10,4,30,1,No,No,Depression,Prescription Drugs,1,0,4,7,None,7,9,5,4,0,6,9,6,10,0,5,5,6,2,318,0,2025-03-03 14:58:55
+30,Female,Temporary,High,1,10,Pharmacist,Geriatrics,31,58,2,38,Yes,Yes,4,8,1,6,1,1,No,No,Bipolar,Multiple,0,0,8,0,None,0,3,5,5,4,3,0,7,7,7,1,3,10,2,292,1,2024-06-23 14:58:55
+64,Female,Full-time,Medium,7,8,Healthcare Assistant,General Practice,4,27,8,25,Yes,No,6,6,1,4,6,3,No,No,Anxiety,None,0,2,0,4,Asthma,2,8,5,4,0,4,3,1,5,9,1,0,2,2,358,0,2024-03-28 14:58:55
+69,Female,Part-time,Medium,8,7,Admin Staff,Cardiology,35,44,11,38,Yes,No,4,5,4,5,14,0,No,No,Bipolar,Multiple,0,0,8,10,Multiple,15,0,3,2,9,4,9,3,10,4,2,4,0,6,246,0,2024-05-03 14:58:55
+60,Female,Full-time,Low,6,9,Nurse,Intensive Care,38,32,11,40,Yes,No,0,5,9,5,24,4,Yes,No,Anxiety,None,0,0,3,9,Multiple,1,8,1,10,7,4,4,1,5,5,0,4,9,4,323,0,2024-10-14 14:58:55
+50,Female,Full-time,High,2,9,Doctor,Oncology,15,51,6,3,No,No,10,7,6,4,10,1,No,No,Bipolar,Multiple,0,0,3,0,Diabetes,14,7,5,7,1,1,1,3,10,5,8,4,8,4,257,0,2025-02-03 14:58:55
+63,Male,Part-time,Low,8,0,Admin Staff,Cardiology,32,57,0,29,No,Yes,6,5,0,6,1,4,No,No,Depression,None,1,0,3,9,Hypertension,0,4,4,8,5,4,1,5,5,0,9,5,5,4,253,0,2024-08-14 14:58:55
+47,Female,Full-time,Medium,2,1,Technician,Geriatrics,20,57,1,29,Yes,No,7,8,9,4,6,4,No,No,"Depression, Anxiety",None,1,0,9,9,Diabetes,8,5,4,3,9,2,0,5,4,2,10,10,6,2,283,0,2024-07-16 14:58:55
+56,Male,Temporary,Low,4,8,Nurse,Geriatrics,8,47,0,21,Yes,Yes,6,7,0,5,3,3,No,No,PTSD,None,1,0,8,3,Multiple,15,6,1,8,9,3,7,1,7,5,3,1,0,4,250,0,2024-06-26 14:58:55
+46,Male,Full-time,High,8,7,Admin Staff,Intensive Care,5,49,10,10,Yes,No,10,6,0,6,10,1,No,No,Anxiety,Cannabis,0,0,5,7,Multiple,3,3,3,8,4,1,1,10,1,10,4,0,0,4,256,0,2024-10-10 14:58:55
+45,Female,Part-time,Low,2,2,Paramedic,Obstetrics,34,22,8,1,Yes,Yes,3,9,5,0,28,5,No,No,"Depression, Anxiety",Alcohol,0,0,10,0,None,11,5,3,6,9,3,2,3,6,10,6,1,3,2,336,1,2024-06-25 14:58:55
+34,Male,Temporary,High,6,7,Pharmacist,Cardiology,38,47,8,11,Yes,Yes,7,8,1,3,1,4,No,No,"Depression, Anxiety",Multiple,0,0,7,10,Diabetes,0,6,0,7,3,8,1,3,3,8,0,9,6,3,264,0,2024-06-08 14:58:55
+28,Male,Part-time,Medium,0,0,Admin Staff,Radiology,21,22,6,29,Yes,No,4,7,0,5,28,1,No,No,PTSD,Cannabis,0,0,3,1,Multiple,0,10,0,2,0,7,3,0,0,5,2,5,10,1,320,0,2025-01-29 14:58:55
+57,Female,Part-time,Medium,3,9,Healthcare Assistant,Intensive Care,40,53,9,35,No,No,9,5,5,7,15,2,No,No,None,Prescription Drugs,0,0,2,0,None,6,5,5,4,2,10,0,1,4,5,2,4,10,2,365,0,2024-08-30 14:58:55
+66,Male,Contract,High,3,3,Midwife,Geriatrics,4,35,2,17,No,Yes,8,8,1,3,6,5,No,No,Bipolar,None,0,0,0,10,Hypertension,17,10,2,2,3,2,2,2,2,0,1,4,7,2,228,0,2025-02-04 14:58:55
+41,Male,Contract,Medium,6,2,Paramedic,Radiology,22,41,12,25,No,No,9,6,5,6,12,2,No,No,Anxiety,Alcohol,0,0,9,6,Multiple,14,5,0,6,1,0,4,10,3,8,7,5,9,4,282,0,2025-03-04 14:58:55
+22,Female,Part-time,Medium,7,5,Doctor,Surgery,16,51,4,6,Yes,No,4,9,9,1,4,2,Yes,No,Multiple,Multiple,0,0,6,1,None,12,1,3,5,1,0,9,4,6,3,4,9,8,0,326,0,2024-07-25 14:58:55
+29,Female,Part-time,Medium,0,6,Doctor,Psychiatry,11,57,3,0,Yes,Yes,0,10,7,0,16,4,No,No,Anxiety,None,0,0,3,0,None,15,4,2,10,1,5,0,10,4,1,0,6,0,1,316,0,2024-05-29 14:58:55
+67,Male,Part-time,Medium,4,3,Doctor,Radiology,22,27,6,25,Yes,Yes,8,6,1,7,20,2,No,No,Depression,Multiple,1,0,7,5,Diabetes,6,2,0,2,10,2,3,7,3,0,1,8,3,4,310,0,2024-10-13 14:58:55
+37,Female,Contract,High,6,6,Doctor,Obstetrics,15,27,8,22,No,Yes,4,8,10,3,11,3,No,No,Multiple,Multiple,0,0,2,5,None,15,6,1,8,0,3,5,5,0,2,0,6,3,1,342,0,2024-08-12 14:58:55
+35,Female,Contract,Low,3,8,Midwife,Neurology,2,25,11,25,Yes,Yes,5,5,8,5,27,3,No,No,Bipolar,Cannabis,0,0,0,9,None,12,3,4,0,9,0,3,2,5,2,5,1,2,2,365,1,2024-10-25 14:58:55
+33,Female,Full-time,Low,3,10,Admin Staff,Cardiology,29,33,1,5,Yes,No,3,8,7,0,18,4,Yes,No,None,None,0,0,4,1,None,13,0,0,9,1,7,6,5,10,4,8,5,6,4,286,0,2024-11-13 14:58:55
+44,Female,Full-time,Medium,3,1,Therapist,Obstetrics,21,51,12,5,No,Yes,5,8,9,3,6,1,No,No,None,Prescription Drugs,1,0,1,0,Hypertension,16,5,0,2,5,0,6,6,9,0,10,8,0,5,218,1,2024-05-01 14:58:55
+36,Other,Part-time,Low,5,10,Admin Staff,General Practice,8,54,7,7,Yes,Yes,7,6,0,4,5,0,No,No,None,Alcohol,0,0,2,9,Diabetes,11,5,1,10,2,4,5,5,5,6,6,6,8,3,308,0,2024-11-14 14:58:55
+49,Female,Temporary,Low,6,2,Technician,Administration,28,29,8,23,No,Yes,2,9,6,2,7,1,No,No,Bipolar,Prescription Drugs,1,0,5,2,Hypertension,19,6,3,9,9,5,8,9,6,0,4,1,7,3,325,1,2024-12-03 14:58:55
+55,Female,Temporary,Medium,1,4,Pharmacist,Pediatrics,36,22,9,21,No,No,4,9,9,3,12,1,Yes,No,Bipolar,Multiple,1,0,2,9,None,12,10,5,10,4,1,1,5,0,3,2,2,1,3,307,1,2024-04-06 14:58:55
+23,Female,Contract,Medium,4,2,Nurse,Geriatrics,22,31,9,18,Yes,Yes,1,8,5,0,4,1,No,No,None,Alcohol,1,0,2,4,Multiple,19,7,1,6,0,6,9,0,3,5,7,7,1,0,358,0,2024-05-17 14:58:55
+53,Male,Contract,Low,3,10,Therapist,Administration,12,50,8,36,No,No,1,7,5,3,1,1,No,No,Multiple,None,0,0,5,5,Hypertension,14,2,5,2,7,6,7,2,8,0,9,10,7,3,241,0,2024-04-30 14:58:55
+44,Male,Contract,High,2,7,Therapist,Administration,31,48,9,17,Yes,Yes,6,7,5,3,8,5,No,No,Anxiety,None,0,0,4,2,None,20,5,0,2,3,0,7,6,9,6,3,8,10,2,306,0,2024-07-27 14:58:55
+43,Female,Part-time,Medium,6,9,Admin Staff,Intensive Care,22,24,6,30,No,Yes,9,5,5,5,29,0,Yes,No,Bipolar,Cannabis,0,0,9,8,Hypertension,3,9,3,1,8,3,10,3,5,9,8,3,0,4,317,0,2024-09-24 14:58:55
+46,Female,Temporary,High,10,7,Therapist,Oncology,16,44,8,36,Yes,No,9,5,9,6,10,5,No,No,Bipolar,Cannabis,0,0,8,10,Hypertension,1,1,2,8,3,3,9,3,1,6,4,8,6,4,243,0,2025-02-18 14:58:55
+43,Female,Full-time,Low,5,7,Technician,General Practice,39,60,8,29,No,Yes,10,4,6,7,23,2,No,No,Multiple,None,0,0,0,4,Diabetes,17,8,0,10,1,4,10,6,3,2,5,1,8,4,255,0,2024-12-20 14:58:55
+43,Male,Part-time,Medium,6,8,Nurse,Neurology,20,50,2,32,Yes,Yes,9,4,2,7,5,1,No,No,Depression,None,0,0,2,1,Hypertension,1,1,1,3,2,0,3,8,5,3,4,10,2,5,273,0,2024-12-12 14:58:55
+70,Female,Full-time,High,4,3,Healthcare Assistant,Radiology,1,40,3,9,No,No,5,8,5,3,28,3,No,No,Depression,Multiple,0,0,2,9,Diabetes,14,2,2,9,4,0,5,10,3,5,9,4,6,3,310,0,2024-11-29 14:58:55
+63,Male,Full-time,Medium,5,4,Midwife,Psychiatry,36,39,1,36,No,Yes,3,7,2,4,25,4,No,No,PTSD,None,0,2,10,5,None,18,9,4,5,9,6,10,1,9,10,10,10,5,3,252,0,2025-02-10 14:58:55
+27,Female,Part-time,Low,4,4,Admin Staff,Obstetrics,5,58,9,11,No,Yes,4,10,6,2,6,4,No,No,PTSD,None,0,0,5,7,None,14,1,2,1,5,8,5,8,6,6,6,1,6,0,361,0,2024-12-04 14:58:55
+36,Female,Full-time,High,6,7,Midwife,Surgery,17,41,2,29,Yes,Yes,0,8,6,2,24,5,No,No,"Depression, Anxiety",None,0,0,7,10,Hypertension,19,8,1,8,6,0,4,2,2,3,6,10,6,0,365,0,2024-12-29 14:58:55
+64,Female,Temporary,Low,1,6,Healthcare Assistant,Pediatrics,29,23,10,26,Yes,Yes,6,8,7,4,6,5,No,No,Depression,Cannabis,0,0,2,5,Diabetes,9,0,2,6,3,1,0,5,5,9,0,0,9,3,292,0,2025-03-13 14:58:55
+58,Female,Full-time,Low,10,8,Admin Staff,Emergency,21,32,10,38,No,No,7,5,1,6,18,3,No,No,Depression,None,0,0,2,3,Asthma,19,4,1,9,6,5,2,3,3,10,1,4,0,4,310,1,2024-09-12 14:58:55
+54,Female,Temporary,Medium,4,7,Admin Staff,General Practice,32,39,4,8,Yes,Yes,8,7,8,3,5,1,No,No,Depression,Prescription Drugs,0,0,5,5,Diabetes,10,0,0,4,9,5,6,0,2,8,6,1,2,2,360,0,2024-06-24 14:58:55
+29,Male,Temporary,High,5,1,Nurse,Administration,29,32,4,20,No,No,7,8,4,5,10,0,Yes,No,None,Cannabis,1,0,7,7,Hypertension,9,4,3,6,2,1,7,8,2,8,7,6,9,1,312,0,2025-03-13 14:58:55
+65,Female,Temporary,Low,5,9,Midwife,Psychiatry,16,36,5,11,Yes,Yes,4,7,8,2,28,2,No,No,Depression,Cannabis,0,0,5,7,None,4,7,4,3,6,8,1,10,1,8,3,7,0,3,283,0,2024-12-29 14:58:55
+65,Male,Contract,Low,4,3,Doctor,Emergency,31,55,12,28,No,No,2,6,9,4,10,4,No,No,"Depression, Anxiety",Prescription Drugs,0,0,9,9,Multiple,8,7,3,9,3,3,2,5,10,9,5,1,4,3,311,1,2024-07-19 14:58:55
+26,Female,Full-time,High,9,5,Midwife,Pediatrics,13,52,6,32,Yes,Yes,9,5,4,5,6,2,Yes,No,Depression,Cannabis,0,0,2,1,None,19,10,3,6,7,6,3,7,2,5,10,6,2,6,172,0,2024-10-14 14:58:55
+60,Female,Part-time,Low,6,1,Pharmacist,Oncology,9,20,6,14,No,No,10,7,6,6,1,0,Yes,Yes,None,None,0,0,3,7,None,18,7,3,1,8,5,10,1,9,1,9,3,0,6,212,0,2025-01-30 14:58:55
+25,Female,Part-time,Low,9,6,Pharmacist,Oncology,35,34,0,1,No,Yes,8,8,10,2,18,5,Yes,No,Anxiety,Multiple,0,0,0,5,Asthma,12,1,1,6,6,10,4,6,0,1,2,0,1,2,332,0,2024-09-02 14:58:55
+27,Female,Full-time,High,7,2,Admin Staff,Cardiology,33,32,1,38,No,No,5,6,8,5,3,4,No,No,PTSD,None,0,0,7,1,None,17,7,1,3,7,10,2,5,2,10,6,10,9,3,273,0,2024-12-22 14:58:55
+66,Female,Contract,High,6,2,Doctor,Pediatrics,8,36,11,17,No,No,4,8,3,3,25,2,No,No,Anxiety,None,0,0,3,0,Asthma,16,4,4,3,7,2,4,1,8,3,10,2,4,3,309,0,2024-06-30 14:58:55
+53,Other,Contract,High,4,10,Paramedic,Pediatrics,27,43,8,2,Yes,Yes,2,8,1,1,5,5,No,No,Anxiety,Prescription Drugs,0,0,5,5,Hypertension,5,0,1,0,1,7,7,1,3,8,2,10,10,0,346,0,2024-08-29 14:58:55
+51,Male,Temporary,High,0,1,Healthcare Assistant,Emergency,10,27,9,6,No,No,5,9,8,1,16,0,Yes,No,"Depression, Anxiety",Prescription Drugs,0,0,10,6,Multiple,9,6,5,2,8,6,7,3,2,2,10,0,2,1,322,0,2024-06-11 14:58:55
+68,Male,Full-time,Medium,4,10,Technician,Psychiatry,13,46,1,17,Yes,Yes,2,10,1,1,24,2,No,No,PTSD,None,0,0,2,9,None,1,5,1,4,5,8,1,3,7,5,6,4,5,1,362,0,2024-07-27 14:58:55
+56,Male,Full-time,High,9,7,Doctor,Obstetrics,38,42,5,37,Yes,Yes,9,3,2,7,4,1,Yes,No,None,Prescription Drugs,0,0,10,4,None,5,4,1,4,10,2,5,2,0,1,10,7,8,2,357,0,2024-06-13 14:58:55
+61,Male,Part-time,Medium,1,5,Technician,Intensive Care,18,27,10,36,No,Yes,5,8,9,3,28,5,No,No,Anxiety,None,0,0,10,9,Asthma,20,0,1,1,3,0,3,7,4,0,10,0,5,2,295,0,2024-10-09 14:58:55
+37,Female,Full-time,Medium,4,0,Midwife,Emergency,14,27,10,32,Yes,Yes,3,8,1,4,27,0,No,No,Depression,None,0,0,5,7,Multiple,12,0,0,3,4,1,8,6,0,4,7,8,1,1,304,0,2024-11-13 14:58:55
+34,Female,Contract,Medium,4,0,Midwife,Surgery,27,45,0,30,Yes,Yes,1,8,2,2,29,2,No,No,Depression,Cannabis,0,0,10,10,None,17,5,4,0,9,10,9,1,6,7,2,2,1,1,339,0,2025-03-15 14:58:55
+63,Male,Full-time,Low,1,6,Technician,Administration,23,32,2,10,Yes,No,7,9,5,2,6,1,No,No,Anxiety,Multiple,0,0,8,8,None,6,9,5,8,4,0,1,2,4,9,1,4,7,2,330,0,2024-04-25 14:58:55
+51,Male,Part-time,Medium,4,7,Healthcare Assistant,Oncology,7,58,1,3,No,Yes,3,8,2,0,8,1,Yes,No,None,None,1,0,8,3,Multiple,1,6,1,0,6,10,7,9,1,9,5,8,10,1,319,0,2025-01-01 14:58:55
+40,Male,Temporary,Medium,3,4,Doctor,Administration,8,56,2,17,Yes,Yes,8,4,9,5,24,0,Yes,No,PTSD,Prescription Drugs,0,0,9,6,None,13,9,4,5,8,4,0,8,0,1,3,4,7,3,341,0,2025-03-19 14:58:55
+38,Female,Part-time,Low,0,10,Paramedic,Oncology,32,47,4,3,Yes,Yes,6,8,7,2,0,3,No,No,PTSD,Cannabis,0,0,2,7,Hypertension,4,9,2,6,6,9,10,4,10,9,7,8,5,1,336,0,2025-03-07 14:58:55
+40,Female,Part-time,Low,2,4,Admin Staff,Cardiology,32,44,10,33,No,Yes,1,7,10,3,30,4,No,Yes,Bipolar,Cannabis,1,3,2,5,None,17,0,0,2,8,1,5,1,6,8,1,9,9,2,294,0,2025-03-08 14:58:55
+49,Male,Temporary,Low,0,3,Nurse,Obstetrics,18,35,9,28,No,Yes,3,8,5,3,0,0,No,No,"Depression, Anxiety",None,0,0,3,1,None,10,8,1,0,3,2,10,2,0,7,3,7,6,0,365,0,2024-05-30 14:58:55
+47,Female,Part-time,High,10,5,Midwife,Surgery,2,21,5,23,Yes,Yes,4,8,6,2,18,1,No,No,PTSD,Cannabis,0,0,6,6,Diabetes,9,3,5,6,9,7,10,7,2,2,1,6,0,3,329,0,2025-01-03 14:58:55
+58,Female,Part-time,Low,4,5,Pharmacist,Oncology,9,37,8,21,No,No,2,8,0,2,5,1,No,No,None,None,1,0,2,8,Multiple,10,4,0,2,9,9,9,3,10,0,1,10,8,3,270,1,2024-05-30 14:58:55
+47,Male,Full-time,Low,3,2,Healthcare Assistant,Emergency,39,36,11,1,Yes,No,8,7,2,3,17,0,Yes,No,Depression,Cannabis,1,0,9,4,Asthma,1,1,5,9,3,4,0,1,5,3,1,0,4,2,348,0,2025-01-18 14:58:55
+44,Female,Full-time,Medium,6,8,Nurse,Surgery,0,49,10,5,Yes,Yes,4,8,2,2,9,3,Yes,No,Bipolar,Cannabis,0,0,7,1,None,14,9,0,5,5,3,1,1,5,7,0,3,8,1,320,0,2025-02-02 14:58:55
+30,Female,Temporary,Low,4,10,Paramedic,Emergency,28,58,9,24,Yes,No,1,7,1,3,27,4,No,No,Anxiety,Prescription Drugs,0,1,10,3,Diabetes,6,7,2,5,7,4,2,5,6,2,3,8,1,5,266,1,2024-11-12 14:58:55
+33,Male,Full-time,High,9,6,Therapist,Intensive Care,33,32,11,20,No,Yes,10,5,6,4,10,2,Yes,No,None,Cannabis,1,0,7,2,None,8,1,4,3,8,9,8,7,10,9,1,9,7,4,320,0,2024-08-05 14:58:55
+22,Male,Full-time,Low,3,0,Admin Staff,Intensive Care,12,51,11,15,Yes,Yes,2,8,8,2,0,0,No,No,None,None,0,3,5,3,Multiple,4,2,0,10,0,5,4,6,10,1,8,7,6,5,207,0,2024-12-09 14:58:55
+22,Male,Part-time,High,1,6,Midwife,Administration,0,48,12,30,No,Yes,8,8,3,4,0,4,Yes,No,None,None,1,0,3,9,None,6,8,3,5,0,6,9,3,0,6,8,3,10,1,324,0,2024-08-10 14:58:55
+68,Male,Contract,Low,3,4,Admin Staff,Oncology,33,49,3,13,No,Yes,6,6,4,4,12,4,No,No,"Depression, Anxiety",None,0,0,10,6,None,19,1,2,10,7,8,9,1,6,3,10,0,3,3,276,0,2024-05-10 14:58:55
+55,Female,Full-time,Low,1,4,Nurse,Oncology,28,37,6,38,Yes,Yes,1,7,2,3,4,5,No,No,Depression,None,0,0,10,9,None,1,5,3,9,10,0,1,8,1,5,10,9,2,3,299,0,2025-02-10 14:58:55
+53,Female,Contract,Low,7,1,Admin Staff,Psychiatry,12,32,5,27,No,No,8,5,10,6,19,1,No,No,PTSD,Prescription Drugs,1,0,4,7,Multiple,2,3,2,3,6,3,9,3,5,4,6,3,3,2,330,1,2025-03-18 14:58:55
+69,Male,Full-time,Low,2,3,Therapist,Intensive Care,28,40,1,31,No,No,3,6,8,3,0,2,No,No,"Depression, Anxiety",Prescription Drugs,1,0,1,0,Diabetes,1,6,3,7,8,8,4,8,7,1,5,2,3,5,240,1,2025-02-19 14:58:55
+46,Male,Full-time,High,8,5,Nurse,Obstetrics,38,49,9,27,No,No,8,6,3,6,19,0,No,Yes,None,Cannabis,0,0,5,7,Hypertension,20,5,3,8,10,4,4,4,4,9,2,5,9,6,168,1,2025-01-18 14:58:55
+61,Male,Temporary,High,3,9,Midwife,Obstetrics,23,40,10,8,No,No,1,8,4,0,2,1,No,No,Bipolar,None,0,0,2,4,None,18,9,5,1,2,7,0,10,9,1,6,10,9,0,328,0,2024-09-14 14:58:55
+66,Male,Temporary,Medium,5,10,Doctor,General Practice,25,36,10,21,No,Yes,9,6,0,5,17,5,Yes,No,PTSD,Prescription Drugs,0,0,5,6,None,3,8,0,6,9,0,2,10,2,8,0,4,7,2,289,0,2024-12-29 14:58:55
+22,Female,Temporary,High,9,6,Pharmacist,General Practice,16,59,10,31,Yes,No,3,10,10,2,8,5,No,No,None,None,0,0,4,10,Diabetes,19,8,0,8,4,3,4,6,10,10,8,4,3,4,284,0,2025-01-31 14:58:55
+37,Male,Contract,Low,4,10,Nurse,Cardiology,6,38,7,4,No,Yes,4,7,1,2,13,1,Yes,No,Depression,Prescription Drugs,0,0,1,10,None,6,9,2,8,2,8,8,4,7,9,3,1,4,2,274,0,2024-10-24 14:58:55
+60,Male,Part-time,Medium,9,4,Therapist,Intensive Care,12,34,6,22,Yes,No,1,8,8,4,30,3,No,No,Multiple,None,1,0,4,0,Hypertension,6,3,4,4,4,0,9,1,7,1,5,2,1,1,313,0,2024-05-07 14:58:55
+26,Male,Full-time,Medium,0,8,Nurse,Emergency,4,28,6,4,Yes,No,9,8,1,3,26,4,No,No,Depression,Prescription Drugs,1,0,4,1,None,16,0,5,0,9,0,0,5,3,7,5,10,3,3,257,0,2025-01-20 14:58:55
+43,Female,Full-time,Medium,8,2,Nurse,Emergency,25,29,7,31,Yes,No,0,8,4,3,16,0,Yes,No,Depression,Cannabis,0,0,8,0,Asthma,18,1,0,5,0,3,7,6,7,7,10,5,6,2,326,0,2024-09-20 14:58:55
+50,Male,Full-time,Low,0,0,Midwife,Neurology,2,50,11,9,Yes,No,6,7,7,3,22,0,No,No,PTSD,None,0,0,10,4,None,15,7,0,7,10,2,0,10,4,0,2,1,2,5,277,0,2024-07-13 14:58:55
+24,Female,Contract,High,7,3,Nurse,Surgery,6,42,11,38,Yes,Yes,9,7,2,5,13,0,No,No,Bipolar,Multiple,0,0,7,5,Hypertension,2,9,5,0,3,6,8,5,10,0,3,3,0,3,296,1,2024-06-12 14:58:55
+33,Male,Temporary,Low,8,8,Pharmacist,Radiology,38,49,12,14,Yes,No,0,9,5,0,28,1,No,No,Bipolar,None,0,0,6,9,None,14,7,1,1,5,10,5,2,4,3,10,1,7,0,365,0,2025-03-17 14:58:55
+47,Female,Part-time,Medium,8,3,Admin Staff,Administration,0,52,10,6,No,No,10,6,3,3,3,3,No,No,"Depression, Anxiety",None,0,0,2,8,None,13,1,5,0,1,2,0,9,2,1,9,8,7,0,365,0,2024-06-03 14:58:55
+37,Female,Contract,Low,0,1,Midwife,General Practice,16,28,0,28,No,Yes,10,5,10,9,4,2,No,No,"Depression, Anxiety",None,0,1,9,7,Multiple,14,3,0,4,6,0,7,7,6,0,2,2,5,5,240,0,2024-11-08 14:58:55
+58,Male,Temporary,Low,1,9,Pharmacist,Administration,24,20,12,2,No,Yes,7,6,6,4,25,5,No,No,Anxiety,Alcohol,0,0,3,6,None,13,0,4,1,7,10,4,2,10,8,5,9,6,4,244,0,2024-06-10 14:58:55
+43,Male,Contract,High,0,4,Midwife,Oncology,2,54,0,18,Yes,No,2,6,9,2,20,1,Yes,Yes,Bipolar,Prescription Drugs,0,0,5,4,Hypertension,6,6,1,9,0,9,6,4,10,2,0,9,9,2,322,0,2024-07-02 14:58:55
+50,Female,Part-time,High,9,2,Pharmacist,Cardiology,14,30,7,9,No,Yes,9,6,2,5,16,2,No,No,None,None,0,0,2,2,Multiple,2,3,3,9,3,1,6,8,8,0,7,5,10,4,242,0,2025-01-18 14:58:55
+35,Female,Temporary,Medium,1,8,Therapist,Obstetrics,28,53,3,27,No,Yes,5,8,5,4,21,5,No,No,PTSD,None,0,1,10,8,Hypertension,16,10,5,3,10,9,6,10,8,1,7,0,1,6,189,0,2024-12-11 14:58:55
+49,Female,Contract,Low,9,3,Pharmacist,Radiology,31,35,4,28,No,Yes,6,7,9,5,28,5,No,No,"Depression, Anxiety",Alcohol,0,0,8,4,Diabetes,9,7,3,0,3,3,5,4,0,7,8,10,4,0,334,0,2024-12-25 14:58:55
+26,Female,Part-time,Low,7,5,Technician,Pediatrics,25,28,7,14,Yes,No,9,7,8,3,24,3,No,No,Anxiety,Cannabis,0,0,7,2,None,14,8,1,6,4,0,10,6,0,4,5,9,6,2,309,0,2024-04-03 14:58:55
+68,Female,Full-time,High,4,1,Pharmacist,Cardiology,15,51,4,34,No,Yes,0,6,10,4,1,4,No,No,Depression,None,0,1,5,2,None,5,8,1,7,3,0,7,10,9,10,0,2,8,3,276,0,2024-07-21 14:58:55
+70,Female,Part-time,Low,10,5,Doctor,Pediatrics,24,34,9,5,Yes,No,5,7,9,1,22,0,No,No,Multiple,None,0,1,3,2,Hypertension,16,2,1,4,8,7,8,6,10,6,2,7,0,5,322,0,2024-10-15 14:58:55
+51,Male,Full-time,Low,6,2,Doctor,Geriatrics,27,31,3,11,No,No,6,8,0,2,21,2,No,No,"Depression, Anxiety",Alcohol,0,1,6,5,None,16,4,2,1,6,6,1,4,4,5,0,4,2,2,322,0,2025-03-22 14:58:55
+67,Female,Contract,Low,1,8,Healthcare Assistant,Intensive Care,8,52,11,37,Yes,No,5,5,2,6,4,1,No,No,PTSD,Multiple,1,0,10,0,Multiple,13,5,5,7,1,7,6,1,0,0,4,7,5,2,322,0,2024-12-04 14:58:55
+26,Male,Temporary,High,7,10,Technician,Pediatrics,0,33,5,12,Yes,No,3,9,1,2,3,2,No,No,Depression,None,0,0,2,10,Hypertension,17,5,4,0,0,3,1,4,3,5,2,1,6,1,324,0,2024-05-21 14:58:55
+33,Female,Temporary,Medium,10,1,Technician,Pediatrics,28,27,12,28,Yes,Yes,0,8,7,2,3,4,No,No,PTSD,Multiple,0,0,9,3,Asthma,4,9,4,6,8,5,5,6,0,10,1,6,5,1,365,0,2024-10-22 14:58:55
+37,Male,Contract,Medium,5,8,Admin Staff,Administration,21,27,11,18,No,No,10,5,6,6,5,0,No,No,Bipolar,None,0,0,7,7,Asthma,7,7,3,0,0,2,1,6,1,6,2,8,0,1,312,0,2024-09-16 14:58:55
+47,Male,Temporary,Low,7,4,Technician,Geriatrics,15,46,4,2,No,Yes,8,8,1,2,19,2,Yes,No,None,Alcohol,0,0,0,2,None,6,5,3,5,5,10,9,3,1,3,8,6,3,3,277,0,2024-04-08 14:58:55
+47,Male,Temporary,Medium,0,7,Admin Staff,Psychiatry,40,31,6,7,Yes,No,3,8,5,3,20,4,No,No,PTSD,None,0,0,2,4,None,3,5,3,5,1,7,5,0,3,7,10,2,5,1,365,0,2025-02-22 14:58:55
+69,Female,Full-time,High,0,1,Healthcare Assistant,Psychiatry,40,20,9,7,No,Yes,6,8,2,2,12,1,No,No,Depression,Cannabis,1,0,10,1,None,17,3,5,4,3,3,1,5,7,7,7,6,7,1,346,0,2024-10-17 14:58:55
+42,Male,Contract,High,6,5,Healthcare Assistant,Psychiatry,6,59,6,19,Yes,No,6,8,7,4,21,3,Yes,No,PTSD,None,0,0,4,1,None,4,6,0,1,5,2,0,2,1,6,2,7,9,0,326,0,2024-08-19 14:58:55
+60,Male,Part-time,Medium,7,2,Therapist,Intensive Care,13,30,12,3,Yes,Yes,1,8,9,2,4,5,Yes,No,Depression,None,1,0,4,10,None,15,7,3,1,4,3,6,10,8,10,10,0,3,1,341,0,2025-02-08 14:58:55
+57,Male,Full-time,Medium,2,9,Doctor,Radiology,28,58,3,20,No,No,0,9,2,1,22,1,No,No,Bipolar,None,0,0,9,6,Asthma,13,2,1,8,10,5,2,4,8,1,1,2,6,4,288,0,2024-12-24 14:58:55
+54,Female,Contract,Low,4,4,Pharmacist,Cardiology,18,50,11,2,No,No,7,7,9,4,24,0,No,No,Anxiety,None,0,0,1,9,Asthma,18,6,3,4,5,10,3,3,1,5,4,4,10,0,365,0,2025-02-13 14:58:55
+51,Other,Full-time,Medium,0,7,Pharmacist,Cardiology,18,36,12,7,No,Yes,7,6,8,3,25,5,No,No,Anxiety,None,0,0,9,2,Diabetes,13,2,1,4,2,6,5,1,0,5,0,5,2,2,336,0,2024-08-28 14:58:55

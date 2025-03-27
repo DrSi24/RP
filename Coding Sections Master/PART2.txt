@@ -1,0 +1,173 @@
+def main():
+    st.set_page_config(
+        page_title="RESUME Predictor",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
+
+    # Create database if it doesn't exist
+    if not os.path.exists(DB_PATH):
+        create_database()
+    
+    # Load data
+    df = load_data()
+    
+    # Sidebar
+    st.sidebar.header("🧭 Main Menu")
+    edit_mode = st.sidebar.checkbox("Enable Edit Mode", value=False)
+    analysis_choice = st.sidebar.radio(
+        "Choose Analysis Model:",
+        ["Kaplan–Meier Estimator", 
+         "Cox Proportional Hazards Model",
+         "Bayesian Spatio-Temporal Model", 
+         "Machine Learning (XGBoost)"]
+    )
+
+    # Create tabs
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+        "🟠 Dashboard",
+        "🟢 What is RESUME",
+        "🔵 Database (Front)",
+        "🟣 Detailed Analytics",
+        "🔷 Data Entry",
+        "⚙️ Database (Backend)"
+    ])
+
+    # Dashboard Tab
+    with tab1:
+        st.title("🧠 RESUME Predictive Modelling Dashboard")
+        
+        # Introduction and Explanation
+        st.markdown("""
+        ### 📋 What am I looking at?
+        This dashboard provides a comprehensive overview of suicide risk factors and patterns among healthcare workers. 
+        The data shown here helps identify trends, risk factors, and potential intervention points.
+
+        ### 🎯 Key Points:
+        - All data is anonymized and aggregated
+        - Risk scores range from 0 (lowest) to 10 (highest)
+        - Temporal patterns show how risks change over time
+        - Employment status may influence risk factors
+        """)
+        
+        # Database Overview Section
+        st.header("📊 Database Overview")
+        if not df.empty:
+            # Overview metrics with explanations
+            col1, col2, col3, col4 = st.columns(4)
+            with col1:
+                st.metric("Total Records", len(df))
+                st.markdown("*Total number of healthcare workers in database*")
+            
+            with col2:
+                crisis_events = int(df['Crisis_Event'].sum())
+                st.metric("Recorded Crisis Events", crisis_events)
+                st.markdown("*Number of documented crisis incidents*")
+            
+            with col3:
+                if 'Age' in df.columns:  # Safe check
+                    age_range = f"{int(df['Age'].min())} - {int(df['Age'].max())}"
+                    st.metric("Age Range", age_range)
+                    st.markdown("*Age span of healthcare workers*")
+                else:
+                    st.metric("Age Range", "N/A")
+                    st.markdown("*Age data not available*")
+            
+            with col4:
+                employment_counts = df['Employment_Status'].value_counts()
+                st.metric("Employment Types", len(employment_counts))
+                st.markdown("*Different categories of employment*")
+
+            # Employment Distribution
+            st.subheader("👥 Employment Distribution")
+            st.markdown("""
+            This pie chart shows the breakdown of employment status among healthcare workers. 
+            Different employment categories may have varying risk levels and support needs.
+            """)
+            emp_fig = px.pie(df, names='Employment_Status', 
+                           title='Distribution by Employment Status')
+            st.plotly_chart(emp_fig)
+
+            # Risk Analysis Section
+            st.header("🎯 Risk Analysis Overview")
+            st.markdown("""
+            ### Understanding the Risk Models:
+
+            1. **Kaplan-Meier Analysis**
+            - Shows survival probability over time
+            - Helps identify critical periods for intervention
+            - Lower curves indicate higher risk periods
+
+            2. **Cox Proportional Hazards**
+            - Examines multiple risk factors simultaneously
+            - Identifies which factors most strongly predict crises
+            - Helps target interventions effectively
+
+            3. **Machine Learning Predictions**
+            - Uses patterns in data to predict future risks
+            - Combines multiple factors for accurate assessment
+            - Helps identify high-risk individuals early
+            """)
+
+            # Model-specific visualizations
+            if analysis_choice == "Kaplan–Meier Estimator":
+                st.subheader("📊 Kaplan-Meier Survival Analysis")
+                
+                kmf = KaplanMeierFitter()
+                if 'Time_To_Crisis' in df.columns and 'Crisis_Event' in df.columns:
+                    kmf.fit(df['Time_To_Crisis'], 
+                           df['Crisis_Event'], 
+                           label='Overall')
+                    fig, ax = plt.subplots(figsize=(10, 6))
+                    kmf.plot(ax=ax)
+                    plt.title('Kaplan-Meier Survival Curve')
+                    st.pyplot(fig)
+
+            # Time Trends
+            st.subheader("📅 Temporal Patterns")
+            st.markdown("""
+            The graphs below show how crisis events and risk factors change over time.
+            This helps identify:
+            - Seasonal patterns
+            - High-risk periods
+            - Impact of interventions
+            - Long-term trends
+            """)
+            
+            # Age Distribution with Context
+            col1, col2 = st.columns(2)
+            with col1:
+                st.subheader("👥 Age Distribution")
+                st.markdown("""
+                This histogram shows the age distribution of healthcare workers in the database.
+                Understanding age patterns helps target age-specific interventions.
+                """)
+                age_fig = px.histogram(df, x='Age', nbins=20, 
+                                     title='Age Distribution of Healthcare Workers')
+                st.plotly_chart(age_fig)
+            
+            with col2:
+                st.subheader("📊 Risk by Employment")
+                st.markdown("""
+                This chart shows average risk levels across different employment types.
+                Higher bars indicate groups that may need additional support.
+                """)
+                risk_by_emp = df.groupby('Employment_Status')['Suicidal_Distress'].mean()
+                risk_fig = px.bar(risk_by_emp, title='Average Risk Level by Employment Type')
+                st.plotly_chart(risk_fig)
+
+            # Summary Statistics
+            st.subheader("📊 Key Findings")
+            st.markdown(f"""
+            ### Summary of Database:
+            - **Total Population**: {len(df)} healthcare workers
+            - **Crisis Events**: {'Crisis_Event' in df.columns and int(df['Crisis_Event'].sum()) or 'N/A'} recorded incidents
+            - **Age Range**: {'Age' in df.columns and f"{int(df['Age'].min())} - {int(df['Age'].max())}" or 'N/A'} years
+            - **Most Common Employment Type**: {'Employment_Status' in df.columns and df['Employment_Status'].mode()[0] or 'N/A'}
+            - **Average Risk Score**: {'Suicidal_Distress' in df.columns and f"{df['Suicidal_Distress'].mean():.2f}/10" or 'N/A'}
+            
+            ### Key Observations:
+            - {len(df[df['Crisis_Event'] == 1])} individuals experienced crisis events
+            - {len(df[df['Social_Isolation'] > 7])} show high social isolation scores
+            - {len(df[df['Hopelessness'] > 7])} indicate severe hopelessness
+            """)

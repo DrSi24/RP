@@ -1,0 +1,102 @@
+# Detailed Analytics Tab
+with tab4:
+    st.title("📈 Detailed Analytics")
+    if not df.empty:
+        # Risk Factor Analysis
+        st.subheader("🎯 Risk Factor Analysis")
+        risk_factors = [
+            "Hopelessness", "Despair", "Impulsivity", "Social_Isolation",
+            "Access_Lethal_Means", "Work_Stress_Level", "Burnout_Level"
+        ]
+        
+        if all(col in df.columns for col in risk_factors):
+            # Average Risk Scores
+            st.markdown("### 📊 Average Risk Factor Scores")
+            risk_data = df[risk_factors].mean().sort_values(ascending=False)
+            
+            fig, ax = plt.subplots(figsize=(10, 6))
+            risk_data.plot(kind='bar')
+            plt.title("Average Risk Factor Scores")
+            plt.xticks(rotation=45)
+            st.pyplot(fig)
+            
+            # Correlation Matrix
+            st.markdown("### 🔄 Risk Factor Correlations")
+            st.markdown("""
+            This heatmap shows how different risk factors relate to each other.
+            Darker colors indicate stronger correlations.
+            """)
+            corr_matrix = df[risk_factors].corr()
+            fig, ax = plt.subplots(figsize=(10, 8))
+            plt.imshow(corr_matrix, cmap='coolwarm', aspect='auto')
+            plt.colorbar()
+            plt.xticks(range(len(risk_factors)), risk_factors, rotation=45)
+            plt.yticks(range(len(risk_factors)), risk_factors)
+            st.pyplot(fig)
+
+        # Temporal Analysis
+        with st.expander("Temporal Analysis"):
+            if "Observation_Date" in df.columns:
+                df['Month'] = pd.to_datetime(df['Observation_Date']).dt.to_period('M')
+                monthly_counts = df.groupby('Month').size()
+                fig = px.line(x=monthly_counts.index.astype(str), y=monthly_counts.values,
+                     title="Records by Month", labels={'x': 'Month', 'y': 'Count'})
+                st.plotly_chart(fig)
+            else:
+                st.info("Observation date data not available for temporal analysis")
+
+        # Risk Factor Distribution
+        st.subheader("📊 Risk Factor Distribution")
+        selected_factor = st.selectbox(
+            "Select Risk Factor to Analyze",
+            risk_factors
+        )
+        
+        if selected_factor in df.columns:
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown("### 📊 Distribution Analysis")
+                fig = px.histogram(
+                    df, 
+                    x=selected_factor,
+                    nbins=20,
+                    title=f"Distribution of {selected_factor}"
+                )
+                st.plotly_chart(fig)
+
+            with col2:
+                st.markdown("### 📦 Box Plot Analysis")
+                fig = px.box(
+                    df,
+                    x="Employment_Status",
+                    y=selected_factor,
+                    title=f"{selected_factor} by Employment Status"
+                )
+                st.plotly_chart(fig)
+
+        # Advanced Analytics
+        st.subheader("🔬 Advanced Analytics")
+        
+        # Multivariate Analysis
+        st.markdown("### 🔄 Multivariate Analysis")
+        col1, col2 = st.columns(2)
+        with col1:
+            factor_x = st.selectbox("Select X-axis factor", risk_factors)
+        with col2:
+            factor_y = st.selectbox("Select Y-axis factor", 
+                                  [f for f in risk_factors if f != factor_x])
+        
+        fig = px.scatter(
+            df,
+            x=factor_x,
+            y=factor_y,
+            color="Employment_Status",
+            title=f"Relationship between {factor_x} and {factor_y}"
+        )
+        st.plotly_chart(fig)
+
+        # Statistical Summary
+        st.subheader("📊 Statistical Summary")
+        summary_stats = df[risk_factors].describe()
+        st.dataframe(summary_stats)

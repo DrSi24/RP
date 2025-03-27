@@ -1,0 +1,222 @@
+# Part 5: Data Entry and Database Backend
+
+# Data Entry Tab
+with tab5:
+    st.title("📝 RESUME+ Data Entry")
+    
+    with st.form("data_entry_form"):
+        # Demographic & Socioeconomic
+        st.markdown("### 👤 Demographic & Socioeconomic")
+        col1, col2 = st.columns(2)
+        with col1:
+            age = st.number_input("Age", 18, 100, 25)
+            sex = st.selectbox("Sex", ["Male", "Female", "Other"])
+            employment_status = st.selectbox("Employment Status", 
+                ["Full-time", "Part-time", "Contract", "Temporary"])
+        with col2:
+            income_level = st.selectbox("Income Level", ["Low", "Medium", "High"])
+            social_deprivation = st.slider("Social Deprivation", 0, 10, 5)
+            material_deprivation = st.slider("Material Deprivation", 0, 10, 5)
+
+        # Occupation Details
+        st.markdown("### 👩‍⚕️ Occupation Details")
+        col1, col2 = st.columns(2)
+        with col1:
+            healthcare_role = st.selectbox("Healthcare Role", 
+                ["Doctor", "Nurse", "Admin Staff", "Paramedic", "Technician", 
+                 "Therapist", "Pharmacist", "Midwife", "Healthcare Assistant"])
+            department = st.selectbox("Department", 
+                ["Emergency", "Surgery", "Pediatrics", "Oncology", "Cardiology", 
+                 "Neurology", "Psychiatry", "Radiology", "General Practice", 
+                 "Intensive Care", "Obstetrics", "Geriatrics", "Administration"])
+            years_experience = st.number_input("Years of Experience", 0, 50, 5)
+            weekly_hours = st.number_input("Weekly Hours", 0, 100, 40)
+            night_shifts = st.number_input("Night Shifts per Month", 0, 30, 0)
+        with col2:
+            work_stress = st.slider("Work Stress Level", 0, 10, 5)
+            job_satisfaction = st.slider("Job Satisfaction", 0, 10, 5)
+            burnout_level = st.slider("Burnout Level", 0, 10, 3)
+            patient_facing = st.selectbox("Patient Facing Role", ["Yes", "No"])
+            management_resp = st.selectbox("Management Responsibilities", ["Yes", "No"])
+
+        # Clinical & Psychiatric
+        st.markdown("### 🏥 Clinical & Psychiatric")
+        col1, col2 = st.columns(2)
+        with col1:
+            mh_disorders = st.text_input("Mental Health Disorders")
+            substance_use = st.text_input("Substance Use Disorders")
+            suicidal_ideation = st.selectbox("History of Suicidal Ideation", ["No", "Yes"])
+        with col2:
+            freq_thoughts = st.slider("Frequency of Suicidal Thoughts", 0, 10, 0)
+            intensity_thoughts = st.slider("Intensity of Suicidal Thoughts", 0, 10, 0)
+            previous_attempts = st.number_input("Previous Suicide Attempts", 0, 10, 0)
+
+        # Support & Resilience
+        st.markdown("### 🤝 Support & Resilience")
+        col1, col2 = st.columns(2)
+        with col1:
+            coping = st.slider("Coping Strategies", 0, 10, 5)
+            resilience = st.slider("Measured Resilience", 0, 10, 5)
+        with col2:
+            mh_engagement = st.slider("MH Service Engagement", 0, 10, 5)
+            support = st.slider("Supportive Relationships", 0, 10, 5)
+
+        submitted = st.form_submit_button("Submit Data")
+        if submitted:
+            entry_data = {
+                "Age": age,
+                "Sex": sex,
+                "Employment_Status": employment_status,
+                "Income_Level": income_level,
+                "Social_Deprivation": social_deprivation,
+                "Material_Deprivation": material_deprivation,
+                "Healthcare_Role": healthcare_role,
+                "Department": department,
+                "Years_Experience": years_experience,
+                "Weekly_Hours": weekly_hours,
+                "Night_Shifts_Monthly": night_shifts,
+                "Work_Stress_Level": work_stress,
+                "Job_Satisfaction": job_satisfaction,
+                "Burnout_Level": burnout_level,
+                "Patient_Facing": patient_facing,
+                "Management_Responsibilities": management_resp,
+                "MH_Disorders": mh_disorders,
+                "Substance_Use_Disorders": substance_use,
+                "History_Suicidal_Ideation": 1 if suicidal_ideation == "Yes" else 0,
+                "Frequency_Suicidal_Thoughts": freq_thoughts,
+                "Intensity_Suicidal_Thoughts": intensity_thoughts,
+                "Previous_Suicide_Attempts": previous_attempts,
+                "Coping_Strategies": coping,
+                "Measured_Resilience": resilience,
+                "MH_Service_Engagement": mh_engagement,
+                "Supportive_Relationships": support,
+                "Observation_Date": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            }
+            
+            if insert_entry(entry_data):
+                st.success("✅ Data successfully saved!")
+                st.rerun()
+
+    # CSV Upload Section
+    st.markdown("### 📤 Batch Data Upload")
+    st.markdown("""
+    Upload multiple records using a CSV file. 
+    Ensure your CSV contains the same columns as the individual entry form.
+    """)
+    csv_file = st.file_uploader("Upload CSV file", type=["csv"])
+    if csv_file is not None:
+        try:
+            uploaded_df = pd.read_csv(csv_file)
+            st.markdown("### 📋 Preview of CSV Data")
+            st.dataframe(uploaded_df.head())
+            
+            if st.button("Process CSV"):
+                if upload_csv_to_db(uploaded_df):
+                    st.success("✅ CSV data successfully uploaded!")
+                    st.rerun()
+        except Exception as e:
+            st.error(f"Error processing CSV: {e}")
+
+# Database Backend Tab
+with tab6:
+    st.title("⚙️ Database Management")
+    
+    if edit_mode:
+        st.warning("""
+        ⚠️ Admin Mode Active - Use with caution!
+        Changes made here directly affect the database.
+        """)
+        
+        # Database Operations
+        st.header("🔧 Database Operations")
+        
+        # Clear Database Option
+        st.subheader("🗑️ Clear Database")
+        st.markdown("""
+        This will remove ALL records from the database.
+        This action cannot be undone.
+        """)
+        if st.button("Clear Database"):
+            confirm = st.checkbox("I understand this will delete all data")
+            if confirm:
+                try:
+                    with get_db_connection() as conn:
+                        cursor = conn.cursor()
+                        cursor.execute(f"DELETE FROM {TABLE_NAME}")
+                        conn.commit()
+                    st.success("Database cleared successfully!")
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"Error clearing database: {e}")
+        
+        # Recent Entries Management
+        st.subheader("📝 Recent Entries Management")
+        st.markdown("View and edit the most recent entries in the database.")
+        recent_data = get_latest_entries(20)
+        if not recent_data.empty:
+            edited_df = st.data_editor(recent_data)
+            if st.button("Save Changes"):
+                try:
+                    with get_db_connection() as conn:
+                        edited_df.to_sql(TABLE_NAME, conn, if_exists='replace', index=False)
+                    st.success("Changes saved successfully!")
+                except Exception as e:
+                    st.error(f"Error saving changes: {e}")
+
+    # Database Statistics
+    st.header("📊 Database Statistics")
+    if not df.empty:
+        col1, col2 = st.columns(2)
+        with col1:
+            st.metric("Total Records", len(df))
+            if 'Healthcare_Role' in df.columns:
+                st.metric("Unique Healthcare Roles", len(df['Healthcare_Role'].unique()))
+        with col2:
+            st.metric("Data Points", len(df.columns) * len(df))
+            if 'Observation_Date' in df.columns:
+                st.metric("Last Update", df['Observation_Date'].max())
+            else:
+                st.metric("Last Update", "N/A")
+
+        # Data Quality Check
+        st.subheader("🔍 Data Quality Check")
+        missing_data = df.isnull().sum()
+        if missing_data.any():
+            st.warning("Fields with missing data:")
+            st.write(missing_data[missing_data > 0])
+        else:
+            st.success("No missing data found in the database")
+
+    else:
+        st.info("""
+        🔒 Enable Edit Mode in sidebar to access database management features.
+        
+        Available features in admin mode:
+        - Clear database
+        - Edit recent entries
+        - View database statistics
+        - Check data quality
+        """)
+
+    # Database Documentation
+    st.header("📚 Database Documentation")
+    st.markdown("""
+    ### Table Structure
+    The database contains the following main categories:
+    - 👤 Demographic & Socioeconomic data
+    - 👩‍⚕️ Occupation Details
+    - 🏥 Clinical & Psychiatric information
+    - 🧠 Psychological Factors
+    - 🤝 Support & Resilience metrics
+    
+    ### Data Types
+    - Text fields: For categorical data
+    - Integer fields: For numerical scores and counts
+    - DateTime fields: For temporal data
+    
+    ### Best Practices
+    1. Always verify data before submission
+    2. Use standardized formats for text entries
+    3. Regular backups are recommended
+    4. Monitor data quality metrics
+    """)

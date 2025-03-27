@@ -1,0 +1,1061 @@
+[{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"tab2\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 353,
+	"startColumn": 6,
+	"endLineNumber": 353,
+	"endColumn": 10
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"tab3\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 452,
+	"startColumn": 6,
+	"endLineNumber": 452,
+	"endColumn": 10
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 455,
+	"startColumn": 12,
+	"endLineNumber": 455,
+	"endColumn": 14
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 473,
+	"startColumn": 42,
+	"endLineNumber": 473,
+	"endColumn": 44
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 474,
+	"startColumn": 42,
+	"endLineNumber": 474,
+	"endColumn": 44
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 475,
+	"startColumn": 43,
+	"endLineNumber": 475,
+	"endColumn": 45
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 475,
+	"startColumn": 65,
+	"endLineNumber": 475,
+	"endColumn": 67
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 478,
+	"startColumn": 50,
+	"endLineNumber": 478,
+	"endColumn": 52
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 479,
+	"startColumn": 58,
+	"endLineNumber": 479,
+	"endColumn": 60
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 485,
+	"startColumn": 47,
+	"endLineNumber": 485,
+	"endColumn": 49
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 486,
+	"startColumn": 55,
+	"endLineNumber": 486,
+	"endColumn": 57
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 489,
+	"startColumn": 53,
+	"endLineNumber": 489,
+	"endColumn": 55
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 490,
+	"startColumn": 61,
+	"endLineNumber": 490,
+	"endColumn": 63
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 504,
+	"startColumn": 23,
+	"endLineNumber": 504,
+	"endColumn": 25
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 534,
+	"startColumn": 60,
+	"endLineNumber": 534,
+	"endColumn": 62
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 538,
+	"startColumn": 23,
+	"endLineNumber": 538,
+	"endColumn": 25
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 597,
+	"startColumn": 87,
+	"endLineNumber": 597,
+	"endColumn": 89
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 600,
+	"startColumn": 85,
+	"endLineNumber": 600,
+	"endColumn": 87
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 603,
+	"startColumn": 85,
+	"endLineNumber": 603,
+	"endColumn": 87
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 605,
+	"startColumn": 86,
+	"endLineNumber": 605,
+	"endColumn": 88
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 623,
+	"startColumn": 12,
+	"endLineNumber": 623,
+	"endColumn": 14
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 631,
+	"startColumn": 22,
+	"endLineNumber": 631,
+	"endColumn": 24
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 637,
+	"startColumn": 44,
+	"endLineNumber": 637,
+	"endColumn": 46
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 640,
+	"startColumn": 41,
+	"endLineNumber": 640,
+	"endColumn": 43
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 643,
+	"startColumn": 44,
+	"endLineNumber": 643,
+	"endColumn": 46
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 648,
+	"startColumn": 24,
+	"endLineNumber": 648,
+	"endColumn": 26
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 657,
+	"startColumn": 18,
+	"endLineNumber": 657,
+	"endColumn": 20
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"tab4\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 674,
+	"startColumn": 6,
+	"endLineNumber": 674,
+	"endColumn": 10
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 676,
+	"startColumn": 12,
+	"endLineNumber": 676,
+	"endColumn": 14
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 684,
+	"startColumn": 23,
+	"endLineNumber": 684,
+	"endColumn": 25
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 687,
+	"startColumn": 25,
+	"endLineNumber": 687,
+	"endColumn": 27
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 701,
+	"startColumn": 27,
+	"endLineNumber": 701,
+	"endColumn": 29
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 711,
+	"startColumn": 38,
+	"endLineNumber": 711,
+	"endColumn": 40
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 712,
+	"startColumn": 17,
+	"endLineNumber": 712,
+	"endColumn": 19
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 712,
+	"startColumn": 46,
+	"endLineNumber": 712,
+	"endColumn": 48
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 713,
+	"startColumn": 34,
+	"endLineNumber": 713,
+	"endColumn": 36
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 727,
+	"startColumn": 31,
+	"endLineNumber": 727,
+	"endColumn": 33
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 733,
+	"startColumn": 21,
+	"endLineNumber": 733,
+	"endColumn": 23
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 743,
+	"startColumn": 21,
+	"endLineNumber": 743,
+	"endColumn": 23
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 763,
+	"startColumn": 13,
+	"endLineNumber": 763,
+	"endColumn": 15
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 773,
+	"startColumn": 25,
+	"endLineNumber": 773,
+	"endColumn": 27
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"tab5\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 782,
+	"startColumn": 6,
+	"endLineNumber": 782,
+	"endColumn": 10
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"tab6\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 899,
+	"startColumn": 6,
+	"endLineNumber": 899,
+	"endColumn": 10
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"edit_mode\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 902,
+	"startColumn": 8,
+	"endLineNumber": 902,
+	"endColumn": 17
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 946,
+	"startColumn": 12,
+	"endLineNumber": 946,
+	"endColumn": 14
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 949,
+	"startColumn": 44,
+	"endLineNumber": 949,
+	"endColumn": 46
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 950,
+	"startColumn": 37,
+	"endLineNumber": 950,
+	"endColumn": 39
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 951,
+	"startColumn": 58,
+	"endLineNumber": 951,
+	"endColumn": 60
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 953,
+	"startColumn": 42,
+	"endLineNumber": 953,
+	"endColumn": 44
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 953,
+	"startColumn": 60,
+	"endLineNumber": 953,
+	"endColumn": 62
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 954,
+	"startColumn": 38,
+	"endLineNumber": 954,
+	"endColumn": 40
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 955,
+	"startColumn": 42,
+	"endLineNumber": 955,
+	"endColumn": 44
+},{
+	"resource": "/c:/Users/siwal/RP+/app.py",
+	"owner": "python",
+	"code": {
+		"value": "reportUndefinedVariable",
+		"target": {
+			"$mid": 1,
+			"path": "/microsoft/pyright/blob/main/docs/configuration.md",
+			"scheme": "https",
+			"authority": "github.com",
+			"fragment": "reportUndefinedVariable"
+		}
+	},
+	"severity": 4,
+	"message": "\"df\" is not defined",
+	"source": "Pylance",
+	"startLineNumber": 961,
+	"startColumn": 24,
+	"endLineNumber": 961,
+	"endColumn": 26
+}]

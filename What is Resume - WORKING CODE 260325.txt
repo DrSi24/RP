@@ -1,0 +1,640 @@
+import shap
+import numpy as np
+import xgboost as xgb
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import sqlite3
+from datetime import datetime
+from lifelines import KaplanMeierFitter, CoxPHFitter
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.metrics import roc_auc_score
+import logging
+from contextlib import contextmanager
+import os
+import plotly.express as px
+import streamlit as st
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Configuration
+DB_PATH = "resume_data.db"
+TABLE_NAME = "resume_data"
+
+# Database functions (keep your existing database functions here)
+def create_database():
+    """Create database and table if they don't exist"""
+    conn = None
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        
+        # Create table with all fields
+        cursor.execute(f"""
+            CREATE TABLE IF NOT EXISTS {TABLE_NAME} (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                Age INTEGER,
+                Sex TEXT,
+                Employment_Status TEXT,
+                Reasons_for_Leaving TEXT,
+                Income_Level TEXT,
+                Social_Deprivation INTEGER,
+                Material_Deprivation INTEGER,
+                MH_Disorders TEXT,
+                Substance_Use_Disorders TEXT,
+                History_Suicidal_Ideation INTEGER,
+                Previous_Suicide_Attempts INTEGER,
+                Frequency_Suicidal_Thoughts INTEGER,
+                Intensity_Suicidal_Thoughts INTEGER,
+                Chronic_Illnesses TEXT,
+                GP_Visits INTEGER,
+                ED_Visits INTEGER,
+                Hospitalizations INTEGER,
+                Medication_Usage TEXT,
+                Workplace_Bullying INTEGER,
+                Work_Stress_Factors INTEGER,
+                Critical_Incidents INTEGER,
+                Social_Connectedness INTEGER,
+                Social_Isolation INTEGER,
+                Recent_Life_Stressors TEXT,
+                Personal_Distress_Narratives TEXT,
+                Escalation_Moments TEXT,
+                Family_History TEXT,
+                Hopelessness INTEGER,
+                Despair INTEGER,
+                Impulsivity INTEGER,
+                Aggression INTEGER,
+                Access_Lethal_Means INTEGER,
+                Geographic_Location TEXT,
+                Regional_Suicide_Rate REAL,
+                Seasonal_Pattern TEXT,
+                Temporal_Health_Trend TEXT,
+                Regional_MH_Budget REAL,
+                Healthcare_Shifts TEXT,
+                Coping_Strategies INTEGER,
+                Measured_Resilience INTEGER,
+                MH_Service_Engagement INTEGER,
+                Protective_Norms TEXT,
+                Supportive_Relationships INTEGER,
+                Suicidal_Distress INTEGER,
+                Time_To_Crisis INTEGER,
+                Crisis_Event INTEGER,
+                Observation_Date TEXT
+            )
+        """)
+        conn.commit()
+        st.success("Database initialized successfully!")
+        
+    except sqlite3.Error as e:
+        st.error(f"Database creation error: {e}")
+        logger.error(f"Database creation error: {e}")
+    finally:
+        if conn:
+            conn.close()
+
+@contextmanager
+def get_db_connection():
+    conn = None
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        yield conn
+    finally:
+        if conn:
+            conn.close()
+
+@st.cache_data(ttl=3600)
+def load_data():
+    try:
+        with get_db_connection() as conn:
+            query = f"SELECT * FROM {TABLE_NAME}"
+            df = pd.read_sql_query(query, conn)
+            if 'Observation_Date' in df.columns:
+                df['Observation_Date'] = pd.to_datetime(df['Observation_Date'])
+            return df
+    except Exception as e:
+        logger.error(f"Data loading error: {e}")
+        return pd.DataFrame()
+
+def insert_entry(data: dict):
+    try:
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            columns = ', '.join(data.keys())
+            placeholders = ', '.join(['?' for _ in data])
+            query = f"INSERT INTO {TABLE_NAME} ({columns}) VALUES ({placeholders})"
+            cursor.execute(query, list(data.values()))
+            conn.commit()
+            return True
+    except sqlite3.Error as e:
+        logger.error(f"Database error: {e}")
+        st.error(f"⚠️ Failed to save data: {e}")
+        return False
+
+def upload_csv_to_db(csv_df: pd.DataFrame):
+    try:
+        with get_db_connection() as conn:
+            csv_df.to_sql(TABLE_NAME, conn, if_exists='append', index=False)
+            return True
+    except Exception as e:
+        logger.error(f"CSV upload error: {e}")
+        st.error(f"⚠️ Failed to upload CSV: {e}")
+        return False
+
+def get_latest_entries(n=10):
+    try:
+        with get_db_connection() as conn:
+            df = pd.read_sql_query(
+                f"SELECT * FROM {TABLE_NAME} ORDER BY id DESC LIMIT {n}",
+                conn
+            )
+            return df
+    except Exception as e:
+        logger.error(f"Error fetching latest entries: {e}")
+        return pd.DataFrame()
+
+# PART 2
+# [All your imports and database functions remain exactly the same up to the main function]
+
+def main():
+    st.set_page_config(
+        page_title="RESUME Predictor",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
+
+    # Create database if it doesn't exist
+    if not os.path.exists(DB_PATH):
+        create_database()
+    
+    # Load data
+    df = load_data()
+    
+    # Sidebar
+    st.sidebar.header("🧭 Main Menu")
+    edit_mode = st.sidebar.checkbox("Enable Edit Mode", value=False)
+    analysis_choice = st.sidebar.radio(
+        "Choose Analysis Model:",
+        ["Kaplan–Meier Estimator", 
+         "Cox Proportional Hazards Model",
+         "Bayesian Spatio-Temporal Model", 
+         "Machine Learning (XGBoost)"]
+    )
+
+    # Create tabs
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+        "🟠 Dashboard",
+        "🟢 What is RESUME",
+        "🔵 Database (Front)",
+        "🟣 Detailed Analytics",
+        "🔷 Data Entry",
+        "⚙️ Database (Backend)"
+    ])
+    # Dashboard Tab
+    with tab1:
+        st.title("🧠 RESUME Predictive Modelling Dashboard")
+        
+        # Database Overview Section
+        st.header("📊 Database Overview")
+        if not df.empty:
+            col1, col2, col3, col4 = st.columns(4)
+            with col1:
+                st.metric("Total Records", len(df))
+            with col2:
+                crisis_events = int(df['Crisis_Event'].sum())
+                st.metric("Recorded Crisis Events", crisis_events)
+            with col3:
+                age_range = f"{int(df['Age'].min())} - {int(df['Age'].max())}"
+                st.metric("Age Range", age_range)
+            with col4:
+                employment_counts = df['Employment_Status'].value_counts()
+                st.metric("Employment Types", len(employment_counts))
+
+            # Employment Distribution
+            st.subheader("👥 Employment Distribution")
+            emp_fig = px.pie(df, names='Employment_Status', title='Distribution by Employment Status')
+            st.plotly_chart(emp_fig)
+
+            # Analysis Models Section
+            st.header("📈 Risk Analysis Models")
+            
+            if analysis_choice == "Kaplan–Meier Estimator":
+                st.subheader("📊 Kaplan-Meier Survival Analysis")
+                st.markdown("""
+                **What is this showing?**
+                - The Kaplan-Meier curve shows the probability of remaining crisis-free over time
+                - Each drop in the curve represents when crisis events occurred
+                - Different lines represent different groups (e.g., by gender or employment status)
+                - Steeper drops indicate periods of higher risk
+                
+                **How to interpret:**
+                - Higher curves = better outcomes
+                - Wider gaps between curves = significant differences between groups
+                - Steep drops = time periods needing attention
+                """)
+                
+                # Kaplan-Meier Analysis
+                kmf = KaplanMeierFitter()
+                if 'Time_To_Crisis' in df.columns and 'Crisis_Event' in df.columns:
+                    kmf.fit(df['Time_To_Crisis'], 
+                           df['Crisis_Event'], 
+                           label='Overall')
+                    fig, ax = plt.subplots(figsize=(10, 6))
+                    kmf.plot(ax=ax)
+                    plt.title('Kaplan-Meier Survival Curve')
+                    st.pyplot(fig)
+
+            elif analysis_choice == "Cox Proportional Hazards Model":
+                # [Your existing Cox model code remains the same]
+                pass
+
+            elif analysis_choice == "Machine Learning (XGBoost)":
+                # [Your existing XGBoost code remains the same]
+                pass
+
+            # Additional Overview Statistics
+            st.header("📋 Detailed Statistics")
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.subheader("Age Distribution")
+                age_fig = px.histogram(df, x='Age', nbins=20, 
+                                     title='Age Distribution of Healthcare Workers')
+                st.plotly_chart(age_fig)
+                
+            with col2:
+                st.subheader("Risk Levels by Employment")
+                risk_by_emp = df.groupby('Employment_Status')['Suicidal_Distress'].mean()
+                risk_fig = px.bar(risk_by_emp, title='Average Risk Level by Employment Type')
+                st.plotly_chart(risk_fig)
+
+            # Time Trends
+            st.subheader("📅 Temporal Trends")
+            df['Observation_Date'] = pd.to_datetime(df['Observation_Date'])
+            time_series = df.groupby(df['Observation_Date'].dt.month)['Crisis_Event'].count()
+            time_fig = px.line(time_series, title='Monthly Distribution of Records')
+            st.plotly_chart(time_fig)
+
+    # What is RESUME Tab
+    with tab2:
+        st.title("🧠 RESUME: Risk Evaluation and Suicide Understanding Monitoring Engine")
+        
+        # Overview Section
+        st.header("📋 Project Overview")
+        st.markdown("""
+        RESUME is an advanced predictive analytics tool designed to identify and assess suicide risk among healthcare workers. 
+        The project combines multiple analytical approaches to provide comprehensive risk assessment and monitoring.
+        
+        🔗 **Project Website:** [RESUME Project Portal](https://www.resumeuk.org)
+        
+        ### 🎯 Core Objectives
+        1. Early Risk Detection
+        2. Continuous Monitoring
+        3. Predictive Analytics
+        4. Evidence-Based Intervention Support
+        
+        ### ⭐ Key Features
+        - 🔄 Real-time risk assessment
+        - 📊 Multi-modal data analysis
+        - ⏱️ Temporal pattern recognition
+        - 📈 Interactive visualization
+        - 🔒 Secure data management
+        """)
+
+        # [Rest of your What is RESUME tab content remains the same]
+        # Technical Architecture
+        st.header("🏗️ Technical Architecture")
+        st.markdown("""
+        ### 📥 Data Collection
+        - 📝 Structured clinical assessments
+        - 📊 Psychometric measurements
+        - ⏱️ Temporal behavioral patterns
+        - 🌍 Environmental factors
+        
+        ### 🔄 Analysis Pipeline
+        1. 🔍 Data Preprocessing
+        2. ⚙️ Feature Engineering
+        3. ⚖️ Risk Assessment
+        4. 🤖 Predictive Modeling
+        5. 📊 Visualization
+        """)
+
+        st.header("🔮 Predictive Models")
+        st.markdown("""
+        ### 1. 📈 Survival Analysis
+        #### 📊 Kaplan-Meier Estimator
+        - Estimates probability of remaining crisis-free over time
+        - Non-parametric approach for time-to-event analysis
+        - Accounts for censored data
+        
+        #### 📉 Cox Proportional Hazards
+        - Analyzes impact of multiple variables on survival
+        - Hazard ratios quantify risk factors
+        - Time-dependent covariate analysis
+        
+        ### 2. 🤖 Machine Learning Models
+        #### 🌳 XGBoost Classification
+        - Gradient boosting framework
+        - Features:
+            - 👤 Demographic factors
+            - 🏥 Clinical indicators
+            - 🧠 Psychosocial variables
+            - 🌍 Environmental factors
+        - Hyperparameter optimization
+        - Cross-validation methodology
+        
+        ### 3. ⚖️ Risk Scoring System
+        - Weighted combination of:
+            - 📋 Clinical assessments
+            - 📚 Historical data
+            - 🔄 Real-time indicators
+            - 🌍 Environmental factors
+        """)
+
+        st.header("📝 Methodology")
+        st.markdown("""
+        ### 🔄 Data Processing Pipeline
+        1. **📥 Data Collection**
+           - 📝 Standardized assessments
+           - 👨‍⚕️ Clinical observations
+           - ⏱️ Temporal tracking
+        
+        2. **⚙️ Feature Engineering**
+           - 📊 Temporal aggregation
+           - 🎯 Risk factor computation
+           - 🔄 Interaction terms
+        
+        3. **🤖 Model Training**
+           - ✔️ Cross-validation
+           - ⚙️ Hyperparameter optimization
+           - 🔄 Model ensemble
+        
+        4. **🎯 Validation**
+           - 👨‍⚕️ Clinical validation
+           - 📊 Statistical testing
+           - 📈 Performance metrics
+        """)
+		    # Database Front Tab
+    with tab3:
+        st.title("📊 Database Overview")
+        if not df.empty:
+            public_cols = [
+                "Observation_Date", "Age", "Sex", "Employment_Status",
+                "MH_Disorders", "Suicidal_Distress", "Time_To_Crisis",
+                "Crisis_Event"
+            ]
+            st.dataframe(df[public_cols].sort_values("Observation_Date", ascending=False))
+            
+            # Basic statistics
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric("Total Records", len(df))
+            with col2:
+                st.metric("Average Age", f"{df['Age'].mean():.1f}")
+            with col3:
+                st.metric("Crisis Events", int(df['Crisis_Event'].sum()))
+        else:
+            st.info("No data available. Please add entries using the Data Entry tab.")
+
+    # Detailed Analytics Tab
+    with tab4:
+        st.title("📈 Detailed Analytics")
+        if not df.empty:
+            # Risk Factor Analysis
+            st.subheader("🎯 Risk Factor Analysis")
+            risk_factors = [
+                "Hopelessness", "Despair", "Impulsivity", "Social_Isolation",
+                "Access_Lethal_Means"
+            ]
+            
+            if all(col in df.columns for col in risk_factors):
+                risk_data = df[risk_factors].mean().sort_values(ascending=False)
+                
+                fig, ax = plt.subplots(figsize=(10, 6))
+                risk_data.plot(kind='bar')
+                plt.title("Average Risk Factor Scores")
+                plt.xticks(rotation=45)
+                st.pyplot(fig)
+                
+                # Correlation matrix
+                st.subheader("📊 Risk Factor Correlations")
+                corr_matrix = df[risk_factors].corr()
+                fig, ax = plt.subplots(figsize=(10, 8))
+                plt.imshow(corr_matrix, cmap='coolwarm', aspect='auto')
+                plt.colorbar()
+                plt.xticks(range(len(risk_factors)), risk_factors, rotation=45)
+                plt.yticks(range(len(risk_factors)), risk_factors)
+                st.pyplot(fig)
+
+            # Additional Analytics
+            st.subheader("📊 Temporal Analysis")
+            if 'Observation_Date' in df.columns:
+                # Time series of crisis events
+                df['Month'] = pd.to_datetime(df['Observation_Date']).dt.to_period('M')
+                monthly_crisis = df.groupby('Month')['Crisis_Event'].sum()
+                
+                fig, ax = plt.subplots(figsize=(12, 6))
+                monthly_crisis.plot(kind='line', marker='o')
+                plt.title('Monthly Crisis Events')
+                plt.xlabel('Month')
+                plt.ylabel('Number of Crisis Events')
+                plt.xticks(rotation=45)
+                st.pyplot(fig)
+
+            # Risk Factor Distribution
+            st.subheader("📈 Risk Factor Distribution")
+            selected_factor = st.selectbox(
+                "Select Risk Factor to Analyze",
+                risk_factors
+            )
+            
+            if selected_factor in df.columns:
+                fig = px.histogram(
+                    df, 
+                    x=selected_factor,
+                    nbins=20,
+                    title=f"Distribution of {selected_factor}"
+                )
+                st.plotly_chart(fig)
+
+                # Box plot by employment status
+                fig = px.box(
+                    df,
+                    x="Employment_Status",
+                    y=selected_factor,
+                    title=f"{selected_factor} by Employment Status"
+                )
+                st.plotly_chart(fig)
+
+            # Multivariate Analysis
+            st.subheader("🔄 Multivariate Analysis")
+            if len(risk_factors) >= 2:
+                col1, col2 = st.columns(2)
+                with col1:
+                    factor_x = st.selectbox("Select X-axis factor", risk_factors)
+                with col2:
+                    factor_y = st.selectbox("Select Y-axis factor", 
+                                          [f for f in risk_factors if f != factor_x])
+                
+                fig = px.scatter(
+                    df,
+                    x=factor_x,
+                    y=factor_y,
+                    color="Employment_Status",
+                    title=f"Relationship between {factor_x} and {factor_y}"
+                )
+                st.plotly_chart(fig)
+
+            # Statistical Summary
+            st.subheader("📊 Statistical Summary")
+            if not df.empty:
+                summary_stats = df[risk_factors].describe()
+                st.dataframe(summary_stats)
+    # Data Entry Tab
+    with tab5:
+        st.title("📝 RESUME Prime Variable Entry")
+        
+        with st.form("prime_variable_form"):
+            st.markdown("### 👤 Demographic & Socioeconomic")
+            col1, col2 = st.columns(2)
+            with col1:
+                age = st.number_input("Age", min_value=16, max_value=100, value=25)
+                sex = st.selectbox("Sex", ["Male", "Female", "Other"])
+                employment_status = st.selectbox(
+                    "Employment Status",
+                    ["Employed", "Unemployed", "Student", "Retired", "Other"]
+                )
+            with col2:
+                income_level = st.selectbox("Income Level", ["Low", "Medium", "High"])
+                social_deprivation = st.slider("Social Deprivation Index", 0, 10, 5)
+                material_deprivation = st.slider("Material Deprivation Score", 0, 10, 5)
+
+            st.markdown("### 🏥 Clinical & Psychiatric")
+            col1, col2 = st.columns(2)
+            with col1:
+                mh_disorders = st.text_input("Mental Health Disorders")
+                substance_use = st.text_input("Substance Use Disorders")
+                suicidal_ideation = st.selectbox("History of Suicidal Ideation", ["No", "Yes"])
+            with col2:
+                freq_thoughts = st.slider("Frequency of Suicidal Thoughts", 0, 10, 0)
+                intensity_thoughts = st.slider("Intensity of Suicidal Thoughts", 0, 10, 0)
+                previous_attempts = st.number_input("Previous Suicide Attempts", 0, 10, 0)
+
+            st.markdown("### 🏃 Health & Medical")
+            col1, col2 = st.columns(2)
+            with col1:
+                chronic_illnesses = st.text_input("Chronic Illnesses")
+                gp_visits = st.number_input("GP Visits (12 months)", 0, 50, 0)
+            with col2:
+                ed_visits = st.number_input("ED Visits (12 months)", 0, 20, 0)
+                hospitalizations = st.number_input("Hospitalizations (12 months)", 0, 20, 0)
+
+            st.markdown("### 🧠 Psychological Factors")
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                hopelessness = st.slider("Hopelessness", 0, 10, 5)
+                despair = st.slider("Despair", 0, 10, 5)
+            with col2:
+                impulsivity = st.slider("Impulsivity", 0, 10, 5)
+                aggression = st.slider("Aggression", 0, 10, 5)
+            with col3:
+                access_lethal = st.slider("Access to Lethal Means", 0, 10, 0)
+                social_isolation = st.slider("Social Isolation", 0, 10, 5)
+
+            st.markdown("### 🤝 Support & Resilience")
+            col1, col2 = st.columns(2)
+            with col1:
+                coping = st.slider("Coping Strategies", 0, 10, 5)
+                resilience = st.slider("Measured Resilience", 0, 10, 5)
+            with col2:
+                mh_engagement = st.slider("MH Service Engagement", 0, 10, 5)
+                support = st.slider("Supportive Relationships", 0, 10, 5)
+
+            submitted = st.form_submit_button("Submit Data")
+            if submitted:
+                entry_data = {
+                    "Age": age,
+                    "Sex": sex,
+                    "Employment_Status": employment_status,
+                    "Income_Level": income_level,
+                    "Social_Deprivation": social_deprivation,
+                    "Material_Deprivation": material_deprivation,
+                    "MH_Disorders": mh_disorders,
+                    "Substance_Use_Disorders": substance_use,
+                    "History_Suicidal_Ideation": 1 if suicidal_ideation == "Yes" else 0,
+                    "Frequency_Suicidal_Thoughts": freq_thoughts,
+                    "Intensity_Suicidal_Thoughts": intensity_thoughts,
+                    "Previous_Suicide_Attempts": previous_attempts,
+                    "Chronic_Illnesses": chronic_illnesses,
+                    "GP_Visits": gp_visits,
+                    "ED_Visits": ed_visits,
+                    "Hospitalizations": hospitalizations,
+                    "Hopelessness": hopelessness,
+                    "Despair": despair,
+                    "Impulsivity": impulsivity,
+                    "Aggression": aggression,
+                    "Access_Lethal_Means": access_lethal,
+                    "Social_Isolation": social_isolation,
+                    "Coping_Strategies": coping,
+                    "Measured_Resilience": resilience,
+                    "MH_Service_Engagement": mh_engagement,
+                    "Supportive_Relationships": support,
+                    "Observation_Date": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                }
+                
+                if insert_entry(entry_data):
+                    st.success("✅ Data successfully saved!")
+                    st.experimental_rerun()
+
+        # CSV Upload Section
+        st.markdown("### 📤 Batch Data Upload")
+        csv_file = st.file_uploader("Upload CSV file", type=["csv"])
+        if csv_file is not None:
+            try:
+                uploaded_df = pd.read_csv(csv_file)
+                if st.button("Process CSV"):
+                    if upload_csv_to_db(uploaded_df):
+                        st.success("✅ CSV data successfully uploaded!")
+                        st.experimental_rerun()
+            except Exception as e:
+                st.error(f"Error processing CSV: {e}")
+
+    # Database Backend Tab
+    with tab6:
+        st.title("⚙️ Database Management")
+        
+        if edit_mode:
+            st.warning("⚠️ Admin Mode Active - Use with caution!")
+            
+            if st.button("Clear Database"):
+                try:
+                    with get_db_connection() as conn:
+                        cursor = conn.cursor()
+                        cursor.execute(f"DELETE FROM {TABLE_NAME}")
+                        conn.commit()
+                    st.success("Database cleared successfully!")
+                    st.experimental_rerun()
+                except Exception as e:
+                    st.error(f"Error clearing database: {e}")
+            
+            # Show recent entries with delete option
+            st.subheader("Recent Entries")
+            recent_data = get_latest_entries(20)
+            if not recent_data.empty:
+                edited_df = st.data_editor(recent_data)
+                if st.button("Save Changes"):
+                    try:
+                        with get_db_connection() as conn:
+                            edited_df.to_sql(TABLE_NAME, conn, if_exists='replace', index=False)
+                        st.success("Changes saved successfully!")
+                    except Exception as e:
+                        st.error(f"Error saving changes: {e}")
+        else:
+            st.info("🔒 Enable Edit Mode in sidebar to access database management features")
+
+# Entry point of the application
+if __name__ == "__main__":
+    main()
